@@ -13,3 +13,11 @@
     background-position: center;
     background-size: contain;
 }
+
+.icon-nav-user::after {
+    background-image: url('../images/icons/icon-nav-user.png');
+}
+
+.icon-lock::after {
+    background-image: url('../images/icons/icon-lock.png');
+}
