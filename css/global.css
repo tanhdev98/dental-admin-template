@@ -124,3 +124,57 @@ nav ul li:hover {
 }
 
 /* end checkbox */
+
+/* Pagination number*/
+.pagination-arrow.disable {
+    cursor: no-drop;
+}
+
+.pagination-arrow.icon-next:after {
+    transform: translateX(1px);
+}
+
+.wrap-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 30px;
+}
+
+.pagination-number {
+    display: flex;
+    gap: 8px;
+}
+
+.pagination-number li.more {
+    display: flex;
+    align-items: center;
+    cursor: default;
+}
+
+.pagination-number li a {
+    width: 20px;
+    height: 20px;
+    line-height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-weight: 300;
+    color: #999;
+    font-size: 15px;
+    line-height: 16px;
+}
+
+.pagination-number li.active a {
+    cursor: pointer;
+}
+
+.pagination-number li.active a,
+.pagination-number li:hover a {
+    font-weight: 700;
+    color: #0068b7;
+}
+
+/* End Pagination number*/

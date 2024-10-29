@@ -21,3 +21,35 @@
 .icon-lock::after {
     background-image: url('../images/icons/icon-lock.png');
 }
+
+/* Icon Next and Prev */
+.icon-next,
+.icon-prev {
+    display: flex;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid #ddd;
+
+}
+
+.icon-next:hover,
+.icon-prev:hover {
+    background-color: #eee;
+}
+
+.icon-next::after {
+    background-image: url('../images/icons/icon-right.png');
+    height: 10px;
+}
+
+.icon-prev::after {
+    background-image: url('../images/icons/icon-left.png');
+    height: 10px;
+}
+
+/* End Icon Next and Prev */
