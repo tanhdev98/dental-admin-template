@@ -1,0 +1,29 @@
+.title {
+    font-size: 18px;
+}
+
+.table {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.table.table-bordered {
+    border-radius: 10px;
+}
+
+.table th,
+.table td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table th {
+    background: #f9f9f9;
+}
+
+.table td {
+    display: flex;
+    align-items: center;
+    row-gap: 17px;
+    column-gap: 21px;
+}

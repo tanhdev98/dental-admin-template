@@ -120,8 +120,14 @@ strong {
     font-size: 16px;
     color: #fff;
     font-weight: 500;
+    border-radius: 3px;
+    width: max-content;
 }
 
 .btn-rounded {
     border-radius: 12px;
+}
+
+.btn-primary {
+    background-color: #0068b7;
 }

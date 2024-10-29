@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/home.css">
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/bootstrap/bootstrap.js"></script>
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="container">
+            <img class="img-logo" src="./images/logo.png" alt="DentalJob Logo">
+            <ul class="auth-navigate">
+                <li><a href="#">덴탈잡 홈페이지</a></li>
+                <li>|</li>
+                <li><a href="#">김관리 님</a></li>
+                <li><button class="btn btn-secondary btn-rounded">로그아웃</button></li>
+            </ul>
+        </div>
+    </header>
+    <!-- end header -->
+    <!-- nav -->
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#">회원 관리</a></li>
+                <li><a href="#">채용 관리</a></li>
+                <li><a href="#">이력서 관리</a></li>
+                <li><a href="#">광고상품 관리 </a></li>
+                <li><a href="#">Biz보드 관리</a></li>
+                <li><a href="#">게시물 관리</a></li>
+                <li><a href="#">결제 관리</a></li>
+                <li><a href="#">통계 관리</a></li>
+                <li><a href="#">마케팅 관리</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- end nav -->
+    <!-- content -->
+    <div id="content">
+        <div class="container">
+            <h1 class="title">회원목록</h1>
+            <table class="table table-bordered">
+                <tbody>
+                    <tr>
+                        <td colspan="4">
+                            <select name="" id="">
+                                <option value="">전체</option>
+                            </select>
+                            <input type="text" placeholder="검색어를 입력해주세요.">
+                            <button class="btn btn-primary">검색</button>
+                            <button class="btn btn-dark">상세검색</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>회원그룹</th>
+                        <td colspan="3">
+                            <div class="item-checkBox">
+                                <input type="checkbox" class="checkbox" id="checkbox1">
+                                <span></span>
+                                <label for="checkbox1">전체</label>
+                            </div>
+                            <div class="item-checkBox">
+                                <input type="checkbox" class="checkbox" id="checkbox2">
+                                <span></span>
+                                <label for="checkbox2">기관회원</label>
+                            </div>
+                            <div class="item-checkBox">
+                                <input type="checkbox" class="checkbox" id="checkbox3">
+                                <span></span>
+                                <label for="checkbox3">개인회원</label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>회원구분</th>
+                        <td colspan="3">
+                            <div class="item-checkBox">
+                                <input type="checkbox" class="checkbox" id="checkbox4">
+                                <span></span>
+                                <label for="checkbox4">대표 치과의사</label>
+                            </div>
+                            <div class="item-checkBox">
+                                <input type="checkbox" class="checkbox" id="checkbox5">
+                                <span></span>
+                                <label for="checkbox5">치과의사</label>
+                            </div>
+                            <div class="item-checkBox">
+                                <input type="checkbox" class="checkbox" id="checkbox6">
+                                <span></span>
+                                <label for="checkbox6">치과기공사(소장)</label>
+                            </div>
+                            <div class="item-checkBox">
+                                <input type="checkbox" class="checkbox" id="checkbox7">
+                                <span></span>
+                                <label for="checkbox7">치과위생사 및 진료스텝</label>
+                            </div>
+                            <div class="item-checkBox">
+                                <input type="checkbox" class="checkbox" id="checkbox8">
+                                <span></span>
+                                <label for="checkbox8">학생(치의학과)</label>
+                            </div>
+                            <div class="item-checkBox">
+                                <input type="checkbox" class="checkbox" id="checkbox9">
+                                <span></span>
+                                <label for="checkbox9">학생(치위생사)</label>
+                            </div>
+                            <div class="item-checkBox">
+                                <input type="checkbox" class="checkbox" id="checkbox10">
+                                <span></span>
+                                <label for="checkbox10">학생(치기공사)</label>
+                            </div>
+                            <div class="item-checkBox">
+                                <input type="checkbox" class="checkbox" id="checkbox11">
+                                <span></span>
+                                <label for="checkbox11">간호조무사</label>
+                            </div>
+                            <div class="item-checkBox">
+                                <input type="checkbox" class="checkbox" id="checkbox12">
+                                <span></span>
+                                <label for="checkbox12">기타</label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>상태</th>
+                        <td>
+                            <div class="item-checkBox">
+                                <input type="checkbox" class="checkbox" id="checkbox7">
+                                <span></span>
+                                <label for="checkbox7">전체</label>
+                            </div>
+                            <div class="item-checkBox">
+                                <input type="checkbox" class="checkbox" id="checkbox8">
+                                <span></span>
+                                <label for="checkbox8">기관회원</label>
+                            </div>
+                            <div class="item-checkBox">
+                                <input type="checkbox" class="checkbox" id="checkbox9">
+                                <span></span>
+                                <label for="checkbox9">개인회원</label>
+                            </div>
+                        </td>
+                        <th>DVmall 회원멤버십</th>
+                        <td>
+                            <div class="item-checkBox">
+                                <input type="checkbox" class="checkbox" id="checkbox10">
+                                <span></span>
+                                <label for="checkbox10">전체</label>
+                            </div>
+                            <div class="item-checkBox">
+                                <input type="checkbox" class="checkbox" id="checkbox11">
+                                <span></span>
+                                <label for="checkbox11">기관회원</label>
+                            </div>
+                            <div class="item-checkBox">
+                                <input type="checkbox" class="checkbox" id="checkbox12">
+                                <span></span>
+                                <label for="checkbox12">개인회원</label>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- end content -->
+</body>
+
+</html>
