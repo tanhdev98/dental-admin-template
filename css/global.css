@@ -65,7 +65,6 @@ nav ul li:hover {
     display: flex;
     align-items: center;
     position: relative;
-    padding-left: 25px;
 }
 
 .item-checkBox input[type="checkbox"],
@@ -116,6 +115,7 @@ nav ul li:hover {
     font-weight: 500;
     line-height: 17px;
     color: #666;
+    padding-left: 25px;
     z-index: 1;
 }
 
