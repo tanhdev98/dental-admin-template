@@ -182,3 +182,23 @@ nav ul li:hover {
 }
 
 /* End Pagination number*/
+
+
+.select-basic {
+    width: 150px;
+    height: 30px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #666;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: relative;
+    background: url('../images/icons/icon-down-select.png') no-repeat right 13px center;
+    background-size: 10px 6px;
+    padding: 0 13px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    cursor: pointer;
+    outline: none;
+}
