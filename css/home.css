@@ -15,15 +15,87 @@
 .table td {
     text-align: center;
     vertical-align: middle;
+    padding: 13px 21px 14px;
 }
 
-.table th {
-    background: #f9f9f9;
+.table th.t-left {
+    text-align: left;
 }
 
-.table td {
+.table th.header-item {
+    text-align: left;
+}
+
+.table th.header-item .header-item-inner {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.table th.header-item .header-item-inner .select-box {
+    margin-left: 108px;
+    border: 1px solid #ddd;
+    padding: 0px 18px;
+    border-radius: 3px;
+    width: 690px;
+}
+
+.table th.header-item .header-item-inner .select-box input {
+    font-size: 15px;
+    border: none;
+    outline: none;
+    font-weight: 300;
+    width: 520px;
+    color: #666;
+}
+
+.table th.header-item .header-item-inner .select-box select {
+    font-size: 15px;
+    border: none;
+    outline: none;
+    width: 97px;
+    font-weight: 300;
+    margin-right: 12px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: relative;
+    background: url('../images/icons/icon-down-select.png') no-repeat right 0px center;
+    background-size: 10px 6px;
+    padding: 9px 6px;
+    color: #666;
+}
+
+
+.table th.header-item .header-item-inner .button-group {
+    display: flex;
+    gap: 5px;
+}
+
+.table th.header-item .header-item-inner .button-group .btn {
+    padding: 6px 22px 4.5px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.table td>div {
     display: flex;
     align-items: center;
-    row-gap: 17px;
-    column-gap: 21px;
+    gap: 13px 76px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+}
+
+.table td>div.group-checkBox {
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+}
+
+.table td>div.group-checkBox label {
+    white-space: nowrap;
+}
+
+.table tbody tr:not(:first-child) th {
+    width: 130px;
+    background-color: #f9f9f9;
 }
