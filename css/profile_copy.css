@@ -222,4 +222,46 @@
 /* right sidebar */
 .profile-content {
     padding: 40px;
+    width: 100%;
+}
+
+
+/* Infomation member */
+#infomation-member table tr th:first-child,
+#infomation-member table tr td:first-child {
+    border-left: none;
+}
+
+#infomation-member table tr th:last-child,
+#infomation-member table tr td:last-child {
+    border-right: none;
+}
+
+#infomation-member table tr th {
+    text-align: center;
+}
+
+#infomation-member table tr th,
+#infomation-member table tr td {
+    padding: 10px 20px 9px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    vertical-align: middle;
+}
+
+#infomation-member table tr td:not(:last-child) {
+    text-align: center;
+}
+
+#infomation-member table thead tr th:first-child {
+    width: 160px;
+}
+
+#infomation-member table thead tr th:nth-child(2) {
+    width: 120px;
+}
+
+#infomation-member .wrap-pagination {
+    margin-top: 20px;
 }
