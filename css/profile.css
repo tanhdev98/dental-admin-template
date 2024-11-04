@@ -251,7 +251,7 @@
 }
 
 #infomation-member table tr td {
-  font-weight: 300;
+  /* font-weight: 300; */
 }
 
 #infomation-member table tr td:not(:last-child) {
