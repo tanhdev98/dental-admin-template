@@ -1,0 +1,350 @@
+.top-nav {
+  background-color: #999;
+  height: 40px;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top-nav div {
+  font-size: 17px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.top-nav button.close {
+  width: 14px;
+  height: 14px;
+  position: relative;
+}
+
+.top-nav button.close::before {
+  content: "";
+  width: 16px;
+  height: 2px;
+  background-color: #fff;
+  transform: rotate(45deg);
+  position: absolute;
+  left: 0;
+}
+
+.top-nav button.close::after {
+  content: "";
+  width: 16px;
+  height: 2px;
+  background-color: #fff;
+  transform: rotate(-45deg);
+  position: absolute;
+  left: 0;
+}
+
+/* Profile Sidebar */
+.profile-content {
+  padding: 39px 42px 0 39px;
+}
+
+#content {
+  /* padding: 0 0 70px; */
+  padding: 0;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.profile {
+  display: flex;
+}
+
+.profile-sidebar {
+  width: 100%;
+  max-width: 330px;
+  border-right: 1px solid #ddd;
+}
+
+.profile-sidebar .profile-user {
+  height: 330px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.profile-sidebar .profile-user .profile-user-img {
+  margin-bottom: 15px;
+}
+
+.profile-sidebar .profile-user .profile-user-img img {
+  height: 64px;
+}
+
+.profile-user-name {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.profile-user-position {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.group-profile-button {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+
+.group-profile-button-top {
+  margin-top: 15px;
+  display: flex;
+  gap: 2px;
+  max-width: 250px;
+  width: 100%;
+}
+
+.group-profile-button-top a {
+  font-size: 15px;
+  font-weight: 300;
+  color: #999;
+  border: 1px solid #ddd;
+  width: 100%;
+  border-radius: 2px;
+  height: 30px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.group-profile-button-top a:hover {
+  border-color: #0068b7;
+  color: #0068b7;
+  font-weight: 500;
+}
+
+.group-profile-button-bottom {
+  width: 100%;
+  max-width: 250px;
+}
+
+.group-profile-button-bottom a {
+  width: 100%;
+  border-radius: 3px;
+  height: 35px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #0068b7;
+}
+
+.icon-user-profile {
+  width: 12px;
+  height: 16px;
+}
+
+.icon-bag {
+  width: 16px;
+  height: 16px;
+}
+
+.icon-list {
+  width: 14px;
+  height: 16px;
+}
+
+.icon-file {
+  width: 14px;
+  height: 16px;
+}
+
+.profile .profile-sidebar > ul {
+  border-top: 1px solid #ddd;
+}
+
+.profile .profile-sidebar > ul li a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 40px;
+  height: 51px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+}
+
+.profile .profile-sidebar > ul li a:hover,
+.profile .profile-sidebar > ul li a.active {
+  background-color: #e0edf7;
+  color: #0068b7;
+}
+
+.profile .profile-sidebar > ul li a:hover:after,
+.profile .profile-sidebar > ul li a.active:after {
+  content: "";
+  width: 6px;
+  height: 10px;
+  background: url("../images/icons/icon-right-active.png") no-repeat center /
+    100%;
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.profile .profile-sidebar > ul li a.active .icon-user-profile::after,
+.profile .profile-sidebar > ul li a:hover .icon-user-profile::after {
+  background-image: url("../images/icons/icon-user-profile.png");
+}
+
+.profile .profile-sidebar > ul li a.active .icon-bag::after,
+.profile .profile-sidebar > ul li a:hover .icon-bag::after {
+  background-image: url("../images/icons/icon-bag.png");
+}
+
+.profile .profile-sidebar > ul li a.active .icon-list::after,
+.profile .profile-sidebar > ul li a:hover .icon-list::after {
+  background-image: url("../images/icons/icon-list.png");
+}
+
+.profile .profile-sidebar > ul li a.active .icon-file::after,
+.profile .profile-sidebar > ul li a:hover .icon-file::after {
+  background-image: url("../images/icons/icon-file.png");
+}
+
+/* right sidebar */
+
+/* Infomation member */
+#infomation-member table tr th:first-child,
+#infomation-member table tr td:first-child {
+  border-left: none;
+}
+
+#infomation-member table tr th:last-child,
+#infomation-member table tr td:last-child {
+  border-right: none;
+}
+
+#infomation-member table tr th,
+#infomation-member table tr td {
+  padding: 10px 20px 9px;
+  font-size: 14px;
+  line-height: 20px;
+  vertical-align: middle;
+}
+
+#infomation-member table tr th {
+  text-align: center;
+  background-color: #f9f9f9;
+  font-weight: 600;
+}
+
+#infomation-member table tr td {
+  font-weight: 300;
+}
+
+#infomation-member table tr td:not(:last-child) {
+  text-align: center;
+}
+
+#infomation-member table thead tr th:first-child {
+  width: 160px;
+}
+
+#infomation-member table thead tr th:nth-child(2) {
+  width: 120px;
+}
+
+#infomation-member .wrap-pagination {
+  margin-top: 20px;
+  margin-bottom: 108px;
+}
+
+.profile-content .title-profile {
+  font-size: 17px;
+  color: #111111;
+  font-weight: 600;
+  border-bottom: 1px solid #999999;
+  padding: 42px 0 13px 0;
+}
+
+.profile-content .title-table-info {
+  font-size: 15px;
+  font-weight: 400;
+  color: #333333;
+  margin-top: 31px;
+}
+.member-basic-infor .title-table-info {
+  margin-top: 21px;
+}
+
+.profile-content .table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.profile-content .table th,
+.profile-content .table td {
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  text-align: left;
+  font-size: 14px;
+  padding: 10px 20px 9px;
+  color: #333333;
+}
+
+.profile-content .table.member-infor {
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+.profile-content .table.member-infor tbody th {
+  background-color: #f9f9f9;
+  border-right: 1px solid #dddddd;
+  text-align: center;
+  font-weight: 600;
+}
+
+.profile-content .table.member-infor tbody td {
+  font-weight: 400;
+  line-height: 20px;
+  padding-left: 18px;
+  width: 595px;
+}
+
+.border-r-ddd {
+  border-right: 1px solid #dddddd;
+}
+
+#textarea1 {
+  min-height: 120px;
+  border-radius: 3px;
+  padding: 10px 20px 9px;
+  font-size: 14px;
+  color: #999999;
+}
+.form-label {
+  margin-bottom: 15px;
+}
+
+.button-form {
+  display: flex;
+  justify-content: end;
+}
+
+.button-form button {
+  margin-top: 10px;
+  height: 30px;
+  padding: 0 23px;
+}
