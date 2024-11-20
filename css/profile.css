@@ -44,11 +44,6 @@
   padding: 39px 42px 0 39px;
 }
 
-#content {
-  /* padding: 0 0 70px; */
-  padding: 0;
-}
-
 .container-fluid {
   padding: 0;
 }
@@ -169,11 +164,11 @@
   height: 16px;
 }
 
-.profile .profile-sidebar > ul {
+.profile .profile-sidebar>ul {
   border-top: 1px solid #ddd;
 }
 
-.profile .profile-sidebar > ul li a {
+.profile .profile-sidebar>ul li a {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -184,42 +179,41 @@
   position: relative;
 }
 
-.profile .profile-sidebar > ul li a:hover,
-.profile .profile-sidebar > ul li a.active {
+.profile .profile-sidebar>ul li a:hover,
+.profile .profile-sidebar>ul li a.active {
   background-color: #e0edf7;
   color: #0068b7;
 }
 
-.profile .profile-sidebar > ul li a:hover:after,
-.profile .profile-sidebar > ul li a.active:after {
+.profile .profile-sidebar>ul li a:hover:after,
+.profile .profile-sidebar>ul li a.active:after {
   content: "";
   width: 6px;
   height: 10px;
-  background: url("../images/icons/icon-right-active.png") no-repeat center /
-    100%;
+  background: url("../images/icons/icon-right-active.png") no-repeat center / 100%;
   position: absolute;
   right: 40px;
   top: 50%;
   transform: translateY(-50%);
 }
 
-.profile .profile-sidebar > ul li a.active .icon-user-profile::after,
-.profile .profile-sidebar > ul li a:hover .icon-user-profile::after {
+.profile .profile-sidebar>ul li a.active .icon-user-profile::after,
+.profile .profile-sidebar>ul li a:hover .icon-user-profile::after {
   background-image: url("../images/icons/icon-user-profile.png");
 }
 
-.profile .profile-sidebar > ul li a.active .icon-bag::after,
-.profile .profile-sidebar > ul li a:hover .icon-bag::after {
+.profile .profile-sidebar>ul li a.active .icon-bag::after,
+.profile .profile-sidebar>ul li a:hover .icon-bag::after {
   background-image: url("../images/icons/icon-bag.png");
 }
 
-.profile .profile-sidebar > ul li a.active .icon-list::after,
-.profile .profile-sidebar > ul li a:hover .icon-list::after {
+.profile .profile-sidebar>ul li a.active .icon-list::after,
+.profile .profile-sidebar>ul li a:hover .icon-list::after {
   background-image: url("../images/icons/icon-list.png");
 }
 
-.profile .profile-sidebar > ul li a.active .icon-file::after,
-.profile .profile-sidebar > ul li a:hover .icon-file::after {
+.profile .profile-sidebar>ul li a.active .icon-file::after,
+.profile .profile-sidebar>ul li a:hover .icon-file::after {
   background-image: url("../images/icons/icon-file.png");
 }
 
@@ -285,6 +279,7 @@
   color: #333333;
   margin-top: 31px;
 }
+
 .member-basic-infor .title-table-info {
   margin-top: 21px;
 }
@@ -334,6 +329,7 @@
   font-size: 14px;
   color: #999999;
 }
+
 .form-label {
   margin-bottom: 15px;
 }
