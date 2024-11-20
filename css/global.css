@@ -1,0 +1,204 @@
+#content {
+    padding: 20px 0 70px 0;
+}
+
+/* header */
+header {
+    height: 63px;
+    padding: 20px 0 15px 0;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .img-logo {
+    width: 100px;
+    height: 100%;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+header .btn {
+    font-size: 13px;
+    padding: 0 7px;
+}
+
+/* end header */
+/* nav */
+nav {
+    background-color: #0068b7;
+    height: 50px;
+}
+
+nav .container {
+    height: 100%;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 35px;
+}
+
+nav ul li {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+nav ul li:hover {
+    color: #00ffff;
+}
+
+/* end nav */
+/* checkbox */
+.item-checkBox {
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.item-checkBox input[type="checkbox"],
+.tab-check-box li input[type="checkbox"] {
+    display: none;
+}
+
+.item-checkBox input[type="checkbox"]+span,
+.tab-check-box input[type="checkbox"]+span {
+    position: absolute;
+    left: 0;
+}
+
+.item-checkBox input[type="checkbox"]+span::before {
+    content: "";
+    background: url('../images/icons/icon-checked-blue.png') no-repeat center /100%;
+    width: 10px;
+    height: 8px;
+    display: block;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.item-checkBox input[type="checkbox"]:checked+span::before {
+    opacity: 1;
+}
+
+.item-checkBox>span {
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    border: 1px solid #ccc;
+    position: absolute;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.item-checkBox input[type="checkbox"]:checked+span {
+    border-color: #0068b7;
+}
+
+.item-checkBox label {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    color: #666;
+    padding-left: 25px;
+    z-index: 1;
+}
+
+.item-checkBox label span {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    padding-left: 25px;
+}
+
+/* end checkbox */
+
+/* Pagination number*/
+.pagination-arrow.disable {
+    cursor: no-drop;
+}
+
+.pagination-arrow.icon-next:after {
+    transform: translateX(1px);
+}
+
+.wrap-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 30px;
+}
+
+.pagination-number {
+    display: flex;
+    gap: 8px;
+}
+
+.pagination-number li.more {
+    display: flex;
+    align-items: center;
+    cursor: default;
+}
+
+.pagination-number li a {
+    width: 20px;
+    height: 20px;
+    line-height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-weight: 300;
+    color: #999;
+    font-size: 15px;
+    line-height: 16px;
+}
+
+.pagination-number li.active a {
+    cursor: pointer;
+}
+
+.pagination-number li.active a,
+.pagination-number li:hover a {
+    font-weight: 700;
+    color: #0068b7;
+}
+
+/* End Pagination number*/
+
+
+.select-basic {
+    width: 150px;
+    height: 30px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #666;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: relative;
+    background: url('../images/icons/icon-down-select.png') no-repeat right 13px center;
+    background-size: 10px 6px;
+    padding: 0 13px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    cursor: pointer;
+    outline: none;
+}

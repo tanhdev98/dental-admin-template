@@ -13,3 +13,60 @@
     background-position: center;
     background-size: contain;
 }
+
+.icon-nav-user::after {
+    background-image: url('../images/icons/icon-nav-user.png');
+}
+
+.icon-lock::after {
+    background-image: url('../images/icons/icon-lock.png');
+}
+
+.icon-user-profile::after {
+    background-image: url('../images/icons/icon-user-profile-dark.png');
+}
+
+.icon-bag::after {
+    background-image: url('../images/icons/icon-bag-dark.png');
+}
+
+.icon-list::after {
+    background-image: url('../images/icons/icon-list-dark.png');
+}
+
+.icon-file::after {
+    background-image: url('../images/icons/icon-file-dark.png');
+}
+
+
+/* Icon Next and Prev */
+.icon-next,
+.icon-prev {
+    display: flex;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid #ddd;
+
+}
+
+.icon-next:hover,
+.icon-prev:hover {
+    background-color: #eee;
+}
+
+.icon-next::after {
+    background-image: url('../images/icons/icon-right.png');
+    height: 10px;
+}
+
+.icon-prev::after {
+    background-image: url('../images/icons/icon-left.png');
+    height: 10px;
+}
+
+/* End Icon Next and Prev */
