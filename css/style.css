@@ -447,7 +447,7 @@
 /* Profile Sidebar */
 .profile-content {
     width: 100%;
-    padding: 39px 42px 0 39px;
+    padding: 39px 42px 30px 39px;
 }
 
 .container-fluid {
@@ -730,14 +730,28 @@
     color: #C00000;
 }
 
+.profile-content-count {
+    font-size: 15px;
+    font-weight: 400;
+    color: #333333;
+    margin-top: 10px;
+}
+
+.profile-content-count .total {
+    color: #C00000;
+}
+
 .member-basic-infor .title-table-info {
+    margin-top: 10px;
+}
+
+.member-basic-infor .title-table-info .total {
     margin-top: 21px;
 }
 
 
 .profile-content .table {
     width: 100%;
-    border-collapse: collapse;
 }
 
 .profile-content .table tr:first-child td,
@@ -745,6 +759,15 @@
     border-top: 1px solid #dddddd;
 }
 
+.profile-content .table tr:first-child th {
+    border-bottom: none;
+    border-top: none;
+}
+
+.profile-content .table th {
+    background-color: #f7f7f7;
+
+}
 
 .profile-content .table th,
 .profile-content .table td {
@@ -753,11 +776,25 @@
     font-size: 14px;
     padding: 10px 20px 9px;
     color: #333333;
+    text-align: center;
+    vertical-align: middle;
+    border-left: none;
+    border-top: none;
+}
+
+.profile-content .table td:nth-child(4) {
+    text-align: left;
+}
+
+.profile-content .table tr:last-child td {
+    border-bottom: none;
 }
 
 .profile-content .table.member-infor {
     margin-top: 15px;
     margin-bottom: 0;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .profile-content .table.member-infor tbody th {
