@@ -665,7 +665,7 @@
 }
 
 #infomation-member table thead tr th:nth-child(2) {
-    width: 120px;
+    width: 160px;
 }
 
 #infomation-member .wrap-pagination {
@@ -726,9 +726,14 @@
     margin-top: 31px;
 }
 
+.profile-content .title-table-info .total {
+    color: #C00000;
+}
+
 .member-basic-infor .title-table-info {
     margin-top: 21px;
 }
+
 
 .profile-content .table {
     width: 100%;
