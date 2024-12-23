@@ -92,12 +92,16 @@
 
 #content .container>.wrap {
     display: flex;
-    gap: 20px;
+    gap: 10px;
 }
 
 #content .container>.wrap .profile-sidebar {
-    min-width: 200px;
-    padding-right: 20px;
+    width: 150px;
+    padding-right: 10px;
+}
+
+.content-right {
+    flex: 1;
 }
 
 #table-form-option th.header-item .header-item-inner .button-group {
@@ -633,6 +637,21 @@
 .profile-sidebar>ul li a.active .icon-file::after,
 .profile-sidebar>ul li a:hover .icon-file::after {
     background-image: url("../images/icons/icon-file.png");
+}
+
+#profile-sidebar-no-space.profile-sidebar {
+    border: none;
+    position: relative;
+}
+
+#profile-sidebar-no-space.profile-sidebar:after {
+    content: "";
+    width: 1px;
+    height: calc(100% + 70px);
+    background-color: #ddd;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 #profile-sidebar-no-space.profile-sidebar>ul li a {
