@@ -185,9 +185,9 @@
 
 #table-results tbody td>div span {
     font-size: 14px;
-    /* font-weight: 300; */
     color: #333;
     line-height: 20px;
+    white-space: nowrap;
 }
 
 .wrap-dropDown {
@@ -484,6 +484,7 @@
     font-size: 15px;
     font-weight: 600;
     line-height: 20px;
+    margin-bottom: 5px;
 }
 
 .profile-user-position {
@@ -534,6 +535,7 @@
 .group-profile-button-bottom {
     width: 100%;
     max-width: 250px;
+    margin-top: 10px;
 }
 
 .group-profile-button-bottom a {
@@ -667,7 +669,7 @@
 
 #infomation-member .wrap-pagination {
     margin-top: 20px;
-    margin-bottom: 108px;
+    margin-bottom: 30px;
 }
 
 .profile-content .title-profile {
@@ -676,6 +678,44 @@
     font-weight: 600;
     border-bottom: 1px solid #999999;
     padding: 42px 0 13px 0;
+}
+
+.profile-content .profile-action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    background-color: #ddd;
+    padding: 10px 20px;
+}
+
+.profile-content .profile-action .profile-action-left {
+    display: flex;
+    gap: 10px;
+}
+
+.profile-content .profile-action .profile-action-left .button-block {
+    background-color: #002060;
+    padding: 7px 15px;
+    color: #fff;
+    width: 100px;
+    text-align: center;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-content .profile-action .profile-action-right .button-block {
+    background-color: #ddd;
+    border: 1px solid #333;
+    color: #333;
+    padding: 7px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    box-sizing: border-box;
 }
 
 .profile-content .title-table-info {
@@ -694,9 +734,14 @@
     border-collapse: collapse;
 }
 
+.profile-content .table tr:first-child td,
+.profile-content .table tr:first-child th {
+    border-top: 1px solid #dddddd;
+}
+
+
 .profile-content .table th,
 .profile-content .table td {
-    border-top: 1px solid #dddddd;
     border-bottom: 1px solid #dddddd;
     text-align: left;
     font-size: 14px;
@@ -721,10 +766,83 @@
     line-height: 20px;
     padding-left: 18px;
     width: 595px;
+    position: relative;
+}
+
+.profile-content .table.member-infor tbody td.four-columns {
+    position: relative;
+}
+
+.profile-content .table.member-infor tbody .wrapRow {
+    display: flex;
+    gap: 18px;
+    position: absolute;
+    top: 50%;
+    left: 540px;
+    transform: translateY(-50%);
+}
+
+.profile-content .table.member-infor tbody .wrapRow .column-th {
+    width: 138px;
+    text-align: center;
+    background-color: #f9f9f9;
+    font-weight: 600;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+
+.profile-content .table.member-infor tbody .wrapRow .column-td {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .border-r-ddd {
     border-right: 1px solid #dddddd;
+}
+
+.profile-content .input-table {
+    width: 100%;
+    height: 30px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    padding: 0 10px;
+}
+
+.profile-content .button-table {
+    width: 100%;
+    height: 30px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 0 10px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.profile-content .button-table-bold {
+    width: 250px;
+    height: 30px;
+    border-radius: 3px;
+    padding: 0 10px;
+    background-color: #333;
+    color: #fff;
+    position: absolute;
+    left: 540px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.profile-content .column-has-form {
+    display: flex;
+    gap: 10px;
+}
+
+.profile-content .column-has-form .button-table {
+    width: 150px;
 }
 
 #textarea1 {
@@ -748,4 +866,87 @@
     margin-top: 10px;
     height: 30px;
     padding: 0 23px;
+}
+
+.toggleTrueFalse input[type=checkbox] {
+    visibility: hidden;
+}
+
+.toggleTrueFalse {
+    width: 40px;
+    height: 18px;
+    background: #333;
+    position: relative;
+    border-radius: 50px;
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
+    left: 0;
+}
+
+.toggleTrueFalse label {
+    display: block;
+    height: 14px;
+    cursor: pointer;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    z-index: 1;
+    background: #fcfff4;
+    background: -webkit-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+    background: linear-gradient(to bottom, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+    border-radius: 50px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+    width: 16px;
+}
+
+.toggleTrueFalse input[type=checkbox]:checked+label {
+    left: 53%;
+}
+
+.bottom-content {
+    border-top: 1px solid #999999;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom-content .button-back-to-list {
+    background-color: #fff;
+    color: #333;
+    padding: 10px 15px 8px;
+    border-radius: 3px;
+    width: 80px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #333;
+    transition: all 0.3s ease;
+}
+
+.bottom-content .button-back-to-list:hover {
+    background-color: #0068b7;
+    border: 1px solid #0068b7;
+    color: #fff;
+}
+
+.bottom-content .button-save {
+    background-color: #0068b7;
+    color: #fff;
+    padding: 10px 15px 8px;
+    border-radius: 3px;
+    width: 80px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #0068b7;
+    transition: all 0.3s ease;
+    opacity: 0.8;
+}
+
+.bottom-content .button-save:hover {
+    opacity: 1;
 }

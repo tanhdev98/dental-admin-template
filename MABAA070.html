@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/bootstrap/bootstrap.js"></script>
+</head>
+
+<body>
+    <!-- content -->
+    <div id="content">
+        <div class="container-fluid">
+
+            <div class="profile">
+                <div class="profile-sidebar">
+                    <div class="profile-user">
+                        <div class="profile-user-img">
+                            <img src="./images/icons/user.png" alt="icon-user">
+                        </div>
+                        <div class="profile-user-name">홍길동</div>
+                        <div class="profile-user-position">(치과회원)</div>
+                        <div class="profile-user-isLogin">활성</div>
+                        <div class="group-profile-button">
+                            <div class="group-profile-button-bottom">
+                                <a href="">잡로그인</a>
+                            </div>
+                        </div>
+                    </div>
+                    <ul>
+                        <li class="active"><a href="#" class="active"><i class="icon icon-user-profile"></i>회원 기본정보</a>
+                        </li>
+                        <li><a href="#"><i class="icon icon-bag"></i>채용광고 내역</a></li>
+                        <li><a href="#"><i class="icon icon-list"></i>배너 등록 내역</a></li>
+                        <li><a href="#"><i class="icon icon-file"></i>채용공고 등록 내역</a></li>
+                        <li><a href="#"><i class="icon icon-file"></i>결제 및 증빙 내역</a></li>
+                        <li><a href="#"><i class="icon icon-file"></i>덴탈잡 이용권 내역</a></li>
+                        <li><a href="#"><i class="icon icon-file"></i>활동 내역</a></li>
+                    </ul>
+                </div>
+                <div class="profile-content">
+                    <div class="title-profile">회원 기본정보</div>
+                    <div class="profile-action">
+                        <div class="profile-action-left">
+                            <a href="#" class="button-block">차단</a>
+                            <a href="#" class="button-block">탈퇴</a>
+                        </div>
+                        <div class="profile-action-right">
+                            <a href="#" class="button-block">일반기업배너</a>
+                        </div>
+                    </div>
+                    <div class="member-basic-infor">
+                        <div class="title-table-info">개인 정보</div>
+                        <table class="table member-infor">
+                            <tbody>
+                                <tr>
+                                    <th style="width: 160px;"><span>회원상태</span></th>
+                                    <td class="border-r-ddd">활성</td>
+                                    <th colspan="2" style="width: 160px;"><span>가입일</span></th>
+                                    <td>2020.04.15</td>
+                                </tr>
+                                <tr>
+                                    <th><span>아이디</span></th>
+                                    <td class="border-r-ddd">bluei0922</td>
+                                    <th colspan="2" style="width: 160px;"><span>비밀번호</span></th>
+                                    <td><button class="button-table" type="text">아이디와 동일하게 초기화</button></td>
+                                </tr>
+                                <tr>
+                                    <th><span>이름</span></th>
+                                    <td class=" border-r-ddd">
+                                        <input type="text" class="input-table" value="이회원">
+                                    </td>
+                                    <th colspan="2"><span>생년월일</span></th>
+                                    <td>
+                                        <input type="date" class="input-table" value="1989.03.02">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th rowspan="3" style="vertical-align: middle;"><span>주소</span></th>
+                                    <td class="border-r-ddd column-has-form">
+                                        <input type="text" class="input-table" value="(21378)">
+                                        <button class="button-table">주소찾기</button>
+                                    </td>
+                                    <th colspan="2"><span>이메일</span></th>
+                                    <td><input type="text" class="input-table" value="lee@email.com"></td>
+                                </tr>
+                                <tr>
+                                    <td class="border-r-ddd"><input type="text" class="input-table"
+                                            value="서울특별시 광진구 천호대로 537"></td>
+                                    <th colspan="2" style="width: 80px;">유선</th>
+                                    <td><input type="text" class="input-table" value="00-000-0000"></td>
+                                </tr>
+                                <tr>
+                                    <td class="border-r-ddd"><input type="text" class="input-table" value="15층, 코드크레인">
+                                    </td>
+                                    <th colspan="2">휴대폰</th>
+                                    <td><input type="text" class="input-table" value="010-1234-5678"></td>
+                                </tr>
+                                <tr>
+                                    <th><span>회원구분</span></th>
+                                    <td class="border-r-ddd">
+                                        <input type="text" class="input-table" value="치기공사 (기사)">
+                                    </td>
+                                    <th colspan="2"><span>근무처(소속)</span></th>
+                                    <td><input type="text" class="input-table" value="-"></td>
+                                </tr>
+                                <tr>
+                                    <th><span>면허번호</span></th>
+                                    <td class="border-r-ddd">
+                                        <input type="text" class="input-table" value="-">
+                                    </td>
+                                    <th colspan="2"><span>덴탈잡그룹구분</span></th>
+                                    <td><input type="text" class="input-table" value="개인회원"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="membership-infor">
+                        <div class="title-table-info">멤버십 정보</div>
+                        <table class="table member-infor">
+                            <tbody>
+                                <tr>
+                                    <th style="width: 100px;"><span>통합여부</span></th>
+                                    <td>미통합회원</td>
+                                </tr>
+                                <tr>
+                                    <th><span>가입사이트</span></th>
+                                    <td class="four-columns">
+                                        <div>덴탈잡</div>
+                                        <div class="wrapRow">
+                                            <div class="column-th">
+                                                이용가능 사이트
+                                            </div>
+                                            <div class="column-td">
+                                                덴탈알바, 덴탈잡, 덴탈세미나, 덴탈비타민, DVmall
+                                            </div>
+                                        </div>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <th><span>Dvmall ID</span></th>
+                                    <td>
+                                        -
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th><span>DVmall 인증 DV ID</span></th>
+                                    <td>
+                                        Dasdqw112(치과회원, 활성)
+                                        <button class="button-table-bold">DVmall 인증 DV ID로 통합</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th><span>덴탈비타민 ID</span></th>
+                                    <td>
+                                        Bluei0922 (치과회원, 횔성)
+                                        <button class="button-table-bold">덴탈비타민 ID로 통합</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th><span>보유 DV Point</span></th>
+                                    <td>
+                                        -
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="receive-infor">
+                        <div class="title-table-info">정보 수신</div>
+                        <table class="table member-infor">
+                            <tbody>
+                                <tr>
+                                    <th style="width: 210px;"><span>DV메일링</span></th>
+                                    <td class="border-r-ddd" style="width: 530px;">
+                                        <div class="toggleTrueFalse">
+                                            <input type="checkbox" value="true" id="check_dvmail" class="toggleCheckBox"
+                                                checked="">
+                                            <label class="clickToggle" for="check_dvmail"></label>
+                                        </div>
+                                    </td>
+                                    <th style="width: 136px;"><span>SMS</span></th>
+                                    <td>
+                                        <div class="toggleTrueFalse">
+                                            <input type="checkbox" value="true" id="check_sms" class="toggleCheckBox"
+                                                checked="">
+                                            <label class="clickToggle" for="check_sms"></label>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="for-member-only">
+                        <div class="title-table-info">정보 수신</div>
+                        <table class="table member-infor">
+                            <tbody>
+                                <tr>
+                                    <th style="width: 100px;"> <span>우수회원선정</span></th>
+                                    <td>
+                                        <div class="toggleTrueFalse">
+                                            <input type="checkbox" value="true" id="check_very_good"
+                                                class="toggleCheckBox" checked="">
+                                            <label class="clickToggle" for="check_very_good"></label>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="comments-member">
+                        <label for="textarea1" class="form-label">
+                            <div class="title-table-info">코멘트</div>
+                        </label>
+                        <textarea placeholder="내용을 입력하세요." class="form-control" id="textarea1" rows="3"></textarea>
+                    </div>
+                    <div class="button-form">
+                        <button class="btn btn-primary">추가</button>
+                    </div>
+                    <div id="infomation-member">
+                        <label for="textarea1" class="form-label">
+                            <div class="title-table-info">멤버십 정보</div>
+                        </label>
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>일자</th>
+                                    <th>관리자</th>
+                                    <th>내용</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2022.01.08</td>
+                                    <td>홍길동</td>
+                                    <td>불만사항 접수 이력 있음.</td>
+                                </tr>
+                                <tr>
+                                    <td>2022.01.08</td>
+                                    <td>홍길동</td>
+                                    <td>불만사항 접수 이력 있음.</td>
+                                </tr>
+                                <tr>
+                                    <td>2022.01.08</td>
+                                    <td>홍길동</td>
+                                    <td>코멘트 내용 코멘트 내용 코멘트 내용 코멘트 내용. 코멘트 내용 코멘트 내용 코멘트 내용 코멘트 내용 코멘트 내용 코멘트 내용 코멘트 내용
+                                        코멘트 내용 코멘트 내용 코멘트 내용 코멘트 내용 코멘트 내용
+                                        <br>
+                                        코멘트 내용 코멘트 내용 코멘트 내용 코멘트 내용 코멘트 내용 코멘트 내용 코멘트 내용 코멘트 내용 코멘트 내용 코멘트 내용 코멘트 내용
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2022.01.08</td>
+                                    <td>홍길동</td>
+                                    <td>불만사항 접수 이력 있음.</td>
+                                </tr>
+                                <tr>
+                                    <td>2022.01.08</td>
+                                    <td>홍길동</td>
+                                    <td>불만사항 접수 이력 있음.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="wrap-pagination">
+                            <div class="pagination-arrow icon icon-prev disable"></div>
+                            <ul class="pagination-number">
+                                <li class="active"><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                            </ul>
+                            <div class="pagination-arrow icon icon-next"></div>
+                        </div>
+                    </div>
+                    <div class="bottom-content">
+                        <a href="#" class="button-back-to-list">목록</a>
+                        <a href="#" class="button-save">저장</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end content -->
+    <!-- content -->
+    <div id="content">
+        <div class="container-fluid">
+
+            </di>
+
+        </div>
+    </div>
+    <!-- end content -->
+</body>
+
+</html>
