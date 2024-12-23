@@ -202,3 +202,48 @@ nav ul li:hover {
     cursor: pointer;
     outline: none;
 }
+
+/* Table blue */
+
+table.table-blue tfoot {
+    width: 100%;
+    background-color: #0068b7;
+}
+
+table.table-blue tfoot tr td {
+    color: #fff;
+    border: 1px solid #000;
+}
+
+table.table-blue th,
+table.table-blue td {
+    text-align: center;
+    padding: 8px 15px;
+    vertical-align: middle;
+    font-weight: 400;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+table.table-blue {
+    width: 100%;
+}
+
+table.table-blue thead {
+    width: 100%;
+    background-color: #0068b7;
+}
+
+table.table-blue thead tr th {
+    color: #fff;
+    border: 1px solid #000;
+}
+
+table.table-blue tbody tr td {
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+table.table-blue tbody tr td:last-child {
+    border-right: 1px solid #000;
+}

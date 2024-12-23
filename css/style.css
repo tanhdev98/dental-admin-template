@@ -90,6 +90,16 @@
     cursor: pointer;
 }
 
+#content .container>.wrap {
+    display: flex;
+    gap: 20px;
+}
+
+#content .container>.wrap .profile-sidebar {
+    min-width: 200px;
+    padding-right: 20px;
+}
+
 #table-form-option th.header-item .header-item-inner .button-group {
     display: flex;
     gap: 5px;
@@ -576,7 +586,7 @@
     border-top: 1px solid #ddd;
 }
 
-.profile .profile-sidebar>ul li a {
+.profile-sidebar>ul li a {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -587,14 +597,14 @@
     position: relative;
 }
 
-.profile .profile-sidebar>ul li a:hover,
-.profile .profile-sidebar>ul li a.active {
+.profile-sidebar>ul li a:hover,
+.profile-sidebar>ul li a.active {
     background-color: #e0edf7;
     color: #0068b7;
 }
 
-.profile .profile-sidebar>ul li a:hover:after,
-.profile .profile-sidebar>ul li a.active:after {
+.profile-sidebar>ul li a:hover:after,
+.profile-sidebar>ul li a.active:after {
     content: "";
     width: 6px;
     height: 10px;
@@ -605,25 +615,42 @@
     transform: translateY(-50%);
 }
 
-.profile .profile-sidebar>ul li a.active .icon-user-profile::after,
-.profile .profile-sidebar>ul li a:hover .icon-user-profile::after {
+.profile-sidebar>ul li a.active .icon-user-profile::after,
+.profile-sidebar>ul li a:hover .icon-user-profile::after {
     background-image: url("../images/icons/icon-user-profile.png");
 }
 
-.profile .profile-sidebar>ul li a.active .icon-bag::after,
-.profile .profile-sidebar>ul li a:hover .icon-bag::after {
+.profile-sidebar>ul li a.active .icon-bag::after,
+.profile-sidebar>ul li a:hover .icon-bag::after {
     background-image: url("../images/icons/icon-bag.png");
 }
 
-.profile .profile-sidebar>ul li a.active .icon-list::after,
-.profile .profile-sidebar>ul li a:hover .icon-list::after {
+.profile-sidebar>ul li a.active .icon-list::after,
+.profile-sidebar>ul li a:hover .icon-list::after {
     background-image: url("../images/icons/icon-list.png");
 }
 
-.profile .profile-sidebar>ul li a.active .icon-file::after,
-.profile .profile-sidebar>ul li a:hover .icon-file::after {
+.profile-sidebar>ul li a.active .icon-file::after,
+.profile-sidebar>ul li a:hover .icon-file::after {
     background-image: url("../images/icons/icon-file.png");
 }
+
+#profile-sidebar-no-space.profile-sidebar>ul li a {
+    padding: 0 10px;
+}
+
+#profile-sidebar-no-space.profile-sidebar>ul li a:hover:after,
+#profile-sidebar-no-space.profile-sidebar>ul li a.active:after {
+    content: "";
+    width: 6px;
+    height: 10px;
+    background: url("../images/icons/icon-right-active.png") no-repeat center / 100%;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 
 /* right sidebar */
 
@@ -735,6 +762,7 @@
     font-weight: 400;
     color: #333333;
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .profile-content-count .total {
@@ -762,6 +790,11 @@
 .profile-content .table tr:first-child th {
     border-bottom: none;
     border-top: none;
+}
+
+.profile-content .member-basic-infor .table tr:first-child th {
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
 }
 
 .profile-content .table th {
@@ -793,8 +826,6 @@
 .profile-content .table.member-infor {
     margin-top: 15px;
     margin-bottom: 0;
-    border-radius: 10px;
-    overflow: hidden;
 }
 
 .profile-content .table.member-infor tbody th {
@@ -845,11 +876,19 @@
 }
 
 .border-r-ddd {
-    border-right: 1px solid #dddddd;
+    border-right: 1px solid #dddddd !important;
 }
 
 .border-t-ddd {
-    border-top: 1px solid #dddddd;
+    border-top: 1px solid #dddddd !important;
+}
+
+.border-b-ddd {
+    border-bottom: 1px solid #dddddd !important;
+}
+
+.border-l-ddd {
+    border-left: 1px solid #dddddd !important;
 }
 
 .profile-content .input-table {
@@ -1056,50 +1095,6 @@
     margin: 0px 0 15px;
 }
 
-#profile-payment-details th,
-#profile-payment-details td {
-    text-align: center;
-    padding: 8px 15px;
-    vertical-align: middle;
-    font-weight: 400;
-    line-height: 20px;
-}
-
-#profile-payment-details table {
-    width: 100%;
-}
-
-#profile-payment-details table thead {
-    width: 100%;
-    background-color: #0068b7;
-}
-
-#profile-payment-details table thead tr th {
-    color: #fff;
-    border: 1px solid #000;
-}
-
-#profile-payment-details table tbody tr td {
-    border-left: 1px solid #000;
-}
-
-#profile-payment-details table tbody tr:not(:last-child) td {
-    border-bottom: 1px solid #000;
-}
-
-#profile-payment-details table tbody tr td:last-child {
-    border-right: 1px solid #000;
-}
-
-#profile-payment-details table tfoot {
-    width: 100%;
-    background-color: #0068b7;
-}
-
-#profile-payment-details table tfoot tr td {
-    color: #fff;
-    border: 1px solid #000;
-}
 
 /* profile paid banners */
 
@@ -1112,37 +1107,6 @@
     margin: 0px 0 15px;
 }
 
-#profile-paid-banners th,
-#profile-paid-banners td {
-    text-align: center;
-    padding: 8px 15px;
-    vertical-align: middle;
-    font-weight: 400;
-    line-height: 20px;
-}
-
-#profile-paid-banners table {
-    width: 100%;
-}
-
-#profile-paid-banners table thead {
-    width: 100%;
-    background-color: #0068b7;
-}
-
-#profile-paid-banners table thead tr th {
-    color: #fff;
-    border: 1px solid #000;
-}
-
-#profile-paid-banners table tbody tr td {
-    border-left: 1px solid #000;
-    border-bottom: 1px solid #000;
-}
-
-#profile-paid-banners table tbody tr td:last-child {
-    border-right: 1px solid #000;
-}
 
 
 /* profile recent recruitment */
@@ -1156,38 +1120,25 @@
     margin: 0px 0 15px;
 }
 
-#profile-recent-recruitment th,
-#profile-recent-recruitment td {
-    text-align: center;
-    padding: 8px 15px;
-    vertical-align: middle;
-    font-weight: 400;
-    line-height: 20px;
+/* profile continuous recruitment advertising*/
+
+#profile-continuous-recruitment-advertising {
+    position: relative;
+    margin: 15px 0 20px;
 }
 
-#profile-recent-recruitment table {
-    width: 100%;
+#profile-continuous-recruitment-advertising .title-table {
+    margin: 0px 0 15px;
 }
 
-#profile-recent-recruitment table thead {
-    width: 100%;
-    background-color: #0068b7;
+
+/* profile continuous recruitment advertising*/
+
+#profile-recruitment-advertising-has-ended {
+    position: relative;
+    margin: 15px 0 20px;
 }
 
-#profile-recent-recruitment table thead tr th {
-    color: #fff;
-    border: 1px solid #000;
-}
-
-#profile-recent-recruitment table tbody tr td {
-    border-left: 1px solid #000;
-    border-bottom: 1px solid #000;
-}
-
-#profile-recent-recruitment table tbody tr td:first-child {
-    padding: 0;
-}
-
-#profile-recent-recruitment table tbody tr td:last-child {
-    border-right: 1px solid #000;
+#profile-recruitment-advertising-has-ended .title-table {
+    margin: 0px 0 15px;
 }
