@@ -13,7 +13,26 @@
     margin: 20px 0;
     font-size: 14px;
     border-radius: 10px;
-    overflow: hidden;
+    /* overflow: hidden; */
+}
+
+.group-datepicker {
+    display: flex;
+    gap: 7px;
+}
+
+.group-datepicker .datepicker-child {
+    position: relative;
+}
+
+.datepicker-child input {
+    width: 180px;
+    height: 100%;
+    border: 1px solid #ccc;
+    padding: 0 11px;
+    cursor: pointer;
+    color: #666;
+    text-transform: uppercase;
 }
 
 .table-has-radius th:first-child {
