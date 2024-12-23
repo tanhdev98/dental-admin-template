@@ -102,7 +102,7 @@
 
 .content-right {
     flex: 1;
-    min-height: 90vh;
+    min-height: calc(100vh - 20px - 50px - 63px - 70px);
 }
 
 #table-form-option th.header-item .header-item-inner .button-group {
