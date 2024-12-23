@@ -446,6 +446,7 @@
 
 /* Profile Sidebar */
 .profile-content {
+    width: 100%;
     padding: 39px 42px 0 39px;
 }
 
@@ -805,6 +806,10 @@
     border-right: 1px solid #dddddd;
 }
 
+.border-t-ddd {
+    border-top: 1px solid #dddddd;
+}
+
 .profile-content .input-table {
     width: 100%;
     height: 30px;
@@ -949,4 +954,198 @@
 
 .bottom-content .button-save:hover {
     opacity: 1;
+}
+
+/* Profile infomation */
+.profile-information {
+    display: flex;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin: 20px 0 21px;
+}
+
+.profile-information .profile-information-left {
+    width: 50%;
+    text-align: center;
+}
+
+.profile-information .profile-information-left .room-name {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.profile-information .profile-information-left .room-image {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.profile-information .profile-information-right {
+    width: 50%;
+}
+
+.profile-information .profile-information-right ul {
+    position: relative;
+}
+
+.profile-information .profile-information-right ul li {
+    display: flex;
+    gap: 5px;
+}
+
+.profile-information .profile-information-right ul li+li {
+    margin-top: 10px;
+}
+
+/* 
+.profile-information .profile-information-right ul li .representative-label {}
+
+.profile-information .profile-information-right ul li .representative-name {} */
+
+/* profile payment details */
+
+#profile-payment-details {
+    position: relative;
+    margin: 15px 0 20px;
+}
+
+#profile-payment-details .title-table {
+    margin: 0px 0 15px;
+}
+
+#profile-payment-details th,
+#profile-payment-details td {
+    text-align: center;
+    padding: 8px 15px;
+    vertical-align: middle;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+#profile-payment-details table {
+    width: 100%;
+}
+
+#profile-payment-details table thead {
+    width: 100%;
+    background-color: #0068b7;
+}
+
+#profile-payment-details table thead tr th {
+    color: #fff;
+    border: 1px solid #000;
+}
+
+#profile-payment-details table tbody tr td {
+    border-left: 1px solid #000;
+}
+
+#profile-payment-details table tbody tr:not(:last-child) td {
+    border-bottom: 1px solid #000;
+}
+
+#profile-payment-details table tbody tr td:last-child {
+    border-right: 1px solid #000;
+}
+
+#profile-payment-details table tfoot {
+    width: 100%;
+    background-color: #0068b7;
+}
+
+#profile-payment-details table tfoot tr td {
+    color: #fff;
+    border: 1px solid #000;
+}
+
+/* profile paid banners */
+
+#profile-paid-banners {
+    position: relative;
+    margin: 15px 0 20px;
+}
+
+#profile-paid-banners .title-table {
+    margin: 0px 0 15px;
+}
+
+#profile-paid-banners th,
+#profile-paid-banners td {
+    text-align: center;
+    padding: 8px 15px;
+    vertical-align: middle;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+#profile-paid-banners table {
+    width: 100%;
+}
+
+#profile-paid-banners table thead {
+    width: 100%;
+    background-color: #0068b7;
+}
+
+#profile-paid-banners table thead tr th {
+    color: #fff;
+    border: 1px solid #000;
+}
+
+#profile-paid-banners table tbody tr td {
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+#profile-paid-banners table tbody tr td:last-child {
+    border-right: 1px solid #000;
+}
+
+
+/* profile recent recruitment */
+
+#profile-recent-recruitment {
+    position: relative;
+    margin: 15px 0 20px;
+}
+
+#profile-recent-recruitment .title-table {
+    margin: 0px 0 15px;
+}
+
+#profile-recent-recruitment th,
+#profile-recent-recruitment td {
+    text-align: center;
+    padding: 8px 15px;
+    vertical-align: middle;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+#profile-recent-recruitment table {
+    width: 100%;
+}
+
+#profile-recent-recruitment table thead {
+    width: 100%;
+    background-color: #0068b7;
+}
+
+#profile-recent-recruitment table thead tr th {
+    color: #fff;
+    border: 1px solid #000;
+}
+
+#profile-recent-recruitment table tbody tr td {
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+#profile-recent-recruitment table tbody tr td:first-child {
+    padding: 0;
+}
+
+#profile-recent-recruitment table tbody tr td:last-child {
+    border-right: 1px solid #000;
 }
