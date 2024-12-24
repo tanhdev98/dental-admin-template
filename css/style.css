@@ -771,7 +771,17 @@
 .advertising-sidebar {
     width: 100%;
     max-width: 150px;
-    border-right: 1px solid #ddd;
+    position: relative;
+}
+
+.advertising-sidebar::before {
+    content: "";
+    width: 1px;
+    background-color: #ddd;
+    height: 100vh;
+    right: 0;
+    top: 0;
+    position: absolute;
 }
 
 .advertising-sidebar ul {
@@ -1508,4 +1518,9 @@ table.member-infor td input[type="text"] {
 .box-self-introduction {
     padding: 15px;
     border: 1px solid #ddd
+}
+
+.advertising-content {
+    width: 100%;
+    padding: 0 15px;
 }
