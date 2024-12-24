@@ -953,6 +953,15 @@
     margin-top: 21px;
 }
 
+.member-basic-infor .avatar-box {
+    width: 130px;
+    height: 160px;
+    border-radius: 0;
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+.member-basic-infor .avatar-box img {}
 
 .profile-content .table {
     width: 100%;
@@ -963,10 +972,6 @@
     border-top: 1px solid #dddddd;
 }
 
-.profile-content .table tr:first-child th {
-    border-bottom: none;
-    border-top: none;
-}
 
 .profile-content .member-basic-infor .table tr:first-child th {
     border-bottom: 1px solid #ddd;
@@ -995,9 +1000,6 @@
     text-align: left;
 }
 
-.profile-content .table tr:last-child td {
-    border-bottom: none;
-}
 
 .profile-content .table.member-infor {
     margin-top: 15px;
@@ -1393,4 +1395,117 @@ table.member-infor td input[type="text"] {
 #advertising-list .count {
     font-weight: 600;
     margin-bottom: 20px;
+}
+
+.profile .title-table {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.work-enviroment table tbody th {
+    width: 250px;
+    border-top: 1px solid #ddd !important;
+}
+
+.profile-content .table th,
+.profile-content .table td {
+    text-align: left;
+}
+
+.work-enviroment table tbody tr:last-child td {
+    border-bottom: 1px solid #ddd !important;
+}
+
+.profile-content .highest-level th {
+    width: 250px;
+    text-align: center;
+}
+
+.profile-content .list-education th,
+.profile-content .list-education td {
+    text-align: center;
+}
+
+.profile-content .list-education thead th:first-child {
+    width: 245px;
+}
+
+.profile-content .list-education thead th:nth-child(2) {
+    width: 320px;
+}
+
+.profile-content .list-education thead th:nth-child(3) {
+    width: 500px;
+}
+
+.profile-content .list-education thead th:nth-child(4) {
+    width: 300px;
+}
+
+.profile-content .list-education tbody td:nth-child(4) {
+    text-align: center;
+}
+
+.profile-content .list-education thead th:nth-child(5) {
+    width: 300px;
+}
+
+.profile-content .list-experience tbody .th {
+    width: 250px;
+}
+
+.profile-content .table.list-experience thead tr:first-child th {
+    text-align: center;
+}
+
+.profile-content .table.list-experience thead tr:first-child th:first-child {
+    width: 250px;
+}
+
+.profile-content .table.list-experience tr:first-child td,
+.profile-content .table.list-experience tr:first-child th {
+    text-align: left;
+}
+
+.profile-content .table.list-experience tbody td:first-child,
+.profile-content .table.list-experience tbody th:first-child {
+    text-align: center;
+}
+
+.profile-content .table.list-experience tfoot th:first-child {
+    text-align: center;
+}
+
+.profile-content .licence-information thead th:nth-child(1) {
+    width: 300px;
+}
+
+.profile-content .licence-information thead th:nth-child(3) {
+    width: 300px;
+}
+
+.profile-content .licence-information .table td,
+.profile-content .licence-information .table th {
+    text-align: center;
+}
+
+.profile-content .licence-information2 .table thead th {
+    text-align: center;
+}
+
+.profile-content .licence-information2 .table thead th:first-child {
+    width: 250px;
+}
+
+.profile-content .licence-information2 .table tbody th {
+    width: 200px;
+}
+
+.profile-content .licence-information2 .table tbody td:first-child {
+    text-align: center;
+}
+
+.box-self-introduction {
+    padding: 15px;
+    border: 1px solid #ddd
 }
