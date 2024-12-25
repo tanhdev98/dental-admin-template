@@ -2064,3 +2064,40 @@ th.require span::after {
     background-color: #7BB32D;
     color: #fff;
 }
+
+
+#list-faq-content td {
+    text-align: left;
+}
+
+#list-faq-content td select {
+    width: 250px;
+}
+
+.list-faq table.table-gray thead tr th,
+.list-faq table.table-gray tbody tr th,
+.list-faq table.table-gray tbody tr td {
+    border-left: none;
+    border-right: none;
+}
+
+.list-faq table.table-gray thead tr th:first-child {
+    width: 5%;
+}
+
+
+.list-faq table.table-gray thead tr th:nth-child(2) {
+    width: 70%;
+}
+
+.list-faq table.table-gray thead tr th:nth-child(3) {
+    width: 15%;
+}
+
+.list-faq table.table-gray thead tr th:last-child {
+    width: 10%;
+}
+
+.list-faq table.table-gray tbody tr td:nth-child(2) {
+    text-align: left;
+}
