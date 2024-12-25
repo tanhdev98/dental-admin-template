@@ -1798,3 +1798,61 @@ table.member-infor td input[type="text"] {
 .compulsory-education .results th:nth-child(6) {
     width: 13%;
 }
+
+#compulsory-education-content-list th {
+    text-align: left;
+    width: 200px;
+}
+
+#compulsory-education-content-list th.require span {
+    position: relative;
+}
+
+#compulsory-education-content-list th.require span::after {
+    content: "*";
+    color: #C00000;
+    position: absolute;
+    right: -10px;
+}
+
+#compulsory-education-content-list td {
+    text-align: left;
+    border-right: none;
+}
+
+#compulsory-education-content-list tr td input:not([type="radio"]) {
+    width: 100%;
+}
+
+#compulsory-education-content-list tr:first-child td input,
+#compulsory-education-content-list tr:nth-child(2) td input,
+#compulsory-education-content-list tr:nth-child(5) td input {
+    width: 500px;
+}
+
+#compulsory-education-content-list td textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+
+#compulsory-education-content-list td select {
+    width: 500px;
+}
+
+#compulsory-education-content-list td .radio-group {
+    display: flex;
+    gap: 30px;
+}
+
+#compulsory-education-content-list td input[type="file"] {
+    display: none;
+}
+
+#compulsory-education-content-list td input[type="file"]+label {
+    padding: 6px 15px;
+    background-color: #7F7F7F;
+    color: #fff;
+    cursor: pointer;
+}
