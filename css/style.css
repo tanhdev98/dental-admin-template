@@ -1720,7 +1720,7 @@ table.member-infor td input[type="text"] {
 
 .group-button.center {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 15px;
 }
 
 #manager-banner-content-list td {
@@ -1827,7 +1827,7 @@ th.require span::after {
 #compulsory-education-content-list tr:first-child td input,
 #compulsory-education-content-list tr:nth-child(2) td input,
 #compulsory-education-content-list tr:nth-child(5) td input {
-    width: 500px;
+    width: 300px;
 }
 
 #compulsory-education-content-list td textarea {
@@ -1930,4 +1930,50 @@ th.require span::after {
 
 #manager-banner-content-change-content-list .bottom-content {
     margin-top: 10px;
+}
+
+#list-of-dental-journals-content-list td {
+    text-align: left;
+}
+
+
+.list-of-dental-journals table.table-gray tr th,
+.list-of-dental-journals table.table-gray tr td {
+    border-left: none;
+    border-right: none;
+}
+
+.list-of-dental-journals table.table-gray thead tr th:first-child {
+    width: 5%;
+}
+
+.list-of-dental-journals table.table-gray thead tr th:nth-child(2) {
+    width: 7%;
+}
+
+.list-of-dental-journals table.table-gray thead tr th:nth-child(3) {
+    width: 60%;
+}
+
+.list-of-dental-journals table.table-gray thead tr th:nth-child(4) {
+    width: 12%;
+}
+
+.list-of-dental-journals table.table-gray thead tr th:nth-child(4) {
+    width: 8%;
+}
+
+.list-of-dental-journals table.table-gray thead tr th:last-child {
+    width: 8%;
+}
+
+.list-of-dental-journals table.table-gray tbody tr td:nth-child(3) {
+    text-align: left;
+}
+
+.list-of-dental-journals table.table-gray tbody tr td .status {
+    padding: 3px 10px;
+    border-radius: 15px;
+    background-color: #797EFC;
+    color: #fff;
 }
