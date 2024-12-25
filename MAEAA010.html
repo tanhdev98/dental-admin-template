@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/bootstrap/bootstrap.js"></script>
+</head>
+
+<body>
+    <!-- content -->
+    <div id="content">
+        <div class="container-fluid">
+            <div class="manager-banner content">
+                <div class="sidebar">
+                    <ul>
+                        <li class="active"><a href="#" class="active">통합 배너 관리</a></li>
+                    </ul>
+                </div>
+                <div class="manager-banner-content content-right">
+                    <div class="title title-manager-banner">이력서 관리 리스트</div>
+                    <div id="manager-banner-content-list">
+                        <table class="table-gray">
+                            <tbody>
+                                <tr>
+                                    <th>
+                                        조건검색
+                                    </th>
+                                    <td>
+                                        <div class="select-box">
+                                            <select name="" id="">
+                                                <option value="">배너 분류</option>
+                                                <option value="">메인 TOP 배너</option>
+                                                <option value="">메인 배너</option>
+                                                <option value="">그랜드 배너</option>
+                                                <option value="">그랜드 서브 배너</option>
+                                                <option value="">프리미엄 배너</option>
+                                                <option value="">HOT 인재 배너</option>
+                                            </select>
+                                            <select name="" id="">
+                                                <option value="">배너 위치 선택</option>
+                                                <option value="">메인 TOP 배너</option>
+                                                <option value="">메인 배너</option>
+                                                <option value="">그랜드 배너</option>
+                                                <option value="">그랜드 서브 배너</option>
+                                                <option value="">프리미엄 배너</option>
+                                                <option value="">HOT 인재 배너</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                    <th>
+                                        배너명
+                                    </th>
+                                    <td>
+                                        <input type="text" placeholder="배너명 입력">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        상태
+                                    </th>
+                                    <td>
+                                        <div class="checkbox-group">
+                                            <div class="item-checkBox">
+                                                <input type="checkbox" class="checkbox" id="checkbox1">
+                                                <span></span>
+                                                <label for="checkbox1">진행예정</label>
+                                            </div>
+                                            <div class="item-checkBox">
+                                                <input type="checkbox" class="checkbox" id="checkbox2">
+                                                <span></span>
+                                                <label for="checkbox2">진행중</label>
+                                            </div>
+                                            <div class="item-checkBox">
+                                                <input type="checkbox" class="checkbox" id="checkbox3">
+                                                <span></span>
+                                                <label for="checkbox3">마감</label>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <th class="border-b-ddd">
+                                        공개 여부
+                                    </th>
+                                    <td>
+                                        <fieldset id="radio-group1" class="radio-group">
+                                            <div class="item-radioBox">
+                                                <input type="radio" name="radio-group1" value="option1" id="accept">
+                                                <span></span>
+                                                <label for="accept"><span>예예변경</span></label>
+                                            </div>
+                                            <div class="item-radioBox">
+                                                <input type="radio" name="radio-group1" value="option2" id="cancel">
+                                                <span></span>
+                                                <label for="cancel"><span>예예변경</span></label>
+                                            </div>
+                                            <div class="item-radioBox">
+                                                <input type="radio" name="radio-group1" value="option3" id="change">
+                                                <span></span>
+                                                <label for="change"><span>예예변경변경</span></label>
+                                            </div>
+                                        </fieldset>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        등록일
+                                    </th>
+                                    <td colspan="3">
+                                        <div class="flex group-item">
+                                            <div class="group-date">
+                                                <input type="date" class="input-date" value="2024.08.31">
+                                                <span>~</span>
+                                                <input type="date" class="input-date" value="2024.09.03">
+                                            </div>
+                                            <ul class="select-value">
+                                                <li>
+                                                    오늘
+                                                </li>
+                                                <li class="active">
+                                                    일주일
+                                                </li>
+                                                <li>
+                                                    15일
+                                                </li>
+                                                <li>
+                                                    1개월
+                                                </li>
+                                                <li>
+                                                    3개월
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="group-button">
+                            <button class="btn btn-gray-bold">검색</button>
+                            <button class="btn btn-gray-thin">초기화</button>
+                        </div>
+                    </div>
+                    <div class="results">
+                        <div class="count-item">총 <span class="total">00</span>건</div>
+                        <table class="table-gray">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>배너 분류</th>
+                                    <th>배너 위치</th>
+                                    <th>전시타입</th>
+                                    <th>배너명</th>
+                                    <th>링크 url</th>
+                                    <th>진행기간<br>
+                                        (상태)
+                                    </th>
+                                    <th>공개여부</th>
+                                    <th>노출수</th>
+                                    <th>클릭수</th>
+                                    <th>
+                                        등록일
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td rowspan="2">
+                                        90
+                                    </td>
+                                    <td rowspan="2">메인</td>
+                                    <td rowspan="2">메인 TOP 배너</td>
+                                    <td>웹</td>
+                                    <td>
+                                        <img src="./images/grand-banner-1.png" alt="img">
+                                        치과의사 선생님들이 선택한 DV World Seoul 최고 핫템
+                                    </td>
+                                    <td>
+                                        https://www.배너링크url이표시됩니다.
+                                    </td>
+                                    <td>
+                                        2024.08.01 10:30 ~ 2024.09.15 10:35
+                                        <br>
+                                        (진행중)
+                                    </td>
+                                    <td>공개</td>
+                                    <td>275</td>
+                                    <td>
+                                        50
+                                    </td>
+                                    <td>
+                                        2024.07.25
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>웹</td>
+                                    <td>
+                                        <img src="./images/grand-banner-1.png" alt="img">
+                                        치과의사 선생님들이 선택한 DV World Seoul 최고 핫템
+                                    </td>
+                                    <td>
+                                        https://www.배너링크url이표시됩니다.
+                                    </td>
+                                    <td>
+                                        2024.08.01 10:30 ~ 2024.09.15 10:35
+                                        <br>
+                                        (진행중)
+                                    </td>
+                                    <td>공개</td>
+                                    <td>275</td>
+                                    <td>
+                                        50
+                                    </td>
+                                    <td>
+                                        2024.07.25
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end content -->
+    <!-- content -->
+    <div id="content">
+        <div class="container-fluid">
+
+            </di>
+
+        </div>
+    </div>
+    <!-- end content -->
+</body>
+
+</html>
