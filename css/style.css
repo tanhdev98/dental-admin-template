@@ -1,16 +1,33 @@
 /* home */
+.t-left {
+    text-align: left !important;
+}
+
+.btn-gray-bold {
+    width: 120px;
+    background-color: #7F7F7F;
+    color: #fff;
+}
+
+.btn-gray-thin {
+    width: 120px;
+    background-color: #F2F2F2;
+    color: #333;
+}
 
 .title {
     font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
 }
 
 .table-has-radius {
     border-collapse: separate;
     border: 1px solid #ddd;
+    overflow: hidden;
 }
 
 #table-form-option {
-    margin: 20px 0;
     font-size: 14px;
     border-radius: 10px;
     /* overflow: hidden; */
@@ -19,6 +36,11 @@
 .group-datepicker {
     display: flex;
     gap: 7px;
+}
+
+.group-datepicker>span {
+    display: flex;
+    align-items: center;
 }
 
 .group-datepicker .datepicker-child {
@@ -41,14 +63,27 @@
 
 .table-has-radius td:last-child {
     border-right: none;
+    border-left: none;
 }
 
 .table-has-radius th:last-child {
     border-right: none;
 }
 
+.wrap-table {
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    margin: 20px 0;
+}
+
 #table-form-option tr:first-child th:first-child {
     border-top: none;
+}
+
+.table-custom #table-form-option tr:first-child th:first-child {
+    padding-bottom: 0;
+    border-bottom: none;
+    background-color: transparent;
 }
 
 #table-form-option th,
@@ -72,10 +107,12 @@
     display: flex;
     gap: 5px;
     align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 30px;
 }
 
 #table-form-option th.header-item .header-item-inner .select-box {
-    margin-left: 108px;
     border: 1px solid #ddd;
     padding: 0px 18px;
     border-radius: 3px;
@@ -89,6 +126,16 @@
     font-weight: 300;
     width: 520px;
     color: #666;
+}
+
+#table-form-option th.header-item .header-item-inner .group-datepicker>span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#table-form-option th.header-item .header-item-inner .group-datepicker input {
+    height: 35px;
 }
 
 #table-form-option th.header-item .header-item-inner .select-box select {
@@ -287,65 +334,106 @@
     position: absolute;
 }
 
-#table-results-member td:first-child {
-    width: 44px;
+#table-results-member.table-results-member-style1 td:first-child {
+    width: 80px;
     border-left: none;
 }
 
-#table-results-member td:nth-child(2) {
-    width: 106px;
+#table-results-member.table-results-member-style1 td:nth-child(2) {
+    width: 60px;
 }
 
-#table-results-member td:nth-child(3) {
-    width: 84px;
+#table-results-member.table-results-member-style1 td:nth-child(3) {
+    width: 120px;
 }
 
-#table-results-member td:nth-child(4) {
-    width: 169px;
+#table-results-member.table-results-member-style1 td:nth-child(4) {
+    width: 70px;
 }
 
-#table-results-member td:nth-child(5) {
+#table-results-member.table-results-member-style1 td:nth-child(5) {
     width: 85px;
 }
 
-#table-results-member td:nth-child(6) {
+#table-results-member.table-results-member-style1 td:nth-child(6) {
     width: 104px;
 }
 
-#table-results-member td:nth-child(7) {
-    width: 109px;
+#table-results-member.table-results-member-style1 td:nth-child(7) {
+    width: 150px;
 }
 
-#table-results-member td:nth-child(8) {
+#table-results-member.table-results-member-style1 td:nth-child(8) {
     width: 159px;
 }
 
-#table-results-member td:nth-child(9) {
-    width: 139px;
+#table-results-member.table-results-member-style1 td:nth-child(9) {
+    width: 95px;
 }
 
-#table-results-member td:nth-child(10) {
+#table-results-member.table-results-member-style1 td:nth-child(10) {
+    width: 95px;
+}
+
+#table-results-member.table-results-member-style1 td:nth-child(11) {
     width: 134px;
 }
 
-#table-results-member td:nth-child(11) {
-    width: 134px;
-}
-
-#table-results-member td:nth-child(12) {
+#table-results-member.table-results-member-style1 td:nth-child(12) {
     width: 139px;
 }
 
-#table-results-member td:nth-child(13) {
+#table-results-member.table-results-member-style1 td:nth-child(13) {
     width: 115px;
 }
 
-#table-results-member td:nth-child(14) {
+#table-results-member.table-results-member-style1 td:nth-child(14) {
     width: 108px;
 }
 
 #table-results-member+.wrap-pagination {
     margin-top: 20px;
+}
+
+#table-results-member.table-results-member-style2 td:first-child {
+    width: 45px;
+    border-left: none;
+}
+
+#table-results-member.table-results-member-style2 td:nth-child(2) {
+    width: 60px;
+}
+
+#table-results-member.table-results-member-style2 td:nth-child(3) {
+    width: 80px;
+}
+
+#table-results-member.table-results-member-style2 td:nth-child(4) {
+    width: 70px;
+}
+
+#table-results-member.table-results-member-style2 td:nth-child(5) {
+    width: 85px;
+}
+
+#table-results-member.table-results-member-style2 td:nth-child(6) {
+    width: 104px;
+}
+
+#table-results-member.table-results-member-style2 td:nth-child(7) {
+    width: 90px;
+}
+
+#table-results-member.table-results-member-style2 td:nth-child(8) {
+    width: 49px;
+}
+
+#table-results-member.table-results-member-style2 td:nth-child(9) {
+    width: 95px;
+}
+
+#table-results-member.table-results-member-style2 td:nth-child(10) {
+    width: 95px;
 }
 
 /* login */
@@ -514,6 +602,7 @@
 .profile-sidebar .profile-user .profile-user-img img {
     height: 64px;
 }
+
 
 .profile-user-name {
     font-size: 15px;
@@ -690,6 +779,88 @@
     transform: translateY(-50%);
 }
 
+.advertising {
+    display: flex;
+}
+
+.advertising-sidebar,
+.sidebar {
+    width: 100%;
+    max-width: 150px;
+    position: relative;
+}
+
+.advertising-sidebar::before,
+.sidebar::before {
+    content: "";
+    width: 1px;
+    background-color: #ddd;
+    height: 100vh;
+    right: 0;
+    top: 0;
+    position: absolute;
+}
+
+.advertising-sidebar ul,
+.sidebar ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.advertising-sidebar ul li,
+.sidebar ul li {
+    width: 100%;
+}
+
+.advertising-sidebar ul li a,
+.sidebar ul li a {
+    margin-bottom: 15px;
+    height: 64px;
+}
+
+
+.advertising .advertising-sidebar>ul,
+.sidebar>ul {
+    border-top: 1px solid #ddd;
+}
+
+.advertising-sidebar>ul li a,
+.sidebar>ul li a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0 15px;
+    height: 51px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    margin: 0;
+}
+
+.advertising-sidebar>ul li a:hover,
+.sidebar>ul li a:hover,
+.advertising-sidebar>ul li a.active,
+.sidebar>ul li a.active {
+    background-color: #e0edf7;
+    color: #0068b7;
+}
+
+.advertising-sidebar>ul li a:hover:after,
+.sidebar>ul li a:hover:after,
+.advertising-sidebar>ul li a.active:after,
+.sidebar>ul li a.active:after {
+    content: "";
+    width: 6px;
+    height: 10px;
+    background: url("../images/icons/icon-right-active.png") no-repeat center / 100%;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
 
 /* right sidebar */
 
@@ -796,7 +967,8 @@
     color: #C00000;
 }
 
-.profile-content-count {
+.profile-content-count,
+.count-item {
     font-size: 15px;
     font-weight: 400;
     color: #333333;
@@ -804,7 +976,8 @@
     margin-bottom: 10px;
 }
 
-.profile-content-count .total {
+.profile-content-count .total,
+.count-item .total {
     color: #C00000;
 }
 
@@ -816,6 +989,15 @@
     margin-top: 21px;
 }
 
+.member-basic-infor .avatar-box {
+    width: 130px;
+    height: 160px;
+    border-radius: 0;
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+.member-basic-infor .avatar-box img {}
 
 .profile-content .table {
     width: 100%;
@@ -826,10 +1008,6 @@
     border-top: 1px solid #dddddd;
 }
 
-.profile-content .table tr:first-child th {
-    border-bottom: none;
-    border-top: none;
-}
 
 .profile-content .member-basic-infor .table tr:first-child th {
     border-bottom: 1px solid #ddd;
@@ -858,9 +1036,6 @@
     text-align: left;
 }
 
-.profile-content .table tr:last-child td {
-    border-bottom: none;
-}
 
 .profile-content .table.member-infor {
     margin-top: 15px;
@@ -870,8 +1045,8 @@
 .profile-content .table.member-infor tbody th {
     background-color: #f9f9f9;
     border-right: 1px solid #dddddd;
-    text-align: center;
     font-weight: 600;
+    text-align: left;
 }
 
 .profile-content .table.member-infor tbody td {
@@ -880,6 +1055,7 @@
     padding-left: 18px;
     width: 595px;
     position: relative;
+    text-align: left;
 }
 
 .profile-content .table.member-infor tbody td.four-columns {
@@ -912,6 +1088,54 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+table.member-infor th {
+    width: 160px;
+}
+
+table.member-infor th,
+table.member-infor td {
+    vertical-align: middle;
+    position: relative;
+}
+
+table.th-dot th,
+table .item-dot {
+    padding-left: 15px;
+    font-size: 20px;
+}
+
+table.th-dot th::before,
+table .item-dot::before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    background-color: #333;
+    border-radius: 50%;
+}
+
+table.member-infor td select {
+    padding: 5px 30px 5px 5px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+table.member-infor td textarea {
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    width: 100%;
+    height: 100px;
+}
+
+table.member-infor td input[type="text"] {
+    border: 1px solid #ddd;
+    width: 100%;
+    padding: 5px 15px;
 }
 
 .border-r-ddd {
@@ -1049,6 +1273,7 @@
     align-items: center;
     border: 1px solid #333;
     transition: all 0.3s ease;
+    margin: 0;
 }
 
 .bottom-content .button-back-to-list:hover {
@@ -1180,4 +1405,699 @@
 
 #profile-recruitment-advertising-has-ended .title-table {
     margin: 0px 0 15px;
+}
+
+.button-group .btn-success {
+    margin: 0 5px;
+}
+
+#popup-payment-history {
+    padding: 2px 5px;
+    border: 1px solid #333;
+    background-color: #ddd;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#profile-payment-history .title-table {
+    margin-top: 15px;
+}
+
+#advertising-list .note {
+    margin: 15px 0;
+    line-height: 20px;
+}
+
+.count {
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    background-color: #ddd;
+}
+
+.count span {
+    color: #C00000;
+}
+
+.profile .title-table {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.work-enviroment table tbody th {
+    width: 250px;
+    border-top: 1px solid #ddd !important;
+}
+
+.profile-content .table th,
+.profile-content .table td {
+    text-align: left;
+}
+
+.work-enviroment table tbody tr:last-child td {
+    border-bottom: 1px solid #ddd !important;
+}
+
+.profile-content .highest-level th {
+    width: 250px;
+    text-align: center;
+}
+
+.profile-content .list-education th,
+.profile-content .list-education td {
+    text-align: center;
+}
+
+.profile-content .list-education thead th:first-child {
+    width: 245px;
+}
+
+.profile-content .list-education thead th:nth-child(2) {
+    width: 320px;
+}
+
+.profile-content .list-education thead th:nth-child(3) {
+    width: 500px;
+}
+
+.profile-content .list-education thead th:nth-child(4) {
+    width: 300px;
+}
+
+.profile-content .list-education tbody td:nth-child(4) {
+    text-align: center;
+}
+
+.profile-content .list-education thead th:nth-child(5) {
+    width: 300px;
+}
+
+.profile-content .list-experience tbody .th {
+    width: 250px;
+}
+
+.profile-content .table.list-experience thead tr:first-child th {
+    text-align: center;
+}
+
+.profile-content .table.list-experience thead tr:first-child th:first-child {
+    width: 250px;
+}
+
+.profile-content .table.list-experience tr:first-child td,
+.profile-content .table.list-experience tr:first-child th {
+    text-align: center;
+}
+
+.profile-content .table.list-experience tbody td:first-child,
+.profile-content .table.list-experience tbody th:first-child {
+    text-align: center;
+}
+
+.profile-content .table.list-experience tfoot th:first-child {
+    text-align: center;
+}
+
+.profile-content .licence-information thead th:nth-child(1) {
+    width: 300px;
+}
+
+.profile-content .licence-information thead th:nth-child(3) {
+    width: 300px;
+}
+
+.profile-content .licence-information .table td,
+.profile-content .licence-information .table th {
+    text-align: center;
+}
+
+.profile-content .licence-information2 .table thead th {
+    text-align: center;
+}
+
+.profile-content .licence-information2 .table thead th:first-child {
+    width: 250px;
+}
+
+.profile-content .licence-information2 .table tbody th {
+    width: 200px;
+}
+
+.profile-content .licence-information2 .table tbody td:first-child {
+    text-align: center;
+}
+
+.box-self-introduction {
+    padding: 15px;
+    border: 1px solid #ddd
+}
+
+.advertising-content {
+    width: 100%;
+    padding: 0 15px;
+}
+
+.content {
+    display: flex;
+}
+
+.content .content-right {
+    width: 100%;
+    padding: 0 20px;
+}
+
+.content .content-right table {
+    position: relative;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.content .content-right table th {
+    background-color: #f9f9f9;
+}
+
+.content .content-right table tr:not(:first-child) th,
+.content .content-right table tr:not(:last-child) th {
+    border-top: 1px solid #ddd;
+}
+
+.content .content-right.manager-continues table tr td:last-child {
+    border-right: none;
+}
+
+.content .content-right.manager-continues .results table tr td:last-child {
+    border-right: 1px solid #ddd;
+}
+
+.content .content-right.manager-continues table tbody th {
+    width: 150px;
+    text-align: left;
+}
+
+.content .content-right.manager-continues table td {
+    text-align: left;
+}
+
+.content .content-right.manager-continues .group-button {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.content .content-right table .select-box select {
+    border: 1px solid #ddd;
+    padding: 6px 15px;
+}
+
+.content .content-right table input {
+    border: 1px solid #ddd;
+    padding: 5px 15px;
+}
+
+.content .content-right table .checkbox-group {
+    display: flex;
+    gap: 30px;
+}
+
+.content .content-right table .group-item.flex {
+    display: flex;
+}
+
+.content .content-right table ul.select-value {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    border: 1px solid #ddd;
+}
+
+.content .content-right table ul.select-value li {
+    padding: 5px 15px;
+    position: relative;
+}
+
+.content .content-right table ul.select-value li+li {
+    border-left: 1px solid #ddd;
+}
+
+.content .content-right table ul.select-value li.active:before {
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid #000;
+    border-radius: 0;
+    position: absolute;
+}
+
+.results .count {
+    margin-top: 50px;
+}
+
+.results table tr th {
+    text-align: center !important;
+}
+
+.manager-continues table tbody tr.empty-content {
+    height: 60px;
+}
+
+.manager-continues table tr td:not(:nth-child(2)) {
+    text-align: center !important;
+}
+
+.manager-continues table tr th:first-child {
+    width: 7%;
+}
+
+.manager-continues table tr th:nth-child(2) {
+    width: 18%;
+}
+
+.manager-continues table tr th:nth-child(3) {
+    width: 7%;
+}
+
+.manager-continues table tr th:nth-child(4) {
+    width: 8%;
+}
+
+.manager-continues table tr th:nth-child(5) {
+    width: 9%;
+}
+
+.manager-continues table tr th:nth-child(6) {
+    width: 9%;
+}
+
+.manager-continues table tr th:nth-child(7) {
+    width: 7%;
+}
+
+.manager-continues table tr th:nth-child(8) {
+    width: 6%;
+}
+
+.manager-continues table tr th:nth-child(9) {
+    width: 8%;
+}
+
+.manager-continues table tr th:nth-child(10) {
+    width: 12%;
+}
+
+.manager-continues table tr th:last-child {
+    width: 9%;
+}
+
+#manager-banner-content-list .radio-group {
+    display: flex;
+    gap: 30px;
+}
+
+#manager-banner-content-list table.table-gray tbody tr td {
+    border-left: none;
+}
+
+.group-button.center {
+    text-align: center;
+    margin-top: 15px;
+}
+
+#manager-banner-content-list td {
+    text-align: left;
+}
+
+.manager-banner-content .results th:first-child {
+    width: 4%;
+}
+
+.manager-banner-content .results th:nth-child(2) {
+    width: 8%;
+}
+
+.manager-banner-content .results th:nth-child(3) {
+    width: 10%;
+}
+
+.manager-banner-content .results th:nth-child(4) {
+    width: 8%;
+}
+
+.manager-banner-content .results th:nth-child(5) {
+    width: 22%;
+}
+
+.manager-banner-content .results th:nth-child(6) {
+    width: 13%;
+}
+
+.manager-banner-content .results th:nth-child(7) {
+    width: 13%;
+}
+
+.manager-banner-content .results th:nth-child(8) {
+    width: 6%;
+}
+
+.manager-banner-content .results th:nth-child(9) {
+    width: 5%;
+}
+
+.manager-banner-content .results th:nth-child(10) {
+    width: 5%;
+}
+
+.manager-banner-content .results th:nth-child(11) {
+    width: 6%;
+}
+
+.compulsory-education .results th:first-child {
+    width: 4%;
+}
+
+.compulsory-education .results th:nth-child(2) {
+    width: 25%;
+}
+
+.compulsory-education .results td:nth-child(2) {
+    text-align: left;
+}
+
+.compulsory-education .results th:nth-child(3) {
+    width: 35%;
+}
+
+.compulsory-education .results th:nth-child(4) {
+    width: 10%;
+}
+
+.compulsory-education .results th:nth-child(5) {
+    width: 13%;
+}
+
+.compulsory-education .results th:nth-child(6) {
+    width: 13%;
+}
+
+#compulsory-education-content-list th {
+    text-align: left;
+    width: 200px;
+}
+
+th.require span {
+    position: relative;
+}
+
+th.require span::after {
+    content: "*";
+    color: #C00000;
+    position: absolute;
+    right: -10px;
+}
+
+#compulsory-education-content-list td {
+    text-align: left;
+    border-right: none;
+}
+
+#compulsory-education-content-list tr td input:not([type="radio"]) {
+    width: 100%;
+}
+
+#compulsory-education-content-list tr:first-child td input,
+#compulsory-education-content-list tr:nth-child(2) td input,
+#compulsory-education-content-list tr:nth-child(5) td input {
+    width: 300px;
+}
+
+#compulsory-education-content-list td textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+
+#compulsory-education-content-list td select {
+    width: 500px;
+}
+
+#compulsory-education-content-list td .radio-group {
+    display: flex;
+    gap: 30px;
+}
+
+#compulsory-education-content-list td input[type="file"] {
+    display: none;
+}
+
+#compulsory-education-content-list td input[type="file"]+label {
+    padding: 6px 15px;
+    background-color: #7F7F7F;
+    color: #fff;
+    cursor: pointer;
+}
+
+#manager-banner-content-change-content-list img {
+    width: 300px;
+    margin-top: 15px;
+}
+
+#manager-banner-content-change-content-list td {
+    text-align: left;
+    width: 650px;
+}
+
+
+#manager-banner-content-change-content-list th {
+    border-left: 1px solid #ddd;
+    text-align: left;
+}
+
+#manager-banner-content-change-content-list td input[type="file"] {
+    display: none;
+}
+
+#manager-banner-content-change-content-list td input[type="file"]+label {
+    padding: 6px 15px;
+    background-color: #7F7F7F;
+    color: #fff;
+    cursor: pointer;
+}
+
+#manager-banner-content-change-content-list tr:nth-child(2) th {
+    border-bottom: 1px solid #ddd;
+}
+
+#manager-banner-content-change-content-list tr td .group-input-column {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+#manager-banner-content-change-content-list tr td .radio-group {
+    display: flex;
+    gap: 30px;
+}
+
+#manager-banner-content-change-content-list .table-gray .table-gray {
+    width: 250px;
+}
+
+#manager-banner-content-change-content-list .group-columns {
+    display: flex;
+    gap: 20px;
+}
+
+#manager-banner-content-change-content-list tr:nth-child(2) td input {
+    width: 100%;
+}
+
+#manager-banner-content-change-content-list tr:nth-child(4) td input {
+    width: 503px;
+}
+
+#manager-banner-content-change-content-list tr:nth-child(6) td input {
+    width: 503px;
+}
+
+#manager-banner-content-change-content-list tr:nth-child(5) td input:first-child {
+    width: 300px;
+}
+
+#manager-banner-content-change-content-list .checkbox-group {
+    margin-bottom: 10px;
+}
+
+#manager-banner-content-change-content-list .bottom-content {
+    margin-top: 10px;
+}
+
+#list-of-dental-journals-content-list td {
+    text-align: left;
+}
+
+.list-of-dental-journals table.table-gray tbody tr td:last-child {
+    border-right: none;
+}
+
+.list-of-dental-journals table.table-gray tr th,
+.list-of-dental-journals table.table-gray tr td {
+    border-left: none;
+    border-right: none;
+}
+
+.list-of-dental-journals table.table-gray thead tr th:first-child {
+    width: 5%;
+}
+
+.list-of-dental-journals table.table-gray thead tr th:nth-child(2) {
+    width: 7%;
+}
+
+.list-of-dental-journals table.table-gray thead tr th:nth-child(3) {
+    width: 60%;
+}
+
+.list-of-dental-journals table.table-gray thead tr th:nth-child(4) {
+    width: 12%;
+}
+
+.list-of-dental-journals table.table-gray thead tr th:nth-child(4) {
+    width: 8%;
+}
+
+.list-of-dental-journals table.table-gray thead tr th:last-child {
+    width: 8%;
+}
+
+.list-of-dental-journals table.table-gray tbody tr td:nth-child(3) {
+    text-align: left;
+}
+
+.list-of-dental-journals table.table-gray tbody tr td .status {
+    padding: 3px 10px;
+    border-radius: 15px;
+    background-color: #797EFC;
+    color: #fff;
+}
+
+.dental-magazine .bottom-content {
+    margin-top: 10px;
+}
+
+.dental-magazine table th {
+    text-align: left;
+}
+
+.dental-magazine table td {
+    text-align: left;
+}
+
+.dental-magazine table td input {
+    width: 100%;
+}
+
+.dental-magazine table td textarea {
+    border: 1px solid #ddd;
+    width: 100%;
+    padding: 15px;
+    height: 120px;
+}
+
+.button-item a {
+    float: right;
+    padding: 5px 15px;
+    background-color: #ddd;
+    margin-bottom: 10px;
+}
+
+.dental-magazine-content table.table-gray tbody tr td:last-child {
+    border-right: none;
+}
+
+#list-notification-content td {
+    text-align: left;
+}
+
+#list-notification-content td select {
+    width: 250px;
+}
+
+.list-notification table.table-gray thead tr th,
+.list-notification table.table-gray tbody tr th,
+.list-notification table.table-gray tbody tr td {
+    border-left: none;
+    border-right: none;
+}
+
+.list-notification table.table-gray thead tr th:first-child {
+    width: 5%;
+}
+
+.list-notification table.table-gray thead tr th:nth-child(2) {
+    width: 7%;
+}
+
+.list-notification table.table-gray thead tr th:nth-child(3) {
+    width: 60%;
+}
+
+.list-notification table.table-gray thead tr th:nth-child(4) {
+    width: 12%;
+}
+
+.list-notification table.table-gray thead tr th:nth-child(4) {
+    width: 8%;
+}
+
+.list-notification table.table-gray thead tr th:last-child {
+    width: 8%;
+}
+
+.list-notification table.table-gray tbody tr td:nth-child(3) {
+    text-align: left;
+}
+
+.list-notification table.table-gray tbody tr td .status {
+    padding: 3px 10px;
+    border-radius: 15px;
+    background-color: #7BB32D;
+    color: #fff;
+}
+
+
+#list-faq-content td {
+    text-align: left;
+}
+
+#list-faq-content td select {
+    width: 250px;
+}
+
+.list-faq table.table-gray thead tr th,
+.list-faq table.table-gray tbody tr th,
+.list-faq table.table-gray tbody tr td {
+    border-left: none;
+    border-right: none;
+}
+
+.list-faq table.table-gray thead tr th:first-child {
+    width: 5%;
+}
+
+
+.list-faq table.table-gray thead tr th:nth-child(2) {
+    width: 70%;
+}
+
+.list-faq table.table-gray thead tr th:nth-child(3) {
+    width: 15%;
+}
+
+.list-faq table.table-gray thead tr th:last-child {
+    width: 10%;
+}
+
+.list-faq table.table-gray tbody tr td:nth-child(2) {
+    text-align: left;
 }
