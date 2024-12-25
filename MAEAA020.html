@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/bootstrap/bootstrap.js"></script>
+</head>
+
+<body>
+    <!-- content -->
+    <div id="content">
+        <div class="container-fluid">
+            <div class="manager-banner-content-change content">
+                <div class="sidebar">
+                    <ul>
+                        <li class="active"><a href="#" class="active">통합 배너 관리</a></li>
+                    </ul>
+                </div>
+                <div class="manager-banner-content-change-content content-right">
+                    <!-- <div class="title title-manager-banner-content-change">법정의무교육</div> -->
+                    <div id="manager-banner-content-change-content-list">
+                        <table class="table-gray">
+                            <tbody>
+                                <tr>
+                                    <th class="require" colspan="2">
+                                        <span>구분 선택</span>
+                                    </th>
+                                    <td colspan="3">
+                                        <div class="select-box">
+                                            <select name="" id="">
+                                                <option value="">미이수 시 과태료가 있는 교육</option>
+                                                <option value="">메인 TOP 배너</option>
+                                                <option value="">메인 배너</option>
+                                                <option value="">그랜드 배너</option>
+                                                <option value="">그랜드 서브 배너</option>
+                                                <option value="">프리미엄 배너</option>
+                                                <option value="">HOT 인재 배너</option>
+                                            </select>
+                                            <select name="" id="">
+                                                <option value="">미이수 시 과태료가 있는 교육</option>
+                                                <option value="">메인 TOP 배너</option>
+                                                <option value="">메인 배너</option>
+                                                <option value="">그랜드 배너</option>
+                                                <option value="">그랜드 서브 배너</option>
+                                                <option value="">프리미엄 배너</option>
+                                                <option value="">HOT 인재 배너</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="require" colspan="2">
+                                        <span>배너명</span>
+                                    </th>
+                                    <td colspan="3">
+                                        <input type="text" placeholder="배너명 입력">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="5">
+                                        <span>배너 등록</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th rowspan="2">
+                                        <span>웹</span>
+                                    </th>
+                                    <th class="require">
+                                        <span>이미지</span>
+                                    </th>
+                                    <td colspan="3">
+                                        <div class="group-input">
+                                            <input type="file" id="file-input">
+                                            <label for="file-input">파일 선택</label>
+                                            <input type="text" placeholder="선택된 파일 없음">
+                                        </div>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="require">
+                                        <span>url</span>
+                                    </th>
+                                    <td colspan="3">
+                                        <div class="select-box">
+                                            <select name="" id="">
+                                                <option value="">Rink type 선택</option>
+                                                <option value="">메인 TOP 배너</option>
+                                                <option value="">메인 배너</option>
+                                                <option value="">그랜드 배너</option>
+                                                <option value="">그랜드 서브 배너</option>
+                                                <option value="">프리미엄 배너</option>
+                                                <option value="">HOT 인재 배너</option>
+                                            </select>
+                                            <input type="text" placeholder="링크 등록">
+                                            <input type="text" placeholder="링크 등록">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th rowspan="2">
+                                        <span>모바일</span>
+                                    </th>
+                                    <th class="require">
+                                        <span>이미지</span>
+                                    </th>
+                                    <td colspan="3">
+                                        <div class="group-input">
+                                            <input type="file" id="file-input">
+                                            <label for="file-input">파일 선택</label>
+                                            <input type="text" placeholder="선택된 파일 없음">
+                                        </div>
+                                        <div class="img">
+                                            <img src="./images/grand-banner-1.png" alt="img" />
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="require">
+                                        <span>url</span>
+                                    </th>
+                                    <td colspan="3">
+                                        <div class="select-box">
+                                            <select name="" id="">
+                                                <option value="">Rink type 선택</option>
+                                                <option value="">메인 TOP 배너</option>
+                                                <option value="">메인 배너</option>
+                                                <option value="">그랜드 배너</option>
+                                                <option value="">그랜드 서브 배너</option>
+                                                <option value="">프리미엄 배너</option>
+                                                <option value="">HOT 인재 배너</option>
+                                            </select>
+                                            <input type="text" placeholder="링크 url 입력">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="require" colspan="2">
+                                        <span>진행기간</span>
+                                    </th>
+                                    <td>
+                                        <div class="group-date">
+                                            <input type="date" class="input-date" value="2024.08.31">
+                                            <span>~</span>
+                                            <input type="date" class="input-date" value="2024.09.03">
+                                        </div>
+                                    </td>
+                                    <th>
+                                        <span>진행기간</span>
+                                    </th>
+                                    <td>
+                                        0
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">
+                                        <span>노출 순서</span>
+                                    </th>
+                                    <td>
+                                        <div class="group-input-column">
+                                            <input type="number" placeholder="배너 순서 입력">
+                                            <span>*메인화면 리스트에서 보여질 순서입니다.</span>
+                                        </div>
+                                    </td>
+                                    <th class="require border-b-ddd">
+                                        <span>공개여부</span>
+                                    </th>
+                                    <td>
+                                        <fieldset id="radio-group1" class="radio-group">
+                                            <div class="item-radioBox">
+                                                <input type="radio" name="radio-group1" value="option1" id="accept">
+                                                <span></span>
+                                                <label for="accept"><span>공개</span></label>
+                                            </div>
+                                            <div class="item-radioBox">
+                                                <input type="radio" name="radio-group1" value="option2" id="cancel">
+                                                <span></span>
+                                                <label for="cancel"><span>비공개</span></label>
+                                            </div>
+                                        </fieldset>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">
+                                        <span>노출 순서</span>
+                                    </th>
+                                    <td colspan="3">
+                                        <div class="group-columns">
+                                            <table class="table-gray">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            노출
+                                                        </td>
+                                                        <td>
+                                                            1
+                                                        </td>
+                                                        <td>
+                                                            2
+                                                        </td>
+                                                        <td>
+                                                            3
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            노출
+                                                        </td>
+                                                        <td>
+                                                            4
+                                                        </td>
+                                                        <td>
+                                                            5
+                                                        </td>
+                                                        <td>
+                                                            6
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            7
+                                                        </td>
+                                                        <td>
+                                                            8
+                                                        </td>
+                                                        <td>
+                                                            9
+                                                        </td>
+                                                        <td>
+                                                            10
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            11
+                                                        </td>
+                                                        <td>
+                                                            12
+                                                        </td>
+                                                        <td colspan="2">
+                                                            ...
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <div class="right-table group-input-column">
+                                                <input type="text" placeholder="위치 입력">
+                                                <span class="note">※ 메인화면 프리미엄 배너리스트에서 보여질 위치입니다. 하기 순서를 참고하시고
+                                                    등록하세요.</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">
+                                        <span>기본배너 사용여부</span>
+                                    </th>
+                                    <td colspan="3">
+                                        <div class="checkbox-group">
+                                            <div class="item-checkBox">
+                                                <input type="checkbox" class="checkbox" id="checkbox1">
+                                                <span></span>
+                                                <label for="checkbox1">진행예정</label>
+                                            </div>
+                                            <div class="item-checkBox">
+                                                <input type="checkbox" class="checkbox" id="checkbox2">
+                                                <span></span>
+                                                <label for="checkbox2">진행중</label>
+                                            </div>
+                                        </div>
+                                        <span class="note">
+                                            *진행 중인 배너가 없을 경우 메인화면에 기본으로 노출되는 배너를 지정합니다.
+                                        </span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="bottom-content">
+                            <a href="#" class="button-back-to-list">목록</a>
+                            <a href="#" class="button-save">저장</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end content -->
+    <!-- content -->
+    <div id="content">
+        <div class="container-fluid">
+
+            </di>
+
+        </div>
+    </div>
+    <!-- end content -->
+</body>
+
+</html>

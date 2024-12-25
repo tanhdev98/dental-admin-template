@@ -1506,7 +1506,7 @@ table.member-infor td input[type="text"] {
 
 .profile-content .table.list-experience tr:first-child td,
 .profile-content .table.list-experience tr:first-child th {
-    text-align: left;
+    text-align: center;
 }
 
 .profile-content .table.list-experience tbody td:first-child,
@@ -1804,11 +1804,11 @@ table.member-infor td input[type="text"] {
     width: 200px;
 }
 
-#compulsory-education-content-list th.require span {
+th.require span {
     position: relative;
 }
 
-#compulsory-education-content-list th.require span::after {
+th.require span::after {
     content: "*";
     color: #C00000;
     position: absolute;
@@ -1855,4 +1855,79 @@ table.member-infor td input[type="text"] {
     background-color: #7F7F7F;
     color: #fff;
     cursor: pointer;
+}
+
+#manager-banner-content-change-content-list img {
+    width: 300px;
+    margin-top: 15px;
+}
+
+#manager-banner-content-change-content-list td {
+    text-align: left;
+    width: 650px;
+}
+
+
+#manager-banner-content-change-content-list th {
+    border-left: 1px solid #ddd;
+    text-align: left;
+}
+
+#manager-banner-content-change-content-list td input[type="file"] {
+    display: none;
+}
+
+#manager-banner-content-change-content-list td input[type="file"]+label {
+    padding: 6px 15px;
+    background-color: #7F7F7F;
+    color: #fff;
+    cursor: pointer;
+}
+
+#manager-banner-content-change-content-list tr:nth-child(2) th {
+    border-bottom: 1px solid #ddd;
+}
+
+#manager-banner-content-change-content-list tr td .group-input-column {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+#manager-banner-content-change-content-list tr td .radio-group {
+    display: flex;
+    gap: 30px;
+}
+
+#manager-banner-content-change-content-list .table-gray .table-gray {
+    width: 250px;
+}
+
+#manager-banner-content-change-content-list .group-columns {
+    display: flex;
+    gap: 20px;
+}
+
+#manager-banner-content-change-content-list tr:nth-child(2) td input {
+    width: 100%;
+}
+
+#manager-banner-content-change-content-list tr:nth-child(4) td input {
+    width: 503px;
+}
+
+#manager-banner-content-change-content-list tr:nth-child(6) td input {
+    width: 503px;
+}
+
+#manager-banner-content-change-content-list tr:nth-child(5) td input:first-child {
+    width: 300px;
+}
+
+#manager-banner-content-change-content-list .checkbox-group {
+    margin-bottom: 10px;
+}
+
+#manager-banner-content-change-content-list .bottom-content {
+    margin-top: 10px;
 }
