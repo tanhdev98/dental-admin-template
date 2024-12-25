@@ -2014,3 +2014,53 @@ th.require span::after {
 .dental-magazine-content table.table-gray tbody tr td:last-child {
     border-right: none;
 }
+
+#list-notification-content td {
+    text-align: left;
+}
+
+#list-notification-content td select {
+    width: 250px;
+}
+
+.list-notification table.table-gray thead tr th,
+.list-notification table.table-gray tbody tr th,
+.list-notification table.table-gray tbody tr td {
+    border-left: none;
+    border-right: none;
+}
+
+.list-notification table.table-gray thead tr th:first-child {
+    width: 5%;
+}
+
+.list-notification table.table-gray thead tr th:nth-child(2) {
+    width: 7%;
+}
+
+.list-notification table.table-gray thead tr th:nth-child(3) {
+    width: 60%;
+}
+
+.list-notification table.table-gray thead tr th:nth-child(4) {
+    width: 12%;
+}
+
+.list-notification table.table-gray thead tr th:nth-child(4) {
+    width: 8%;
+}
+
+.list-notification table.table-gray thead tr th:last-child {
+    width: 8%;
+}
+
+.list-notification table.table-gray tbody tr td:nth-child(3) {
+    text-align: left;
+}
+
+.list-notification table.table-gray tbody tr td .status {
+    padding: 3px 10px;
+    border-radius: 15px;
+    background-color: #7BB32D;
+    color: #fff;
+}
