@@ -1,4 +1,15 @@
 /* home */
+.btn-gray-bold {
+    width: 120px;
+    background-color: #7F7F7F;
+    color: #fff;
+}
+
+.btn-gray-thin {
+    width: 120px;
+    background-color: #F2F2F2;
+    color: #333;
+}
 
 .title {
     font-size: 18px;
@@ -768,13 +779,15 @@
     display: flex;
 }
 
-.advertising-sidebar {
+.advertising-sidebar,
+.sidebar {
     width: 100%;
     max-width: 150px;
     position: relative;
 }
 
-.advertising-sidebar::before {
+.advertising-sidebar::before,
+.sidebar::before {
     content: "";
     width: 1px;
     background-color: #ddd;
@@ -784,7 +797,8 @@
     position: absolute;
 }
 
-.advertising-sidebar ul {
+.advertising-sidebar ul,
+.sidebar ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -792,23 +806,25 @@
     text-align: center;
 }
 
-.advertising-sidebar ul li {
+.advertising-sidebar ul li,
+.sidebar ul li {
     width: 100%;
 }
 
-.advertising-sidebar ul li a {
+.advertising-sidebar ul li a,
+.sidebar ul li a {
     margin-bottom: 15px;
-}
-
-.advertising-sidebar ul li a {
     height: 64px;
 }
 
-.advertising .advertising-sidebar>ul {
+
+.advertising .advertising-sidebar>ul,
+.sidebar>ul {
     border-top: 1px solid #ddd;
 }
 
-.advertising-sidebar>ul li a {
+.advertising-sidebar>ul li a,
+.sidebar>ul li a {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -821,13 +837,17 @@
 }
 
 .advertising-sidebar>ul li a:hover,
-.advertising-sidebar>ul li a.active {
+.sidebar>ul li a:hover,
+.advertising-sidebar>ul li a.active,
+.sidebar>ul li a.active {
     background-color: #e0edf7;
     color: #0068b7;
 }
 
 .advertising-sidebar>ul li a:hover:after,
-.advertising-sidebar>ul li a.active:after {
+.sidebar>ul li a:hover:after,
+.advertising-sidebar>ul li a.active:after,
+.sidebar>ul li a.active:after {
     content: "";
     width: 6px;
     height: 10px;
@@ -1402,9 +1422,15 @@ table.member-infor td input[type="text"] {
     line-height: 20px;
 }
 
-#advertising-list .count {
+.count {
     font-weight: 600;
     margin-bottom: 20px;
+    padding: 10px 15px;
+    background-color: #ddd;
+}
+
+.count span {
+    color: #C00000;
 }
 
 .profile .title-table {
@@ -1523,4 +1549,144 @@ table.member-infor td input[type="text"] {
 .advertising-content {
     width: 100%;
     padding: 0 15px;
+}
+
+.content {
+    display: flex;
+}
+
+.content .content-right {
+    width: 100%;
+    padding: 0 20px;
+}
+
+.content .content-right table {
+    position: relative;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.content .content-right table th {
+    background-color: #f9f9f9;
+}
+
+.content .content-right table tr:not(:first-child) th,
+.content .content-right table tr:not(:last-child) th {
+    border-top: 1px solid #ddd;
+}
+
+.content .content-right.manager-continues table tr td:last-child {
+    border-right: none;
+}
+
+.content .content-right.manager-continues .results table tr td:last-child {
+    border-right: 1px solid #ddd;
+}
+
+.content .content-right.manager-continues table tbody th {
+    width: 150px;
+    text-align: left;
+}
+
+.content .content-right.manager-continues table td {
+    text-align: left;
+}
+
+.content .content-right.manager-continues .group-button {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.content .content-right table .select-box select {
+    border: 1px solid #ddd;
+    padding: 6px 15px;
+}
+
+.content .content-right table input {
+    border: 1px solid #ddd;
+    padding: 5px 15px;
+}
+
+.content .content-right table .checkbox-group {
+    display: flex;
+    gap: 30px;
+}
+
+.content .content-right table .group-item.flex {
+    display: flex;
+}
+
+.content .content-right table ul.select-value {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    border: 1px solid #ddd;
+}
+
+.content .content-right table ul.select-value li {
+    padding: 5px 15px;
+    position: relative;
+}
+
+.content .content-right table ul.select-value li+li {
+    border-left: 1px solid #ddd;
+}
+
+.content .content-right table ul.select-value li.active:before {
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid #000;
+    border-radius: 0;
+    position: absolute;
+}
+
+.results .count {
+    margin-top: 50px;
+}
+
+.results .table tr th:first-child {
+    width: 7px;
+}
+
+.results .table tr th:nth-child(2) {
+    width: 18px;
+}
+
+.results .table tr th:nth-child(3) {
+    width: 6px;
+}
+
+.results .table tr th:nth-child(4) {
+    width: 7px;
+}
+
+.results .table tr th:nth-child(5) {
+    width: 8px;
+}
+
+.results .table tr th:nth-child(6) {
+    width: 8px;
+}
+
+.results .table tr th:nth-child(7) {
+    width: 6px;
+}
+
+.results .table tr th:nth-child(8) {
+    width: 5px;
+}
+
+.results .table tr th:nth-child(9) {
+    width: 18px;
+}
+
+.results .table tr th:nth-child(10) {
+    width: 9px;
+}
+
+.results .table tr th:last-child {
+    width: 8px;
 }

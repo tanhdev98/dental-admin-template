@@ -16,57 +16,167 @@
     <!-- content -->
     <div id="content">
         <div class="container-fluid">
-
-            <div class="advertising">
-                <div class="advertising-sidebar">
+            <div class="manager-continues content">
+                <div class="sidebar">
                     <ul>
-                        <li><a href="#">이력서 관리</a></li>
+                        <li class="active"><a href="#" class="active">이력서 관리</a></li>
                     </ul>
                 </div>
-                <div class="advertising-content">
-                    <div class="title-advertising">업계추정광고 목록</div>
-                    <div id="advertising-list">
-                        <div class="note">
-                            ** 하기 집계수량은 해당페이지를 조회하는 일자기준(실시간, 2024-09-03 오전 11:57:11)입니다.<br>
-                            ** 리스트에 출력된 내용은 현재 덴탈잡에 노출되는 광고 중 사업장 구분이 일반(기타) 이거나 회원구분이 기타인 회원정보 기준입니다.
+                <div class="manager-continues content-right">
+                    <div class="title title-manager-continues">이력서 관리 리스트</div>
+                    <div id="manager-continues-list">
+                        <table class="table-gray">
+                            <tbody>
+                                <tr>
+                                    <th>
+                                        조건검색
+                                    </th>
+                                    <td>
+                                        <div class="select-box">
+                                            <select name="" id="">
+                                                <option value=""> 메인</option>
+                                                <option value="">메인 TOP 배너</option>
+                                                <option value="">메인 배너</option>
+                                                <option value="">그랜드 배너</option>
+                                                <option value="">그랜드 서브 배너</option>
+                                                <option value="">프리미엄 배너</option>
+                                                <option value="">HOT 인재 배너</option>
+                                            </select>
+                                            <input type="text" placeholder="검색어 입력">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        상태
+                                    </th>
+                                    <td>
+                                        <div class="checkbox-group">
+                                            <div class="item-checkBox">
+                                                <input type="checkbox" class="checkbox" id="checkbox1">
+                                                <span></span>
+                                                <label for="checkbox1">공개</label>
+                                            </div>
+                                            <div class="item-checkBox">
+                                                <input type="checkbox" class="checkbox" id="checkbox2">
+                                                <span></span>
+                                                <label for="checkbox2">비공개</label>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        등록일
+                                    </th>
+                                    <td>
+                                        <div class="flex group-item">
+                                            <div class="group-date">
+                                                <input type="date" class="input-date" value="2024.08.31">
+                                                <span>~</span>
+                                                <input type="date" class="input-date" value="2024.09.03">
+                                            </div>
+                                            <ul class="select-value">
+                                                <li>
+                                                    오늘
+                                                </li>
+                                                <li class="active">
+                                                    일주일
+                                                </li>
+                                                <li>
+                                                    15일
+                                                </li>
+                                                <li>
+                                                    1개월
+                                                </li>
+                                                <li>
+                                                    3개월
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="group-button">
+                            <button class="btn btn-gray-bold">검색</button>
+                            <button class="btn btn-gray-thin">초기화</button>
                         </div>
+                    </div>
+                    <div class="results">
                         <div class="count">
-                            추정광고 수: <span>0,000</span> 건
+                            총 등록 이력서 0,000 건 | 공개중인 이력서: <span>0,000</span>건
                         </div>
                         <table class="table-gray">
                             <thead>
                                 <tr>
-                                    <th style="width: 8%;">아이디</th>
-                                    <th style="width: 6%;">이름</th>
-                                    <th style="width: 8%;">기관명</th>
-                                    <th style="width: 8%;">기관구분</th>
-                                    <th style="width: 8%;">신청기간</th>
-                                    <th style="width: 30%;">회원구분</th>
-                                    <th style="width: 7%;">채용공고 제목</th>
-                                    <th style="width: 7%;">조회수</th>
+                                    <th>아이디(이름)</th>
+                                    <th>이력서 제목</th>
+                                    <th>희망업종</th>
+                                    <th>소지자격증</th>
+                                    <th>희망 근무형태</th>
+                                    <th>희망 근무지역</th>
+                                    <th>희망급여</th>
+                                    <th>경력사항</th>
+                                    <th>상태</th>
+                                    <th>
+                                        수정일<br>
+                                        (등록일)
+                                    </th>
+                                    <th>관리</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>
-                                        aaaaaaa1
+                                        Aaaaa11<br>
+                                        (홍길동)
                                     </td>
-                                    <td>아이디</td>
+                                    <td>열심히 하겠습니다.</td>
+                                    <td>진료실</td>
+                                    <td>치과위생사</td>
+                                    <td>아르바이트</td>
+                                    <td>1차-인천 서구</td>
+                                    <td>협의 후 결정</td>
+                                    <td>신입</td>
+                                    <td>공개</td>
                                     <td>
-                                        기관구분분
+                                        2024.08.31<br>
+                                        (2024.01.01)
                                     </td>
                                     <td>
-                                        기관(구분)
+                                        삭제<br>
+                                        변경
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="10"></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Aaaaa12<br>
+                                        (홍길동)
                                     </td>
                                     <td>
-                                        기관(구분)
+                                        안녕하세요 8년차<br> 치과위생사 이유정입니다.
                                     </td>
-                                    <td>신청상품기관구분분기(관구분분기관구분분)</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>신입</td>
+                                    <td>공개</td>
                                     <td>
-                                        <span class="start-date">2024-09-09</span>~<br>
-                                        <span class="end-date">2024-09-15</span>
+                                        2024.08.31<br>
+                                        (2024.01.01)
                                     </td>
-                                    <td>2024-09-15</td>
+                                    <td>
+                                        삭제<br>
+                                        변경
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
