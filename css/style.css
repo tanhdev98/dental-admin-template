@@ -1936,6 +1936,9 @@ th.require span::after {
     text-align: left;
 }
 
+.list-of-dental-journals table.table-gray tbody tr td:last-child {
+    border-right: none;
+}
 
 .list-of-dental-journals table.table-gray tr th,
 .list-of-dental-journals table.table-gray tr td {
@@ -1976,4 +1979,38 @@ th.require span::after {
     border-radius: 15px;
     background-color: #797EFC;
     color: #fff;
+}
+
+.dental-magazine .bottom-content {
+    margin-top: 10px;
+}
+
+.dental-magazine table th {
+    text-align: left;
+}
+
+.dental-magazine table td {
+    text-align: left;
+}
+
+.dental-magazine table td input {
+    width: 100%;
+}
+
+.dental-magazine table td textarea {
+    border: 1px solid #ddd;
+    width: 100%;
+    padding: 15px;
+    height: 120px;
+}
+
+.button-item a {
+    float: right;
+    padding: 5px 15px;
+    background-color: #ddd;
+    margin-bottom: 10px;
+}
+
+.dental-magazine-content table.table-gray tbody tr td:last-child {
+    border-right: none;
 }
