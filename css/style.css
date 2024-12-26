@@ -1722,6 +1722,7 @@ table.member-infor td input[type="text"] {
     margin-top: 15px;
 }
 
+#manager-banner-content-list th,
 #manager-banner-content-list td {
     text-align: left;
 }
@@ -1931,6 +1932,15 @@ th.require span::after {
     margin-top: 10px;
 }
 
+.manager-banner table.table-gray tbody tr td.img-banner {
+    text-align: left;
+}
+
+.manager-banner table.table-gray tbody tr td img {
+    margin-bottom: 10px;
+}
+
+#list-of-dental-journals-content-list th,
 #list-of-dental-journals-content-list td {
     text-align: left;
 }
@@ -1972,6 +1982,7 @@ th.require span::after {
 .list-of-dental-journals table.table-gray tbody tr td:nth-child(3) {
     text-align: left;
 }
+
 
 .list-of-dental-journals table.table-gray tbody tr td .status {
     padding: 3px 10px;
@@ -2065,6 +2076,7 @@ th.require span::after {
 }
 
 
+#list-faq-content th,
 #list-faq-content td {
     text-align: left;
 }
@@ -2125,4 +2137,57 @@ th.require span::after {
     width: 100%;
     padding: 15px;
     height: 120px;
+}
+
+#email-request-list-content-list td {
+    text-align: left;
+}
+
+.email-request-list table.table-gray thead tr th,
+.email-request-list table.table-gray tbody tr th,
+.email-request-list table.table-gray tbody tr td {
+    border-left: none;
+    border-right: none;
+}
+
+
+.email-request-list table.table-gray thead tr th:first-child {
+    width: 5%;
+}
+
+
+.email-request-list table.table-gray thead tr th:nth-child(2) {
+    width: 5%;
+}
+
+.email-request-list table.table-gray thead tr th:nth-child(3) {
+    width: 10%;
+}
+
+.email-request-list table.table-gray thead tr th:nth-child(4) {
+    width: 8%;
+}
+
+.email-request-list table.table-gray thead tr th:nth-child(5) {
+    width: 12%;
+}
+
+.email-request-list table.table-gray thead tr th:nth-child(6) {
+    width: 38%;
+}
+
+.email-request-list table.table-gray tbody tr td:nth-child(6) {
+    text-align: left;
+}
+
+.email-request-list table.table-gray thead tr th:nth-child(7) {
+    width: 8%;
+}
+
+.email-request-list table.table-gray thead tr th:nth-child(8) {
+    width: 6%;
+}
+
+.email-request-list table.table-gray thead tr th:last-child {
+    width: 8%;
 }
