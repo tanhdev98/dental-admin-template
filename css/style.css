@@ -1125,6 +1125,7 @@ table.member-infor td textarea {
     height: 100px;
 }
 
+table.member-infor td input[type="number"],
 table.member-infor td input[type="text"] {
     border: 1px solid #ddd;
     width: 100%;
@@ -2240,7 +2241,8 @@ th.require span::after {
     padding-right: 20px;
     margin-bottom: 0;
 }
-.customer-center-notice-registration-or-modification.infor-left .title-date-reply{
+
+.customer-center-notice-registration-or-modification.infor-left .title-date-reply {
     margin-top: -12px;
 }
 
