@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/bootstrap/bootstrap.js"></script>
+</head>
+
+<body>
+    <!-- content -->
+    <div id="content">
+        <div class="container-fluid">
+            <div class="cancel-payment content">
+                <div class="sidebar">
+                    <ul>
+                        <li><a href="#">업무관리</a></li>
+                        <li class="active"><a href="#" class="active">덴탈플러스</a></li>
+                        <li><a href="#">자원봉사</a></li>
+                        <li><a href="#">이벤트</a></li>
+                        <li><a href="#">법정의무교육</a></li>
+                        <li><a href="#">문서서식</a></li>
+                        <li><a href="#">덴탈매거진</a></li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                </div>
+                <div class="cancel-payment-content content-right things-to-checkList">
+                    <div class="title title-cancel-payment">이메일 문의 리스트</div>
+                    <div id="cancel-payment-content-list ">
+                        <table class="table-gray">
+                            <tbody>
+                                <tr>
+                                    <th>
+                                        조건 검색
+                                    </th>
+                                    <td>
+                                        <div class="flex-conditional-search">
+                                            <div class="select-box">
+                                                <select name="" id="">
+                                                    <option value="">회원 ID</option>
+                                                    <option value="">이름</option>
+                                                    <option value="">상품명</option>
+                                                    <option value="">치과명</option>
+                                                </select>
+                                                <input type="text" placeholder="검색어 입력">
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        등록일
+                                    </th>
+                                    <td colspan="3">
+                                        <div class="flex group-item">
+                                            <div class="select-box">
+                                                <select name="" id="">
+                                                    <option value="">발급일</option>
+                                                    <option value="">유효기간</option>
+                                                </select>
+                                                <input type="text" placeholder="검색어 입력">
+                                            </div>
+                                            <div class="group-date">
+                                                <input type="date" class="input-date" value="2024.08.31">
+                                                <span>~</span>
+                                                <input type="date" class="input-date" value="2024.09.03">
+                                            </div>
+                                            <ul class="select-value">
+                                                <li>
+                                                    오늘
+                                                </li>
+                                                <li class="active">
+                                                    일주일
+                                                </li>
+                                                <li>
+                                                    15일
+                                                </li>
+                                                <li>
+                                                    1개월
+                                                </li>
+                                                <li>
+                                                    3개월
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="group-button center">
+                            <button class="btn btn-gray-bold">검색</button>
+                            <button class="btn btn-gray-thin">초기화</button>
+                        </div>
+                    </div>
+                    <div class="results">
+                        <div class="flex-top-item">
+                            <div class="count-item">총 <span class="total">000</span>건</div>
+                        </div>
+                        <table class="table-gray">
+                            <thead>
+                                <tr>
+                                    <th>취소일</th>
+                                    <th>치과명</th>
+                                    <th>회원 ID(이름)</th>
+                                    <th>상품명</th>
+                                    <th>결제금액</th>
+                                    <th>결제수단</th>
+                                    <th>취소사유</th>
+                                    <th>
+                                        취소 관리자
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2024.08.31</td>
+                                    <td>플랜치과 일산</td>
+                                    <td>Plandent8(홍길동)</td>
+                                    <td>덴탈잡그랜드배너(채용광고포함),그랜드배너고정옵션</td>
+                                    <td>460,000</td>
+                                    <td>카드결제</td>
+                                    <td>관리자기 작성한 취소사유 표시</td>
+                                    <td>홍길동</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="wrap-pagination">
+                            <div class="pagination-arrow icon icon-prev disable"></div>
+                            <ul class="pagination-number">
+                                <li class="active"><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                            </ul>
+                            <div class="pagination-arrow icon icon-next"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end content -->
+    <!-- content -->
+    <div id="content">
+        <div class="container-fluid">
+
+            </di>
+
+        </div>
+    </div>
+    <!-- end content -->
+</body>
+
+</html>
