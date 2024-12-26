@@ -107,7 +107,6 @@
     display: flex;
     gap: 5px;
     align-items: center;
-    flex-direction: column;
     align-items: flex-start;
     margin-left: 30px;
 }
@@ -635,7 +634,7 @@
     width: 100%;
 }
 
-.group-profile-button-top a {
+.group-profile-button-top span {
     font-size: 15px;
     font-weight: 300;
     color: #999;
@@ -648,12 +647,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.group-profile-button-top a:hover {
-    border-color: #0068b7;
-    color: #0068b7;
-    font-weight: 500;
 }
 
 .group-profile-button-bottom {
@@ -1428,14 +1421,14 @@ table.member-infor td input[type="text"] {
     line-height: 20px;
 }
 
-.count {
+.profile-content-count .count {
     font-weight: 600;
     margin-bottom: 20px;
     padding: 10px 15px;
     background-color: #ddd;
 }
 
-.count span {
+.profile-content-count .count span {
     color: #C00000;
 }
 
@@ -1604,6 +1597,7 @@ table.member-infor td input[type="text"] {
 }
 
 .content .content-right table .select-box select {
+    width: 150px;
     border: 1px solid #ddd;
     padding: 6px 15px;
 }
@@ -1723,6 +1717,7 @@ table.member-infor td input[type="text"] {
     margin-top: 15px;
 }
 
+#manager-banner-content-list th,
 #manager-banner-content-list td {
     text-align: left;
 }
@@ -1932,6 +1927,15 @@ th.require span::after {
     margin-top: 10px;
 }
 
+.manager-banner table.table-gray tbody tr td.img-banner {
+    text-align: left;
+}
+
+.manager-banner table.table-gray tbody tr td img {
+    margin-bottom: 10px;
+}
+
+#list-of-dental-journals-content-list th,
 #list-of-dental-journals-content-list td {
     text-align: left;
 }
@@ -1973,6 +1977,7 @@ th.require span::after {
 .list-of-dental-journals table.table-gray tbody tr td:nth-child(3) {
     text-align: left;
 }
+
 
 .list-of-dental-journals table.table-gray tbody tr td .status {
     padding: 3px 10px;
@@ -2066,6 +2071,7 @@ th.require span::after {
 }
 
 
+#list-faq-content th,
 #list-faq-content td {
     text-align: left;
 }
@@ -2100,4 +2106,672 @@ th.require span::after {
 
 .list-faq table.table-gray tbody tr td:nth-child(2) {
     text-align: left;
+}
+
+#add-faq-content td {
+    text-align: left;
+}
+
+#add-faq-content td select {
+    width: 250px;
+}
+
+.add-faq table.table-gray tbody tr th,
+.add-faq table.table-gray tbody tr td {
+    border-left: none;
+    border-right: none;
+    text-align: left;
+}
+
+.add-faq table.table-gray tbody tr th {
+    width: 200px;
+}
+
+.add-faq table.table-gray tbody tr td textarea {
+    border: 1px solid #ddd;
+    width: 100%;
+    padding: 15px;
+    height: 120px;
+}
+
+#email-request-list-content-list td {
+    text-align: left;
+}
+
+.email-request-list table.table-gray thead tr th,
+.email-request-list table.table-gray tbody tr th,
+.email-request-list table.table-gray tbody tr td {
+    border-left: none;
+    border-right: none;
+}
+
+
+.email-request-list table.table-gray thead tr th:first-child {
+    width: 5%;
+}
+
+
+.email-request-list table.table-gray thead tr th:nth-child(2) {
+    width: 5%;
+}
+
+.email-request-list table.table-gray thead tr th:nth-child(3) {
+    width: 10%;
+}
+
+.email-request-list table.table-gray thead tr th:nth-child(4) {
+    width: 8%;
+}
+
+.email-request-list table.table-gray thead tr th:nth-child(5) {
+    width: 12%;
+}
+
+.email-request-list table.table-gray thead tr th:nth-child(6) {
+    width: 38%;
+}
+
+.email-request-list table.table-gray tbody tr td:nth-child(6) {
+    text-align: left;
+}
+
+.email-request-list table.table-gray thead tr th:nth-child(7) {
+    width: 8%;
+}
+
+.email-request-list table.table-gray thead tr th:nth-child(8) {
+    width: 6%;
+}
+
+.email-request-list table.table-gray thead tr th:last-child {
+    width: 8%;
+}
+
+.email-request-short-list table.table-gray thead tr th,
+.email-request-short-list table.table-gray tbody tr th,
+.email-request-short-list table.table-gray tbody tr td {
+    border-left: none;
+    border-right: none;
+}
+
+
+.email-request-short-list table.table-gray thead tr th:first-child {
+    width: 10%;
+}
+
+
+.email-request-short-list table.table-gray thead tr th:nth-child(2) {
+    width: 10%;
+}
+
+.email-request-short-list table.table-gray thead tr th:nth-child(3) {
+    width: 60%;
+}
+
+.email-request-short-list table.table-gray tbody tr td:nth-child(3) {
+    text-align: left;
+}
+
+.email-request-short-list table.table-gray thead tr th:nth-child(4) {
+    width: 10%;
+}
+
+.email-request-short-list table.table-gray thead tr th:last-child {
+    width: 10%;
+}
+
+/* START  MAGAF020 */
+.list-of-dental-journals-content.content-right.customer-center-notice .flex {
+    display: flex;
+}
+
+.customer-center-notice-registration-or-modification.infor-left {
+    width: 15%;
+    height: 740px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 15px;
+    padding-top: 20px;
+}
+
+.customer-center-notice-registration-or-modification.infor-left .title {
+    padding-right: 20px;
+    margin-bottom: 0;
+}
+
+.customer-center-notice-registration-or-modification.infor-right {
+    padding: 15px 15px 0 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+    width: 80%;
+}
+
+.customer-center-notice .flex-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.customer-center-notice .input-title {
+    border: 1px solid #ddd;
+    width: 100%;
+    padding-left: 12px;
+    height: 30px;
+    font-size: 14px;
+    color: #666666;
+}
+
+.customer-center-notice .item-checkBox {
+    height: 30px;
+}
+
+.customer-center-notice .select-basic {
+    width: 100px;
+}
+
+.customer-center-notice #textarea-detail {
+    border: 1px solid #ddd;
+    width: 100%;
+    height: 500px;
+    max-height: 100%;
+    padding: 7px 12px 12px 12px;
+}
+
+.customer-center-notice .bottom-content {
+    border-top: none;
+}
+
+/* END MAGAF020 */
+
+/* START MAGAH020 */
+.email-inquiry .customer-center-notice-registration-or-modification.infor-right {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.email-inquiry .content {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.email-inquiry .content.content-job {
+    width: 390px;
+    line-height: 1.2;
+    margin-bottom: 5px;
+}
+
+.email-inquiry .title-content-job,
+.email-inquiry .content.content-job {
+    margin-top: 15px;
+}
+
+.email-inquiry .border-bottom {
+    background-color: #000;
+    height: 2px;
+    width: 100%;
+}
+
+.email-inquiry .customer-center-notice-registration-or-modification.infor-right {
+    width: 100%;
+}
+
+.email-inquiry .mgt-5 {
+    margin-top: -5px;
+}
+
+.email-inquiry .textarea {
+    height: 243px;
+    max-height: 243px;
+    width: calc(100% - 20px);
+    margin-left: 20px;
+    border: 1px solid #ddd;
+}
+
+.email-inquiry .star {
+    color: red;
+    margin-bottom: -8px;
+}
+
+.email-inquiry .title-textarea {
+    height: 237px;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    margin-top: -5px;
+}
+
+/* END MAGAH020 */
+
+/* START MAIAA010 */
+.things-to-checkList select {
+    padding: 4px 15px !important;
+    width: 150px;
+}
+
+.things-to-checkList .select-box {
+    display: flex;
+    gap: 10px;
+}
+
+.things-to-checkList .select-box input {
+    width: 400px;
+}
+
+.things-to-checkList .flex-conditional-search {
+    display: flex;
+    gap: 200px;
+}
+
+.things-to-checkList .group-item.flex {
+    display: flex;
+    gap: 10px;
+}
+
+.things-to-checkList .whether-to-use {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.things-to-checkList .whether-to-use .flex-checkbox {
+    display: flex;
+    gap: 15px;
+}
+
+.things-to-checkList .whether-to-use .title-whether-to-use {
+    background-color: #f9f9f9;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: 400;
+    line-height: 20px;
+    font-size: 14px;
+    width: 110px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-left: -120px;
+}
+
+.things-to-checkList .results .flex-top-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.things-to-checkList .results .flex-top-item {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.things-to-checkList .results .group-button {
+    display: flex;
+    gap: 10px;
+}
+
+.things-to-checkList .results .group-button .btn {
+    width: 200px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.email-request-list .things-to-checkList table.table-gray thead tr th:first-child {
+    width: 5%;
+    /* Cột 1 */
+}
+
+.email-request-list .things-to-checkList table.table-gray thead tr th:nth-child(2) {
+    width: 6%;
+    /* Cột 2 */
+}
+
+.email-request-list .things-to-checkList table.table-gray thead tr th:nth-child(3) {
+    width: 5%;
+    /* Cột 3 */
+}
+
+.email-request-list .things-to-checkList table.table-gray thead tr th:nth-child(4) {
+    width: 6%;
+    /* Cột 4 */
+}
+
+.email-request-list .things-to-checkList table.table-gray thead tr th:nth-child(5) {
+    width: 8%;
+    /* Cột 5 */
+}
+
+.email-request-list .things-to-checkList table.table-gray thead tr th:nth-child(6) {
+    width: 5%;
+    /* Cột 6 */
+}
+
+.email-request-list .things-to-checkList table.table-gray thead tr th:nth-child(7) {
+    width: 18%;
+    /* Cột 7 */
+}
+
+.email-request-list .things-to-checkList table.table-gray thead tr th:nth-child(8) {
+    width: 5%;
+    /* Cột 8 */
+}
+
+.email-request-list .things-to-checkList table.table-gray thead tr th:nth-child(9) {
+    width: 10%;
+    /* Cột 9 */
+}
+
+.email-request-list .things-to-checkList table.table-gray thead tr th:nth-child(10) {
+    width: 10%;
+    /* Cột 10 */
+}
+
+.email-request-list .things-to-checkList table.table-gray thead tr th:nth-child(11) {
+    width: 7%;
+    /* Cột 11 */
+}
+
+.email-request-list .things-to-checkList table.table-gray thead tr th:last-child {
+    width: 15%;
+    /* Cột 12 */
+}
+
+/* td  */
+.email-request-list .things-to-checkList table.table-gray tbody tr td:nth-child(6) {
+    text-align: center;
+}
+
+.email-request-list .things-to-checkList table.table-gray tbody tr td:nth-child(7),
+.email-request-list .things-to-checkList table.table-gray tbody tr td:last-child {
+    text-align: left;
+}
+
+.email-request-list .things-to-checkList table.table-gray tbody tr td .redText {
+    color: red;
+}
+
+.email-request-list .things-to-checkList table.table-gray tbody tr td .blueText {
+    color: blue;
+}
+
+/* END MAIAA010 */
+
+/* START MAIAA020 */
+.form-group-tickets {
+    display: flex;
+}
+
+.form-group-tickets .form-group-left {
+    width: 20%;
+}
+
+.form-group-tickets .form-group-right {
+    width: 80%;
+}
+
+.form-group-tickets .title-form {
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    color: #333333;
+    font-size: 14px;
+}
+
+.form-group-tickets .form-group-right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.form-group-tickets .form-group-right input {
+    width: 400px;
+    height: 30px;
+    border: 1px solid #ddd;
+    padding-left: 12px;
+}
+
+.form-group-tickets .select-box select {
+    border: 1px solid #ddd;
+    padding-left: 12px;
+    height: 30px;
+    width: 200px;
+}
+
+[data-popup="issuance-individual-tickets"] .popup-button,
+[data-popup="issuance-of-bulk-tickets"] .popup-button {
+    width: 120px !important;
+    border-radius: 3px;
+}
+
+.form-group-tickets .title-form-comments {
+    height: 210px;
+}
+
+.form-group-tickets #content-form-comments {
+    border: 1px solid #ddd;
+    height: 200px;
+    max-height: 200px;
+    width: 100%;
+    padding: 12px;
+}
+
+/* END MAIAA020 */
+
+/* START MAIAA030 */
+#popup .form-group-bulk-tickets {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+#popup .form-group-bulk-tickets .popup-button.btn-download-excel {
+    width: 180px !important;
+    text-align: center;
+    margin: 0;
+}
+
+#popup .form-group-bulk-tickets table.table-gray {
+    margin-top: 10px;
+}
+
+#popup .form-group-bulk-tickets table.table-gray tbody tr td:last-child {
+    border-right: none;
+}
+
+#popup .form-group-bulk-tickets table.table-gray tbody tr td {
+    border-left: none;
+    border-top: 1px solid #ddd;
+}
+
+#popup .form-group-bulk-tickets table.table-gray .col-1 {
+    width: 20%;
+    background-color: #f9f9f9;
+    border-right: 1px solid #ddd;
+}
+
+#popup .form-group-bulk-tickets table.table-gray .flex {
+    display: flex;
+    gap: 10px;
+}
+
+#popup .form-group-bulk-tickets table.table-gray td {
+    height: 30px;
+}
+
+#popup .form-group-bulk-tickets table.table-gray .flex input {
+    border: 1px solid #ddd;
+    padding: 8px;
+    border-radius: 3px;
+    width: 60%;
+}
+
+#popup .form-group-bulk-tickets table.table-gray .flex .popup-button {
+    width: max-content;
+    padding: 5px;
+    margin: 0;
+}
+
+#popup .form-group-bulk-tickets .table-child {
+    display: none;
+}
+
+#popup .form-group-bulk-tickets .table-child.active {
+    display: block;
+}
+
+#popup .form-group-bulk-tickets .table-child tbody tr td {
+    border: 1px solid #ddd !important;
+}
+
+#popup .form-group-bulk-tickets .title-writing-guide {
+    margin: 20px 0;
+    text-decoration: underline;
+}
+
+#popup .form-group-bulk-tickets .writing-guide {
+    margin: 10px 0;
+}
+
+#popup .form-group-bulk-tickets .how-to-create-file {
+    width: 100%;
+}
+
+#popup .form-group-bulk-tickets .title-create-file {
+    width: 100%;
+    background-color: #f9f9f9;
+    height: 35px;
+    display: flex;
+    align-items: center;
+}
+
+#popup .form-group-bulk-tickets .title-create-file p {
+    margin-left: 10px;
+}
+
+#popup .form-group-bulk-tickets .list-create-file-guide {
+    margin-top: 15px;
+}
+
+#popup .form-group-bulk-tickets .list-create-file-guide p {
+    background-color: yellow;
+    width: max-content;
+}
+
+#popup .form-group-bulk-tickets .list-create-file-guide li {
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.redText {
+    color: red;
+}
+
+#popup .form-group-bulk-tickets .table-create-file-guide {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    border: 1px solid #ddd !important;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#popup .form-group-bulk-tickets .table-create-file-guide .col-main {
+    width: 60%;
+    padding: 5px;
+}
+
+#popup .form-group-bulk-tickets .table-create-file-guide .col-small-70 {
+    width: 70%;
+}
+
+#popup .form-group-bulk-tickets .table-create-file-guide .col-small-30 {
+    width: 30%;
+}
+
+#popup .form-group-bulk-tickets .table-create-file-guide tr th {
+    border: 1px solid #ddd !important;
+}
+
+#popup .form-group-bulk-tickets .table-create-file-guide td {
+    border: 1px solid #ddd !important;
+    padding: 5px;
+}
+
+#popup .form-group-bulk-tickets .table-create-file-guide td p {
+    margin: 5px 0;
+}
+
+#popup[data-popup="issuance-of-bulk-tickets"] .popup-content {
+    height: auto;
+    max-height: 90%;
+    overflow-y: scroll;
+}
+
+.h-129 {
+    height: 129px;
+}
+
+/* END MAIAA030 */
+
+
+#cancel-payment-content-list td {
+    text-align: left;
+}
+
+.cancel-payment table.table-gray thead tr th,
+.cancel-payment table.table-gray tbody tr th,
+.cancel-payment table.table-gray tbody tr td {
+    border-left: none;
+    border-right: none;
+}
+
+
+.cancel-payment table.table-gray thead tr th:first-child {
+    width: 10%;
+}
+
+
+.cancel-payment table.table-gray thead tr th:nth-child(2) {
+    width: 12%;
+}
+
+.cancel-payment table.table-gray thead tr th:nth-child(3) {
+    width: 12%;
+}
+
+.cancel-payment table.table-gray thead tr th:nth-child(4) {
+    width: 25%;
+}
+
+.cancel-payment table.table-gray tbody tr td:nth-child(4) {
+    text-align: left;
+}
+
+.cancel-payment table.table-gray thead tr th:nth-child(5) {
+    width: 8%;
+}
+
+.cancel-payment table.table-gray thead tr th:nth-child(6) {
+    width: 8%;
+}
+
+.cancel-payment table.table-gray thead tr th:nth-child(7) {
+    width: 15%;
+}
+
+.cancel-payment table.table-gray thead tr th:last-child {
+    width: 10%;
 }
