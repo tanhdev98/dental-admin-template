@@ -634,7 +634,7 @@
     width: 100%;
 }
 
-.group-profile-button-top a {
+.group-profile-button-top span {
     font-size: 15px;
     font-weight: 300;
     color: #999;
@@ -647,12 +647,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.group-profile-button-top a:hover {
-    border-color: #0068b7;
-    color: #0068b7;
-    font-weight: 500;
 }
 
 .group-profile-button-bottom {
@@ -1603,6 +1597,7 @@ table.member-infor td input[type="text"] {
 }
 
 .content .content-right table .select-box select {
+    width: 150px;
     border: 1px solid #ddd;
     padding: 6px 15px;
 }

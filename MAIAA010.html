@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/bootstrap/bootstrap.js"></script>
+</head>
+
+<body>
+    <!-- content -->
+    <div id="content">
+        <div class="container-fluid">
+            <div class="email-request-list content">
+                <div class="sidebar">
+                    <ul>
+                        <li><a href="#">업무관리</a></li>
+                        <li class="active"><a href="#" class="active">덴탈플러스</a></li>
+                        <li><a href="#">자원봉사</a></li>
+                        <li><a href="#">이벤트</a></li>
+                        <li><a href="#">법정의무교육</a></li>
+                        <li><a href="#">문서서식</a></li>
+                        <li><a href="#">덴탈매거진</a></li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                </div>
+                <div class="email-request-list-content content-right things-to-checkList">
+                    <div class="title title-email-request-list">이메일 문의 리스트</div>
+                    <div id="email-request-list-content-list ">
+                        <table class="table-gray">
+                            <tbody>
+                                <tr>
+                                    <th>
+                                        조건 검색
+                                    </th>
+                                    <td>
+                                        <div class="flex-conditional-search">
+                                            <div class="select-box">
+                                                <select name="" id="">
+                                                    <option value="">덴탈 비타민 ID</option>
+                                                    <option value="">Dvmall ID</option>
+                                                    <option value="">이름</option>
+                                                    <option value="">쿠폰번호</option>
+                                                    <option value="">결제 상품명</option>
+                                                </select>
+                                                <input type="text" placeholder="검색어 입력">
+                                            </div>
+                                            <div class="whether-to-use">
+                                                <div class="title-whether-to-use">사용여부</div>
+                                                <div class="flex-checkbox">
+                                                    <div class="item-checkBox">
+                                                        <input type="checkbox" class="checkbox" id="checkbox1">
+                                                        <span></span>
+                                                        <label for="checkbox1">전체</label>
+                                                    </div>
+                                                    <div class="item-checkBox">
+                                                        <input type="checkbox" class="checkbox" id="checkbox2">
+                                                        <span></span>
+                                                        <label for="checkbox2">사용</label>
+                                                    </div>
+                                                    <div class="item-checkBox">
+                                                        <input type="checkbox" class="checkbox" id="checkbox3">
+                                                        <span></span>
+                                                        <label for="checkbox3">미사용</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        등록일
+                                    </th>
+                                    <td colspan="3">
+                                        <div class="flex group-item">
+                                            <div class="group-date">
+                                                <input type="date" class="input-date" value="2024.08.31">
+                                                <span>~</span>
+                                                <input type="date" class="input-date" value="2024.09.03">
+                                            </div>
+                                            <ul class="select-value">
+                                                <li>
+                                                    오늘
+                                                </li>
+                                                <li class="active">
+                                                    일주일
+                                                </li>
+                                                <li>
+                                                    15일
+                                                </li>
+                                                <li>
+                                                    1개월
+                                                </li>
+                                                <li>
+                                                    3개월
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="group-button center">
+                            <button class="btn btn-gray-bold">검색</button>
+                            <button class="btn btn-gray-thin">초기화</button>
+                        </div>
+                    </div>
+                    <div class="results">
+                        <div class="flex-top-item">
+                            <div class="count-item">총 <span class="total">000</span>건</div>
+                            <div class="group-button">
+                                <button class="btn btn-gray-bold">개별 이용권 발급</button>
+                                <button class="btn btn-gray-bold">일괄 이용권 발급</button>
+                            </div>
+                        </div>
+                        <table class="table-gray">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>덴탈비타민 ID</th>
+                                    <th>이름</th>
+                                    <th>덴탈이마트 ID</th>
+                                    <th>이용권번호</th>
+                                    <th>사용<br>사이트</th>
+                                    <th>상품이름</th>
+                                    <th>
+                                        판매가격<br>
+                                        결제금액
+                                    </th>
+                                    <th>
+                                        사용/환불여부<br>
+                                        사용/환불일자
+                                    </th>
+                                    <th>
+                                        구매일자<br>
+                                        유효일자
+                                    </th>
+                                    <th>비고</th>
+                                    <th>Comments</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>199785</td>
+                                    <td>babv2811</td>
+                                    <td>김성호</td>
+                                    <td>beby2841</td>
+                                    <td>2106090116</td>
+                                    <td></td>
+                                    <td>예방교육예방교육예방교육</td>
+                                    <td>
+                                        <p>60,000</p>
+                                        <p class="blueText">45,000</p>
+                                    </td>
+                                    <td>
+                                        <p>미사옴</p>
+                                        <p class="redText">육교</p>
+                                        <p class="redText">(42724-09-09)</p>
+                                    </td>
+                                    <td>
+                                        <p>2024-09-09</p>
+                                        <p>2024-09-09</p>
+                                    </td>
+                                    <td>예방교육예</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>199785</td>
+                                    <td>babv2811</td>
+                                    <td>김성호</td>
+                                    <td>beby2841</td>
+                                    <td>2106090116</td>
+                                    <td>김성호</td>
+                                    <td>예방교육예방교육예방교육</td>
+                                    <td>
+                                        <p>60,000</p>
+                                        <p class="blueText">0</p>
+                                    </td>
+                                    <td>
+                                        <p class="blueText">육교</p>
+                                        <p class="blueText">(42724-09-09)</p>
+                                    </td>
+                                    <td>
+                                        <p>2024-09-09</p>
+                                        <p>2024-09-09</p>
+                                    </td>
+                                    <td>예방교육예</td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="wrap-pagination">
+                            <div class="pagination-arrow icon icon-prev disable"></div>
+                            <ul class="pagination-number">
+                                <li class="active"><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                            </ul>
+                            <div class="pagination-arrow icon icon-next"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end content -->
+    <!-- content -->
+    <div id="content">
+        <div class="container-fluid">
+
+            </di>
+
+        </div>
+    </div>
+    <!-- end content -->
+</body>
+
+</html>

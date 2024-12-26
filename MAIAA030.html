@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/bootstrap/bootstrap.js"></script>
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="container">
+            <img class="img-logo" src="./images/logo.png" alt="DentalJob Logo">
+            <ul class="auth-navigate">
+                <li><a href="#">덴탈잡 홈페이지</a></li>
+                <li>|</li>
+                <li><a href="#">김관리 님</a></li>
+                <li><button class="btn btn-secondary btn-rounded">로그아웃</button></li>
+            </ul>
+        </div>
+    </header>
+    <!-- end header -->
+    <!-- nav -->
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#">회원 관리</a></li>
+                <li><a href="#">채용 관리</a></li>
+                <li><a href="#">이력서 관리</a></li>
+                <li><a href="#">광고상품 관리 </a></li>
+                <li><a href="#">Biz보드 관리</a></li>
+                <li><a href="#">게시물 관리</a></li>
+                <li><a href="#">결제 관리</a></li>
+                <li><a href="#">통계 관리</a></li>
+                <li><a href="#">마케팅 관리</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- end nav -->
+    <!-- content -->
+    <div id="content">
+        <div class="container">
+            <div id="popup" data-popup="issuance-of-bulk-tickets">
+                <div class="overlay"></div>
+                <div class="popup-content">
+                    <div class="popup-close"></div>
+                    <div class="popup-title">일괄 이용권 발급</div>
+                    <div class="form-group-bulk-tickets">
+                        <div class="popup-button btn-download-excel">샘플파일 다운로드</div>
+                        <table class="table-gray">
+                            <tbody>
+                                <tr>
+                                    <td class="col-1">엑셀파일 선택</td>
+                                    <td>
+                                        <div class="flex">
+                                            <input placeholder="파일 선택" id="select-file">
+                                            <button class="popup-button" for="select-file">파일 첨부</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="h-129">
+                                    <td class="col-1">등록 결과</td>
+                                    <td>
+                                        <table class="table-child active">
+                                            <tr>
+                                                <td>비타민아이디</td>
+                                                <td>상품코드</td>
+                                                <td>구매일자</td>
+                                                <td>사은품구분</td>
+                                                <td>코멘트</td>
+                                                <td>등록순번</td>
+                                                <td>등록결과</td>
+                                            </tr>
+                                            <tr>
+                                                <td>ehcheng2</td>
+                                                <td>001</td>
+                                                <td>2019-07-15</td>
+                                                <td>사은품</td>
+                                                <td></td>
+                                                <td>128430</td>
+                                                <td>등록완료</td>
+                                            </tr>
+                                            <tr>
+                                                <td>ehcheng2</td>
+                                                <td>002</td>
+                                                <td>2019-07-15</td>
+                                                <td>멤버십 가입사은품</td>
+                                                <td></td>
+                                                <td>128431</td>
+                                                <td>등록완료</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="title-writing-guide">작성 가이드 보기</div>
+                        <div class="how-to-create-file">
+                            <div class="title-create-file">
+                                <p>[ 파일 작성방법 ]</p>
+                            </div>
+                            <ul class="list-create-file-guide">
+                                <p>1. 등록파일형식 :</p>
+                                <li>1) 첨부된 엑셀 파일 참고 (샘플파일)</li>
+                            </ul>
+                            <ul class="list-create-file-guide">
+                                <p>2. 칼럼명 순서 :</p>
+                                <li>1) 머리글-> 비타민아이디, 상품코드, 구매일자, 사은품구분, 코멘트</li>
+                                <li class="redText">2) 상품코드 : 엑셀파일에서 텍스트 형식으로 001, 002 와 같이 등록되어야 함</li>
+                                <li>3) 구매일자 : 2019-07-01 과 같이 - 으로 구분</li>
+                            </ul>
+                            <ul class="list-create-file-guide">
+                                <p>3. 시트개수제한 :</p>
+                                <li>1) Sheet1 하나만 있어야 함</li>
+                            </ul>
+                            <ul class="list-create-file-guide">
+                                <p>4. 행개수제한 :</p>
+                                <li>1) 머리클 제외 199행까지만 가능 (머리글 포함 200행, 머리글 반드시 포함)</li>
+                            </ul>
+                            <ul class="list-create-file-guide">
+                                <p>5. 주의사항 :</p>
+                                <li>1) 신청자 일괄등록이 완료된 후에는 일괄삭제는 할 수 없으며, 정보수정 및 삭제시 개별 상세정보를 이용해야 함</li>
+                            </ul>
+                            <ul class="list-create-file-guide">
+                                <p>6. 등록코드참조 :</p>
+                            </ul>
+                            <table class="table-create-file-guide">
+                                <tr>
+                                    <th colspan="7" class="col-main">상품코드</th>
+                                    <th colspan="3">사은품구분</th>
+                                </tr>
+                                <tr>
+                                    <!-- Cột nhỏ bên trong Cột Chính 1 -->
+                                    <td colspan="5" class="col-small-70">명칭</td>
+                                    <td colspan="2" class="col-small-30">코드</td>
+                                    <!-- Cột nhỏ bên trong Cột Chính 2 -->
+                                    <td colspan="2" class="col-small-70">명칭</td>
+                                    <td colspan="1" class="col-small-30">코드</td>
+                                </tr>
+                                <tr>
+                                    <!-- Dữ liệu trong các cột nhỏ -->
+                                    <td colspan="5">
+                                        <p>덴탈잡채용광고</p>
+                                        <p>덴탈잡그랜드배너 (채용광고포함)</p>
+                                        <p>덴탈잡프리미엄배너(채용광고포함)</p>
+                                        <p>덴탈잡핫리쿠르트(채용광고포함)</p>
+                                        <p>하이라이트강조</p>
+                                        <p>하이라이트강조2</p>
+                                        <p>컬러강조</p>
+                                        <p>컬러강조2</p>
+                                        <p>아이콘강조(이용권)</p>
+                                        <p>아이콘강조2(이용권)</p>
+                                        <p>핫리쿠르트배너고정옵션</p>
+                                        <p>고정옵션</p>
+                                        <p>그랜드배너고정옵션</p>
+                                        <p>프리미엄배너고정옵션</p>
+                                    </td>
+                                    <td colspan="2">
+                                        <p>001</p>
+                                        <p>002</p>
+                                        <p>003</p>
+                                        <p>008</p>
+                                        <p>1000</p>
+                                        <p>1500</p>
+                                        <p>2000</p>
+                                        <p>2500</p>
+                                        <p>3000</p>
+                                        <p>3500</p>
+                                        <p>4000</p>
+                                        <p>5000</p>
+                                        <p>6000</p>
+                                        <p>7000</p>
+                                    </td>
+                                    <td colspan="2">
+                                        <p>없음</p>
+                                        <p>사은품 </p>
+                                        <p>멤버십증정</p>
+                                    </td>
+                                    <td colspan="1">
+                                        <p>공란</p>
+                                        <p>Y1</p>
+                                        <p>Z1</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <button class="popup-button">이용권 발급</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end content -->
+</body>
+
+</html>
