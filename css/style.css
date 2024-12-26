@@ -2232,13 +2232,16 @@ th.require span::after {
     display: flex;
     flex-direction: column;
     align-items: end;
-    gap: 15px;
+    gap: 27px;
     padding-top: 20px;
 }
 
 .customer-center-notice-registration-or-modification.infor-left .title {
     padding-right: 20px;
     margin-bottom: 0;
+}
+.customer-center-notice-registration-or-modification.infor-left .title-date-reply{
+    margin-top: -12px;
 }
 
 .customer-center-notice-registration-or-modification.infor-right {
