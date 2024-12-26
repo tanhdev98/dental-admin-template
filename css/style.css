@@ -107,7 +107,6 @@
     display: flex;
     gap: 5px;
     align-items: center;
-    flex-direction: column;
     align-items: flex-start;
     margin-left: 30px;
 }
@@ -1428,14 +1427,14 @@ table.member-infor td input[type="text"] {
     line-height: 20px;
 }
 
-.count {
+.profile-content-count .count {
     font-weight: 600;
     margin-bottom: 20px;
     padding: 10px 15px;
     background-color: #ddd;
 }
 
-.count span {
+.profile-content-count .count span {
     color: #C00000;
 }
 
@@ -2100,4 +2099,30 @@ th.require span::after {
 
 .list-faq table.table-gray tbody tr td:nth-child(2) {
     text-align: left;
+}
+
+#add-faq-content td {
+    text-align: left;
+}
+
+#add-faq-content td select {
+    width: 250px;
+}
+
+.add-faq table.table-gray tbody tr th,
+.add-faq table.table-gray tbody tr td {
+    border-left: none;
+    border-right: none;
+    text-align: left;
+}
+
+.add-faq table.table-gray tbody tr th {
+    width: 200px;
+}
+
+.add-faq table.table-gray tbody tr td textarea {
+    border: 1px solid #ddd;
+    width: 100%;
+    padding: 15px;
+    height: 120px;
 }
