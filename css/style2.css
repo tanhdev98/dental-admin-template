@@ -2026,11 +2026,14 @@ th.require span::after {
   width: 20%;
   height: 100%;
   background-color: #f9f9f9;
-  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: end;
   gap: 15px;
+  padding-top: 20px;
+}
+.customer-center-notice-registration-or-modification.infor-left .title {
+  padding-right: 20px;
 }
 .customer-center-notice-registration-or-modification.infor-right {
   padding: 15px 15px 0 15px;
@@ -2038,30 +2041,57 @@ th.require span::after {
   flex-direction: column;
   align-items: start;
   gap: 15px;
+  width: 80%;
 }
 .customer-center-notice .flex-row {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-.customer-center-notice .input-title{
-    border: 1px solid #ddd;
-    width: 100%;
-    padding-left: 12px;
-    height: 30px;
-    font-size: 14px;
-    color: #666666;
+.customer-center-notice .input-title {
+  border: 1px solid #ddd;
+  width: 100%;
+  padding-left: 12px;
+  height: 30px;
+  font-size: 14px;
+  color: #666666;
 }
-.customer-center-notice .item-checkBox{
+.customer-center-notice .item-checkBox {
   height: 30px;
 }
 .customer-center-notice .select-basic {
   width: 100px;
 }
-.customer-center-notice #textarea-detail{
+.customer-center-notice #textarea-detail {
   border: 1px solid #ddd;
   width: 100%;
   height: 500px;
   padding: 7px 12px 12px 12px;
 }
 /* END MAGAF020 */
+
+/* START MAGAH020 */
+.email-inquiry .content {
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+.email-inquiry .content.content-job {
+  width: 390px;
+  line-height: 1.2;
+  margin-bottom: 5px;
+}
+.email-inquiry .title-content-job,
+.email-inquiry .content.content-job {
+  margin-top: 15px;
+}
+.email-inquiry .border-bottom {
+  border: 1px solid #000;
+  height: 1px;
+  width: 100%;
+}
+.email-inquiry
+  .customer-center-notice-registration-or-modification.infor-right {
+  width: 100%;
+}
+/* END MAGAH020 */
