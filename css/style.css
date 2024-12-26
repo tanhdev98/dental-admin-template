@@ -2191,3 +2191,36 @@ th.require span::after {
 .email-request-list table.table-gray thead tr th:last-child {
     width: 8%;
 }
+
+.email-request-short-list table.table-gray thead tr th,
+.email-request-short-list table.table-gray tbody tr th,
+.email-request-short-list table.table-gray tbody tr td {
+    border-left: none;
+    border-right: none;
+}
+
+
+.email-request-short-list table.table-gray thead tr th:first-child {
+    width: 10%;
+}
+
+
+.email-request-short-list table.table-gray thead tr th:nth-child(2) {
+    width: 10%;
+}
+
+.email-request-short-list table.table-gray thead tr th:nth-child(3) {
+    width: 60%;
+}
+
+.email-request-short-list table.table-gray tbody tr td:nth-child(3) {
+    text-align: left;
+}
+
+.email-request-short-list table.table-gray thead tr th:nth-child(4) {
+    width: 10%;
+}
+
+.email-request-short-list table.table-gray thead tr th:last-child {
+    width: 10%;
+}
