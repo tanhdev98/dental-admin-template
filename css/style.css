@@ -15,6 +15,12 @@
     color: #333;
 }
 
+.btn-gray-bold:hover,
+.btn-gray-thin:hover {
+    background-color: #0068b7;
+    color: #fff;
+}
+
 .title {
     font-size: 18px;
     font-weight: 600;
@@ -70,7 +76,6 @@
     width: 180px;
     height: 100%;
     border: 1px solid #ccc;
-    padding: 0 11px;
     cursor: pointer;
     color: #666;
     text-transform: uppercase;
@@ -901,10 +906,6 @@
     font-weight: 600;
 }
 
-#infomation-member table tr td {
-    /* font-weight: 300; */
-}
-
 #infomation-member table tr td:not(:last-child) {
     text-align: center;
 }
@@ -1009,8 +1010,6 @@
     margin-top: 15px;
 }
 
-.member-basic-infor .avatar-box img {}
-
 .profile-content .table {
     width: 100%;
 }
@@ -1105,6 +1104,7 @@
 table.member-infor th:not(.item-dot) {
     width: 160px;
     background-color: #f9f9f9;
+    font-weight: 500;
 }
 
 table.member-infor th,
@@ -1576,85 +1576,88 @@ table.member-infor td input[type="text"] {
     display: flex;
 }
 
-.content .content-right {
-    width: 100%;
-    padding: 0 20px;
-}
 
-.content .content-right table {
+table {
     position: relative;
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
 }
 
-.content .content-right table th {
+table th {
     background-color: #f9f9f9;
 }
 
-.content .content-right table tr:not(:first-child) th,
-.content .content-right table tr:not(:last-child) th {
+table tr:not(:first-child) th,
+table tr:not(:last-child) th {
     border-top: 1px solid #ddd;
 }
 
-.content .content-right.manager-continues table tr td:last-child {
+manager-continues table tr td:last-child {
     border-right: none;
 }
 
-.content .content-right.manager-continues .results table tr td:last-child {
+manager-continues .results table tr td:last-child {
     border-right: 1px solid #ddd;
 }
 
-.content .content-right.manager-continues table tbody th {
+manager-continues table tbody th {
     width: 150px;
     text-align: left;
 }
 
-.content .content-right.manager-continues table td {
+manager-continues table td {
     text-align: left;
 }
 
-.content .content-right.manager-continues .group-button {
+manager-continues .group-button {
     margin-top: 30px;
     text-align: center;
 }
 
-.content .content-right table .select-box select {
+table .select-box {
+    display: flex;
+    gap: 5px;
+}
+
+table .select-box select {
     width: 150px;
     border: 1px solid #ddd;
     padding: 6px 15px;
 }
 
-.content .content-right table input {
+table input {
     border: 1px solid #ddd;
     padding: 5px 15px;
 }
 
-.content .content-right table .checkbox-group {
+table .checkbox-group {
     display: flex;
     gap: 30px;
 }
 
-.content .content-right table .group-item.flex {
+table .group-item.flex {
     display: flex;
 }
 
-.content .content-right table ul.select-value {
+table ul.select-value {
     display: flex;
     align-items: center;
     margin-left: 40px;
     border: 1px solid #ddd;
 }
 
-.content .content-right table ul.select-value li {
+table ul.select-value li {
     padding: 5px 15px;
     position: relative;
+    cursor: pointer;
 }
 
-.content .content-right table ul.select-value li+li {
+table ul.select-value li+li {
     border-left: 1px solid #ddd;
 }
 
-.content .content-right table ul.select-value li.active:before {
+table ul.select-value li.active:before,
+table ul.select-value li:hover:before {
     content: "";
     top: 0;
     left: 0;
@@ -1702,7 +1705,7 @@ table.member-infor td input[type="text"] {
 }
 
 .manager-continues table tr th:nth-child(6) {
-    width: 12%;
+    width: 9%;
 }
 
 .manager-continues table tr th:nth-child(7) {
@@ -1737,6 +1740,10 @@ table.member-infor td input[type="text"] {
 .group-button.center {
     text-align: center;
     margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 #manager-banner-content-list th,
@@ -2874,11 +2881,6 @@ th.require span::after {
     border-left: none;
 }
 
-.group-button.center {
-    text-align: center;
-    margin-top: 15px;
-}
-
 #product-list-content-list>table>tbody>tr>th,
 #product-list-content-list>table>tbody>tr>td {
     text-align: left;
@@ -2923,4 +2925,56 @@ th.require span::after {
     padding: 5px 15px;
     border-radius: 5px;
     margin-top: 10px;
+}
+
+
+/* Search Box */
+
+#search-box {
+    position: relative;
+}
+
+#search-box .table-gray {
+    width: 100%;
+}
+
+#search-box .table-gray {
+    width: 100%;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+#search-box .table-gray td {
+    border-right: 0;
+}
+
+
+#search-box .table-gray th {
+    width: 150px;
+    text-align: left;
+    background-color: #f9f9f9;
+}
+
+#search-box .table-gray tr+tr th {
+    border-top: 1px solid #ddd;
+}
+
+#search-box .table-gray td {
+    text-align: left;
+}
+
+#search-box .table-gray td select {
+    min-width: 150px;
+    border: 1px solid #ddd;
+    padding: 6px 15px;
+}
+
+#search-box .table-gray td input {
+    border: 1px solid #ddd;
+    padding: 5px 15px;
+}
+
+#search-box .table-gray td input {
+    border: 1px solid #ddd;
+    padding: 5px 15px;
 }
