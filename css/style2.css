@@ -257,9 +257,101 @@
   justify-content: end;
   height: 38px;
 }
-#popup.dental-plus-preview .group-btn .popup-button:hover{
+#popup.dental-plus-preview .group-btn .popup-button:hover {
   background-color: #f7f7f7;
   border: 1px solid #ddd;
   box-sizing: border-box;
 }
 /* END MAGAD020 */
+
+/* START MAGAD010 */
+.list-dental-document-formats table .input-table {
+  width: 100%;
+}
+.list-dental-document-formats .results table.table-gray thead tr th ,
+.list-dental-document-formats .results table.table-gray tbody tr td {
+  text-align: center !important;
+  border: 1px solid #ddd;
+}
+.list-dental-document-formats
+  .results
+  table.table-gray
+  tbody
+  tr
+  td.text-underline {
+  text-decoration: underline;
+}
+.list-dental-document-formats
+  .results
+  table.table-gray
+  thead
+  tr
+  th:nth-child(1) {
+  width: 6%;
+}
+.list-dental-document-formats
+  .results
+  table.table-gray
+  thead
+  tr
+  th:nth-child(2) {
+  width: 15%;
+}
+.list-dental-document-formats
+  .results
+  table.table-gray
+  thead
+  tr
+  th:nth-child(3) {
+  width: 32%;
+}
+.list-dental-document-formats
+  .results
+  table.table-gray
+  thead
+  tr
+  th:nth-child(4) {
+  width: 12%;
+}
+.list-dental-document-formats
+  .results
+  table.table-gray
+  thead
+  tr
+  th:nth-child(5) {
+  width: 15%;
+}
+.list-dental-document-formats
+  .results
+  table.table-gray
+  thead
+  tr
+  th:nth-child(6) {
+  width: 10%;
+}
+.list-dental-document-formats
+  .results
+  table.table-gray
+  thead
+  tr
+  th:nth-child(7) {
+  width: 10%;
+}
+.list-dental-document-formats .results table.table-gray .item-checkBox {
+  justify-content: center;
+}
+.list-dental-document-formats .results table.table-gray .item-checkBox input {
+  display: block !important;
+}
+.list-dental-document-formats .results .btn-checkbox {
+  padding: 8px 15px;
+  background-color: #dddddd;
+  margin-top: 10px;
+}
+.list-dental-document-formats .results .btn-checkbox:hover {
+  background-color: #f7f7f7;
+}
+.list-dental-document-formats .button-item{
+  border-radius: 5px;
+}
+/* END MAGAD010 */
