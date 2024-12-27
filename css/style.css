@@ -595,6 +595,13 @@
     padding: 10px 42px 30px 39px;
 }
 
+.profile-note {
+    padding: 10px 15px;
+    background-color: #f9f9f9;
+    font-size: 14px;
+    line-height: 20px;
+}
+
 .container-fluid {
     padding: 0;
 }
