@@ -70,3 +70,7 @@
 }
 
 /* End Icon Next and Prev */
+
+.icon-date::after {
+    background-image: url("../images/icons/icon-date.png");
+}

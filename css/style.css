@@ -47,6 +47,25 @@
     position: relative;
 }
 
+.group-datepicker .datepicker-child i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.icon-date {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 0;
+    right: 13px;
+    background: #fff;
+    cursor: pointer;
+    z-index: 1;
+    pointer-events: auto;
+
+}
+
 .datepicker-child input {
     width: 180px;
     height: 100%;
@@ -1083,8 +1102,9 @@
     align-items: center;
 }
 
-table.member-infor th {
+table.member-infor th:not(.item-dot) {
     width: 160px;
+    background-color: #f9f9f9;
 }
 
 table.member-infor th,
@@ -1095,15 +1115,15 @@ table.member-infor td {
 
 table.th-dot th,
 table .item-dot {
-    padding-left: 15px;
+    padding-left: 18px;
     font-size: 20px;
 }
 
 table.th-dot th::before,
 table .item-dot::before {
     content: "";
-    width: 4px;
-    height: 4px;
+    width: 6px;
+    height: 6px;
     position: absolute;
     top: 50%;
     left: 5px;
@@ -2779,4 +2799,65 @@ th.require span::after {
 
 .cancel-payment table.table-gray thead tr th:last-child {
     width: 10%;
+}
+
+.group-input-file {
+    display: flex;
+    position: relative;
+    gap: 10px;
+}
+
+.hidden-file-input {
+    position: absolute;
+    left: -9999px;
+}
+
+.custom-file-upload {
+    position: relative;
+    display: inline-block;
+}
+
+.custom-label-file {
+    background-color: #ddd;
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.result-input-file {
+    margin-top: 10px;
+}
+
+.result-input-file li {
+    position: relative;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.result-input-file li+li {
+    margin-top: 5px;
+}
+
+.result-input-file li::before {
+    content: "";
+    width: 2px;
+    height: 12px;
+    background-color: #333;
+    position: absolute;
+    left: -15px;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.result-input-file li::after {
+    content: "";
+    width: 2px;
+    height: 12px;
+    background-color: #333;
+    position: absolute;
+    left: -15px;
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
 }

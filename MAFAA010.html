@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/bootstrap/bootstrap.js"></script>
+</head>
+
+<body>
+    <!-- content -->
+    <div id="content">
+        <div class="container-fluid">
+            <div class="manager-banner content">
+                <div class="sidebar">
+                    <ul>
+                        <li class="active"><a href="#" class="active">통합 배너 관리</a></li>
+                    </ul>
+                </div>
+                <div class="manager-banner-content content-right">
+                    <div class="title title-manager-banner">이력서 관리 리스트</div>
+                    <div id="manager-banner-content-list">
+                        <table class="table-gray">
+                            <tbody>
+                                <tr>
+                                    <th>
+                                        조건검색
+                                    </th>
+                                    <td>
+                                        <div class="select-box">
+                                            <select name="" id="">
+                                                <option value="">배너 분류</option>
+                                                <option value="">메인 TOP 배너</option>
+                                                <option value="">메인 배너</option>
+                                                <option value="">그랜드 배너</option>
+                                                <option value="">그랜드 서브 배너</option>
+                                                <option value="">프리미엄 배너</option>
+                                                <option value="">HOT 인재 배너</option>
+                                            </select>
+                                            <select name="" id="">
+                                                <option value="">배너 위치 선택</option>
+                                                <option value="">메인 TOP 배너</option>
+                                                <option value="">메인 배너</option>
+                                                <option value="">그랜드 배너</option>
+                                                <option value="">그랜드 서브 배너</option>
+                                                <option value="">프리미엄 배너</option>
+                                                <option value="">HOT 인재 배너</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                    <th>
+                                        배너명
+                                    </th>
+                                    <td>
+                                        <input type="text" placeholder="배너명 입력">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        상태
+                                    </th>
+                                    <td>
+                                        <div class="checkbox-group">
+                                            <div class="item-checkBox">
+                                                <input type="checkbox" class="checkbox" id="checkbox1">
+                                                <span></span>
+                                                <label for="checkbox1">진행예정</label>
+                                            </div>
+                                            <div class="item-checkBox">
+                                                <input type="checkbox" class="checkbox" id="checkbox2">
+                                                <span></span>
+                                                <label for="checkbox2">진행중</label>
+                                            </div>
+                                            <div class="item-checkBox">
+                                                <input type="checkbox" class="checkbox" id="checkbox3">
+                                                <span></span>
+                                                <label for="checkbox3">마감</label>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <th class="border-b-ddd">
+                                        공개 여부
+                                    </th>
+                                    <td>
+                                        <fieldset id="radio-group1" class="radio-group">
+                                            <div class="item-radioBox">
+                                                <input type="radio" name="radio-group1" value="option1" id="accept">
+                                                <span></span>
+                                                <label for="accept"><span>예예변경</span></label>
+                                            </div>
+                                            <div class="item-radioBox">
+                                                <input type="radio" name="radio-group1" value="option2" id="cancel">
+                                                <span></span>
+                                                <label for="cancel"><span>예예변경</span></label>
+                                            </div>
+                                            <div class="item-radioBox">
+                                                <input type="radio" name="radio-group1" value="option3" id="change">
+                                                <span></span>
+                                                <label for="change"><span>예예변경변경</span></label>
+                                            </div>
+                                        </fieldset>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        등록일
+                                    </th>
+                                    <td colspan="3">
+                                        <div class="flex group-item">
+                                            <div class="group-date">
+                                                <input type="date" class="input-date" value="2024.08.31">
+                                                <span>~</span>
+                                                <input type="date" class="input-date" value="2024.09.03">
+                                            </div>
+                                            <ul class="select-value">
+                                                <li>
+                                                    오늘
+                                                </li>
+                                                <li class="active">
+                                                    일주일
+                                                </li>
+                                                <li>
+                                                    15일
+                                                </li>
+                                                <li>
+                                                    1개월
+                                                </li>
+                                                <li>
+                                                    3개월
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="group-button center">
+                            <button class="btn btn-gray-bold">검색</button>
+                            <button class="btn btn-gray-thin">초기화</button>
+                        </div>
+                    </div>
+                    <div class="results">
+                        <div class="count">
+                            총 등록 이력서 0,000 건 | 공개중인 이력서: <span>0,000</span>건
+                        </div>
+                        <table class="table-gray">
+                            <thead>
+                                <tr>
+                                    <th>아이디(이름)</th>
+                                    <th>이력서 제목</th>
+                                    <th>희망업종</th>
+                                    <th>소지자격증</th>
+                                    <th>희망 근무형태</th>
+                                    <th>희망 근무지역</th>
+                                    <th>희망급여</th>
+                                    <th>경력사항</th>
+                                    <th>상태</th>
+                                    <th>
+                                        수정일<br>
+                                        (등록일)
+                                    </th>
+                                    <th>관리</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        Aaaaa11<br>
+                                        (홍길동)
+                                    </td>
+                                    <td>열심히 하겠습니다.</td>
+                                    <td>진료실</td>
+                                    <td>치과위생사</td>
+                                    <td>아르바이트</td>
+                                    <td>1차-인천 서구</td>
+                                    <td>협의 후 결정</td>
+                                    <td>신입</td>
+                                    <td>공개</td>
+                                    <td>
+                                        2024.08.31<br>
+                                        (2024.01.01)
+                                    </td>
+                                    <td>
+                                        삭제<br>
+                                        변경
+                                    </td>
+                                </tr>
+                                <tr class="empty-content ">
+                                    <td colspan="10"></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Aaaaa12<br>
+                                        (홍길동)
+                                    </td>
+                                    <td>
+                                        안녕하세요 8년차<br> 치과위생사 이유정입니다.
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>신입</td>
+                                    <td>공개</td>
+                                    <td>
+                                        2024.08.31<br>
+                                        (2024.01.01)
+                                    </td>
+                                    <td>
+                                        삭제<br>
+                                        변경
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end content -->
+    <!-- content -->
+    <div id="content">
+        <div class="container-fluid">
+
+            </di>
+
+        </div>
+    </div>
+    <!-- end content -->
+</body>
+
+</html>
