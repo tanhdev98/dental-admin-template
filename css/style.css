@@ -2861,3 +2861,60 @@ th.require span::after {
     top: 50%;
     transform: translateY(-50%) rotate(-45deg);
 }
+
+/* Product List */
+
+#product-list-content-list .radio-group {
+    display: flex;
+    gap: 30px;
+}
+
+#product-list-content-list table.table-gray tbody tr td {
+    border-left: none;
+}
+
+.group-button.center {
+    text-align: center;
+    margin-top: 15px;
+}
+
+#product-list-content-list th,
+#product-list-content-list td {
+    text-align: left;
+}
+
+.product-list-content .results th:first-child {
+    width: 6%;
+}
+
+.product-list-content .results th:nth-child(2) {
+    width: 11%;
+}
+
+.product-list-content .results th:nth-child(3) {
+    width: 11%;
+}
+
+.product-list-content .results th:nth-child(4) {
+    width: 11%;
+}
+
+.product-list-content .results th:nth-child(5) {
+    width: 17%;
+}
+
+.product-list-content .results th:nth-child(6) {
+    width: 11%;
+}
+
+.product-list-content .results th:nth-child(7) {
+    width: 11%;
+}
+
+.product-list-content .results th:nth-child(8) {
+    width: 11%;
+}
+
+.product-list-content .results th:last-child {
+    width: 11%;
+}
