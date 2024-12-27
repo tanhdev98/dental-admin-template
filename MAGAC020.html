@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/bootstrap/bootstrap.js"></script>
+</head>
+
+<body>
+    <!-- content -->
+    <div id="content" class="dental-event-registration-modification">
+        <div class="container-fluid">
+            <div class="list-notification content">
+                <div class="sidebar">
+                    <ul>
+                        <li><a href="#">업무관리</a></li>
+                        <li class="active"><a href="#" class="active">덴탈플러스</a></li>
+                        <li><a href="#">자원봉사</a></li>
+                        <li><a href="#">이벤트</a></li>
+                        <li><a href="#">법정의무교육</a></li>
+                        <li><a href="#">문서서식</a></li>
+                        <li><a href="#">덴탈매거진</a></li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                </div>
+                <div class="list-notification-content content-right">
+                    <div class="title title-list-notification">법정의무교육</div>
+                    <div id="list-notification-content">
+                        <table class="table-parent">
+                            <tr>
+                                <td>제목</td>
+                                <td><input type="text" placeholder="제목 입력"></td>
+                            </tr>
+                            <tr>
+                                <td>채널</td>
+                                <td>
+                                    <div class="select-box">
+                                        <select name="" id="">
+                                            <option value="">선택</option>
+                                            <option value="">WEB, APP</option>
+                                            <option value="">WEB</option>
+                                            <option value="">APP</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>이벤트 타입</td>
+                                <td>
+                                    <div class="select-box">
+                                        <select name="" id="">
+                                            <option value="">안내형</option>
+                                            <option value="">댓글형</option>
+                                            <option value="">참여형</option>
+                                            <option value="">설문형</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>대상회원</td>
+                                <td>
+                                    <div class="select-box">
+                                        <select name="" id="">
+                                            <option value="">전체</option>
+                                            <option value="">개인회원</option>
+                                            <option value="">치과회원</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>회원구분(선택)</td>
+                                <td>
+                                    <div class="group-check-box">
+                                        <div class="item-checkBox">
+                                            <input type="checkbox" class="checkbox" id="checkbox1">
+                                            <span></span>
+                                            <label for="checkbox1">전체(A)</label>
+                                        </div>
+                                        <div class="item-checkBox">
+                                            <input type="checkbox" class="checkbox" id="checkbox2">
+                                            <span></span>
+                                            <label for="checkbox2">치과의사(<span>110</span>)</label>
+                                        </div>
+                                        <div class="item-checkBox">
+                                            <input type="checkbox" class="checkbox" id="checkbox3">
+                                            <span></span>
+                                            <label for="checkbox3">치과기공사(<span>200</span>)</label>
+                                        </div>
+                                        <div class="item-checkBox">
+                                            <input type="checkbox" class="checkbox" id="checkbox4">
+                                            <span></span>
+                                            <label for="checkbox4">치과기공사(소장)(<span>201</span>)</label>
+                                        </div>
+                                        <div class="item-checkBox">
+                                            <input type="checkbox" class="checkbox" id="checkbox5">
+                                            <span></span>
+                                            <label for="checkbox5">치과기공사(기사)(<span>202</span>)</label>
+                                        </div>
+                                        <div class="item-checkBox">
+                                            <input type="checkbox" class="checkbox" id="checkbox6">
+                                            <span></span>
+                                            <label for="checkbox6">치과위생사 및 진료스탭(<span>310</span>)</label>
+                                        </div>
+                                        <div class="item-checkBox">
+                                            <input type="checkbox" class="checkbox" id="checkbox7">
+                                            <span></span>
+                                            <label for="checkbox7">학생(치의학과)(<span>401</span>)</label>
+                                        </div>
+                                        <div class="item-checkBox">
+                                            <input type="checkbox" class="checkbox" id="checkbox8">
+                                            <span></span>
+                                            <label for="checkbox8">학생(치위생과)(<span>402</span>)</label>
+                                        </div>
+                                        <div class="item-checkBox">
+                                            <input type="checkbox" class="checkbox" id="checkbox9">
+                                            <span></span>
+                                            <label for="checkbox9">학생(치기공과)(<span>403</span>)</label>
+                                        </div>
+                                        <div class="item-checkBox">
+                                            <input type="checkbox" class="checkbox" id="checkbox10">
+                                            <span></span>
+                                            <label for="checkbox10">기타(<span>999</span>)</label>
+                                        </div>
+
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>진행기간</td>
+                                <td>
+                                    <table class="table-child">
+                                        <tr>
+                                            <td></td>
+                                            <td>진행상태</td>
+                                            <td>
+                                                <div class="select-box">
+                                                    <select name="" id="">
+                                                        <option value="">진행중 진행예정</option>
+                                                        <option value="">마감</option>
+                                                    </select>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>사이트 등록여부</td>
+                                <td>
+                                    <table class="table-child">
+                                        <tr>
+                                            <td>
+                                                <div class="select-box">
+                                                    <select name="" id="">
+                                                        <option value="">미등록</option>
+                                                        <option value="">등록</option>
+                                                    </select>
+                                                </div>
+                                            </td>
+                                            <td>공개여부</td>
+                                            <td>
+                                                <div class="select-box">
+                                                    <select name="" id="">
+                                                        <option value="">비공개</option>
+                                                        <option value="">공개</option>
+                                                    </select>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>APP 썸네일</td>
+                                <td>
+                                    <div class="item-input">
+                                        <input id="file-upload1" placeholder="썸네일 등록">
+                                        <button class="btn-file-upload btn-file-upload1">
+                                            파일첨부
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>WEB 썸네일</td>
+                                <td>
+                                    <div class="item-input">
+                                        <input id="file-upload2" placeholder="파일명.확장자">
+                                        <button class="btn-file-upload btn-file-upload2">
+                                            파일첨부
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>상세내용</td>
+                                <td><textarea name="" id="textarea-details" placeholder="내용 입력"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td>연결 URL</td>
+                                <td><input id="input-link-url" placeholder="URL 입력"></td>
+                            </tr>
+                        </table>
+                        <div class="group-button">
+                            <div class="item-button">
+                                <button class="btn-popup">목록</button>
+                            </div>
+                            <div class="item-button">
+                                <button class="btn-save">저장</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end content -->
+    <!-- content -->
+    <div id="content">
+        <div class="container-fluid">
+
+            </di>
+
+        </div>
+    </div>
+    <!-- end content -->
+</body>
+
+</html>
