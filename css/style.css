@@ -587,7 +587,7 @@
 /* Profile Sidebar */
 .profile-content {
     width: 100%;
-    padding: 39px 42px 30px 39px;
+    padding: 10px 42px 30px 39px;
 }
 
 .container-fluid {
@@ -927,7 +927,7 @@
     color: #111111;
     font-weight: 600;
     border-bottom: 1px solid #999999;
-    padding: 42px 0 13px 0;
+    padding: 0px 0 13px 0;
 }
 
 .profile-content .profile-action {
@@ -1117,6 +1117,7 @@ table.th-dot th,
 table .item-dot {
     padding-left: 18px;
     font-size: 20px;
+    position: relative;
 }
 
 table.th-dot th::before,
@@ -2869,7 +2870,7 @@ th.require span::after {
     gap: 30px;
 }
 
-#product-list-content-list table.table-gray tbody tr td {
+#product-list-content-list>table>tbody>tr>td {
     border-left: none;
 }
 
@@ -2878,43 +2879,48 @@ th.require span::after {
     margin-top: 15px;
 }
 
-#product-list-content-list th,
-#product-list-content-list td {
+#product-list-content-list>table>tbody>tr>th,
+#product-list-content-list>table>tbody>tr>td {
     text-align: left;
+    border-left: none;
+    border-right: none;
 }
 
-.product-list-content .results th:first-child {
-    width: 6%;
+#product-list-content-list th.item-dot {
+    padding-left: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: transparent;
 }
 
-.product-list-content .results th:nth-child(2) {
-    width: 11%;
+#product-list-content-list .bottom-content {
+    margin-top: 15px;
 }
 
-.product-list-content .results th:nth-child(3) {
-    width: 11%;
+#product-list-content-list tr tr th:first-child {
+    width: 10%;
 }
 
-.product-list-content .results th:nth-child(4) {
-    width: 11%;
+#product-list-content-list tr tr th:nth-child(2) {
+    width: 30%;
 }
 
-.product-list-content .results th:nth-child(5) {
-    width: 17%;
+#product-list-content-list tr tr th:nth-child(3) {
+    width: 30%;
 }
 
-.product-list-content .results th:nth-child(6) {
-    width: 11%;
+#product-list-content-list tr tr th:nth-child(4) {
+    width: 15%;
 }
 
-.product-list-content .results th:nth-child(7) {
-    width: 11%;
+#product-list-content-list tr tr th:last-child {
+    width: 15%;
 }
 
-.product-list-content .results th:nth-child(8) {
-    width: 11%;
-}
-
-.product-list-content .results th:last-child {
-    width: 11%;
+#product-list-content-list .button-save-child-table {
+    background-color: #333333;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    margin-top: 10px;
 }

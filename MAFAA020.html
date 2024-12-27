@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/bootstrap/bootstrap.js"></script>
+</head>
+
+<body>
+    <!-- content -->
+    <div id="content">
+        <div class="container-fluid">
+            <div class="product-list content">
+                <div class="sidebar">
+                    <ul>
+                        <li><a href="#" class="active">상품 목록</a></li>
+                        <li><a href="#">배너상품</a></li>
+                        <li><a href="#">옵션 상품</a></li>
+                    </ul>
+                </div>
+                <div class="product-list-content content-right">
+                    <div id="product-list-content-list">
+                        <table class="table-gray">
+                            <tbody>
+                                <tr>
+                                    <th class="require">
+                                        <span>상품 구분</span>
+                                    </th>
+                                    <td colspan="3">
+                                        <div class="select-box">
+                                            <select name="" id="">
+                                                <option value="">배너 분류</option>
+                                                <option value="">메인 TOP 배너</option>
+                                                <option value="">메인 배너</option>
+                                                <option value="">그랜드 배너</option>
+                                                <option value="">그랜드 서브 배너</option>
+                                                <option value="">프리미엄 배너</option>
+                                                <option value="">HOT 인재 배너</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="require">
+                                        <span>상품명</span>
+                                    </th>
+                                    <td>
+                                        <input type="text" placeholder="상품명 입력">
+                                    </td>
+                                    <th class="border-b-ddd">
+                                        상품 코드
+                                    </th>
+                                    <td>
+                                        <input type="text" disabled placeholder="0000000">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="require">
+                                        <span>가격</span>
+                                    </th>
+                                    <td>
+                                        <div class="select-box">
+                                            <select name="" id="">
+                                                <option value="">일 선택</option>
+                                                <option value="">메인 TOP 배너</option>
+                                                <option value="">메인 배너</option>
+                                                <option value="">그랜드 배너</option>
+                                                <option value="">그랜드 서브 배너</option>
+                                                <option value="">프리미엄 배너</option>
+                                                <option value="">HOT 인재 배너</option>
+                                            </select>
+                                            <input type="text">
+                                        </div>
+                                    </td>
+                                    <th>
+                                        ID당 구매 수량
+                                    </th>
+                                    <td>
+                                        <div class="group-input">
+                                            <input type="text" placeholder="수량 입력"><b> 개</b>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class=" item-dot" colspan="4">옵션 선택</th>
+                                </tr>
+                                <tr>
+                                    <th>옵션</th>
+                                    <td class="border-t-ddd" colspan="3">
+                                        <table class="table-gray">
+                                            <thead>
+                                                <tr>
+                                                    <th>상태</th>
+                                                    <th>옵션명</th>
+                                                    <th>가격</th>
+                                                    <th>공개여부</th>
+                                                    <th>관리</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="select-box">
+                                                            <select name="" id="">
+                                                                <option value="">일 선택</option>
+                                                                <option value="">일 선택 2</option>
+                                                                <option value="">일 선택 3</option>
+                                                            </select>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" placeholder="그랜드 배너 - 공정옵션">
+                                                    </td>
+                                                    <td>
+                                                        <div class="select-box">
+                                                            <select name="" id="">
+                                                                <option value="">7일</option>
+                                                                <option value="">14일</option>
+                                                                <option value="">30일</option>
+                                                            </select>
+                                                            <input type="text" placeholder="60,000">
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="select-box">
+                                                            <select name="" id="">
+                                                                <option value="">공개</option>
+                                                                <option value="">공개 1</option>
+                                                                <option value="">공개 2</option>
+                                                            </select>
+                                                        </div>
+                                                    </td>
+                                                    <td>삭제</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="select-box">
+                                                            <select name="" id="">
+                                                                <option value="">일 선택</option>
+                                                                <option value="">일 선택 2</option>
+                                                                <option value="">일 선택 3</option>
+                                                            </select>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" placeholder="그랜드 배너 - 공정옵션">
+                                                    </td>
+                                                    <td>
+                                                        <div class="select-box">
+                                                            <select name="" id="">
+                                                                <option value="">7일</option>
+                                                                <option value="">14일</option>
+                                                                <option value="">30일</option>
+                                                            </select>
+                                                            <input type="text" placeholder="60,000">
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="select-box">
+                                                            <select name="" id="">
+                                                                <option value="">공개</option>
+                                                                <option value="">공개 1</option>
+                                                                <option value="">공개 2</option>
+                                                            </select>
+                                                        </div>
+                                                    </td>
+                                                    <td>삭제</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <button href="#" class="button-save-child-table">추가</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="require">
+                                        <span>공개여부</span>
+                                    </th>
+                                    <td>
+                                        <fieldset id="radio-group1" class="radio-group">
+                                            <div class="item-radioBox">
+                                                <input type="radio" name="radio-group1" value="option1" id="z1">
+                                                <span></span>
+                                                <label for="z1"><span>공개</span></label>
+                                            </div>
+                                            <div class="item-radioBox">
+                                                <input type="radio" name="radio-group1" value="option2" id="z2">
+                                                <span></span>
+                                                <label for="z2"><span>비공개</span></label>
+                                            </div>
+                                        </fieldset>
+                                    </td>
+                                    <th class="require">
+                                        <span>상태</span>
+                                    </th>
+                                    <td>
+                                        <fieldset id="radio-group1" class="radio-group">
+                                            <div class="item-radioBox">
+                                                <input type="radio" name="radio-group1" value="option1" id="z3">
+                                                <span></span>
+                                                <label for="z3"><span>판매예정</span></label>
+                                            </div>
+                                            <div class="item-radioBox">
+                                                <input type="radio" name="radio-group1" value="option2" id="z4">
+                                                <span></span>
+                                                <label for="z4"><span>판매중</span></label>
+                                            </div>
+                                            <div class="item-radioBox">
+                                                <input type="radio" name="radio-group1" value="option2" id="z5">
+                                                <span></span>
+                                                <label for="z5"><span>판매 종료</span></label>
+                                            </div>
+                                        </fieldset>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class=" bottom-content">
+                            <a href="#" class="button-back-to-list">목록</a>
+                            <a href="#" class="button-save">저장</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end content -->
+    <!-- content -->
+    <div id="content">
+        <div class="container-fluid">
+
+            </di>
+
+        </div>
+    </div>
+    <!-- end content -->
+</body>
+
+</html>
