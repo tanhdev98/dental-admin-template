@@ -173,23 +173,93 @@
 /* END MAIAB010 */
 
 /* START MAGAD020 */
+#popup.dental-plus-preview .popup-content {
+  width: 80%;
+}
 .table-dental-plus-preview table {
   width: 100%;
   border-collapse: collapse;
 }
-.table-dental-plus-preview table tr{
-    height: 50px;
-  }
+.table-dental-plus-preview table tr {
+  height: 50px;
+}
 .table-dental-plus-preview table td {
   text-align: center;
   vertical-align: middle;
   border: 1px solid #ddd;
 }
-.table-dental-plus-preview table .col-table-50{
-    width: 50%;
+.table-dental-plus-preview table .col-table-10 {
+  width: 10%;
+}
+.table-dental-plus-preview table .col-table-20 {
+  width: 20%;
+}
+.table-dental-plus-preview table .col-table-50 {
+  width: 50%;
+}
+.table-dental-plus-preview table .col-table-80 {
+  width: 80%;
+}
+.table-dental-plus-preview table .col-table-90 {
+  width: 90%;
 }
 .table-dental-plus-preview table tr:nth-child(1) td {
   text-align: left;
   padding-left: 10px;
+}
+
+.table-dental-plus-preview .table-dental-plus-child td {
+  border: none;
+}
+.table-dental-plus-preview .table-dental-plus-child .col-table-10,
+.table-dental-plus-preview .table-dental-plus-child .col-table-20 {
+  border-right: 1px solid #ddd;
+  background-color: #f7f7f7;
+}
+.table-dental-plus-preview .table-dental-plus-child .col-table-90,
+.table-dental-plus-preview .table-dental-plus-child .col-table-80 {
+  padding: 6px;
+}
+.table-dental-plus-preview .table-dental-plus-child .text-box {
+  width: 80%;
+  height: 38px;
+  padding: 6px 10px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+.table-dental-plus-preview .table-dental-plus-child .group-box-file {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: left;
+}
+.table-dental-plus-preview .table-dental-plus-child .group-box-file input {
+  border: 1px solid #ddd;
+  width: 55%;
+  padding-left: 10px;
+  height: 38px;
+}
+#popup.dental-plus-preview .popup-button {
+  margin: 0;
+}
+.table-dental-plus-preview
+  .table-dental-plus-child
+  .group-box-file
+  .title-text-file {
+  text-decoration: underline;
+}
+#popup.dental-plus-preview .group-btn {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  justify-content: end;
+  height: 38px;
+}
+#popup.dental-plus-preview .group-btn .popup-button:hover{
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
 }
 /* END MAGAD020 */
