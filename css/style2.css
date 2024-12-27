@@ -357,6 +357,12 @@
 /* END MAGAD010 */
 
 /* START MAGAC010 */
+.dental-plus-event-list .group-top-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
 .dental-plus-event-list .input-table {
   width: 40%;
 }
@@ -379,19 +385,22 @@
   width: 6%;
 }
 .dental-plus-event-list .results table.table-gray thead tr th:nth-child(7) {
-  width: 12%;
+  width: 13%;
 }
 .dental-plus-event-list .results table.table-gray thead tr th:nth-child(8) {
-  width: 6%;
+  width: 7%;
 }
 .dental-plus-event-list .results table.table-gray thead tr th:nth-child(9) {
-  width: 6%;
+  width: 7%;
 }
 .dental-plus-event-list .results table.table-gray thead tr th:nth-child(10) {
-  width: 8%;
+  width: 5%;
 }
 .dental-plus-event-list .results table.table-gray thead tr th:nth-child(11) {
   width: 8%;
+}
+.dental-plus-event-list .results table.table-gray tbody tr td {
+  height: 160px;
 }
 .dental-plus-event-list .results table.table-gray .text-left {
   text-align: left;
@@ -416,5 +425,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  max-width: 70px;
+  margin: auto;
+}
+.dental-plus-event-list .results table.table-gray .btn-view-applicants {
+  background-color: #f7f7f7;
+  height: 25px;
+  color: #666666;
+  vertical-align: middle;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 80px;
+  margin: auto;
+  border-radius: 3px;
+  border: 1px solid #ddd;
 }
 /* END MAGAC010 */
