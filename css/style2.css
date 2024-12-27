@@ -1,0 +1,173 @@
+/* START MAIAB010 */
+.group-coupon {
+  display: flex;
+  gap: 15px;
+  padding: 15px;
+  border: 1px dashed red;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+.group-coupon .item-coupon {
+  flex: 1;
+}
+.group-coupon .item-coupon table {
+  width: 100%;
+}
+.group-coupon .item-coupon .title-coupon {
+  margin-bottom: 10px;
+  color: #2165ef;
+}
+.group-coupon .table-coupon td {
+  border: 1px solid #ddd !important;
+  padding: 5px;
+  text-align: center;
+  vertical-align: middle;
+  height: 40px;
+}
+.group-button .select-box-coupon {
+  border: 1px solid #ddd;
+  margin-bottom: 5px;
+}
+.things-to-checkList .results .group-button .btn-gray-bold-coupon {
+  height: 34px;
+}
+.btn-delete-coupon {
+  background-color: #EBEBEB;
+  border: 1px solid #ccc;
+  padding:2px 5px;
+  border-radius: 5px;
+}
+.email-request-list
+  .things-to-checkList
+  table.table-gray-coupon
+  thead
+  tr
+  th:first-child {
+  width: 5%;
+  /* Cột 1 */
+}
+
+.email-request-list
+  .things-to-checkList
+  table.table-gray-coupon
+  thead
+  tr
+  th:nth-child(2) {
+  width: 6%;
+  /* Cột 2 */
+}
+
+.email-request-list
+  .things-to-checkList
+  table.table-gray-coupon
+  thead
+  tr
+  th:nth-child(3) {
+  width: 6%;
+  /* Cột 3 */
+}
+
+.email-request-list
+  .things-to-checkList
+  table.table-gray-coupon
+  thead
+  tr
+  th:nth-child(4) {
+  width: 6%;
+  /* Cột 4 */
+}
+
+.email-request-list
+  .things-to-checkList
+  table.table-gray-coupon
+  thead
+  tr
+  th:nth-child(5) {
+  width: 11%;
+  /* Cột 5 */
+}
+
+.email-request-list
+  .things-to-checkList
+  table.table-gray-coupon
+  thead
+  tr
+  th:nth-child(6) {
+  width: 11%;
+  /* Cột 6 */
+}
+
+.email-request-list
+  .things-to-checkList
+  table.table-gray-coupon
+  thead
+  tr
+  th:nth-child(7) {
+  width: 5%;
+  /* Cột 7 */
+}
+
+.email-request-list
+  .things-to-checkList
+  table.table-gray-coupon
+  thead
+  tr
+  th:nth-child(8) {
+  width: 10%;
+  /* Cột 8 */
+}
+
+.email-request-list
+  .things-to-checkList
+  table.table-gray-coupon
+  thead
+  tr
+  th:nth-child(9) {
+  width: 9%;
+  /* Cột 9 */
+}
+
+.email-request-list
+  .things-to-checkList
+  table.table-gray-coupon
+  thead
+  tr
+  th:nth-child(10) {
+  width: 9%;
+  /* Cột 10 */
+}
+
+.email-request-list
+  .things-to-checkList
+  table.table-gray-coupon
+  thead
+  tr
+  th:nth-child(11) {
+  width: 9%;
+  /* Cột 11 */
+}
+
+.email-request-list
+  .things-to-checkList
+  table.table-gray-coupon
+  thead
+  tr
+  th:nth-child(12) {
+  width: 6%;
+  /* Cột 12 */
+}
+.email-request-list
+  .things-to-checkList
+  table.table-gray-coupon
+  thead
+  tr
+  th:last-child {
+  width: 7%;
+  /* Cột 13 */
+}
+.email-request-list table.table-gray-coupon tbody tr td {
+  text-align: center !important;
+  vertical-align: middle;
+}
+
+/* END MAIAB010 */
