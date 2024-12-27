@@ -3059,3 +3059,26 @@ th.require span::after {
 .list-event-registrants .results table th:last-child {
     width: 3%;
 }
+
+.before-table {
+    display: flex;
+    justify-content: space-between;
+}
+
+.before-table {
+    display: flex;
+    justify-content: space-between;
+}
+
+.before-table .group-left {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+}
+
+.before-table .group-left .button-left {
+    padding: 5px 15px;
+    background-color: #A5A5A5;
+    height: 24px;
+}
