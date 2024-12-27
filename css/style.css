@@ -192,6 +192,7 @@
 .content-right {
     flex: 1;
     min-height: calc(100vh - 20px - 50px - 63px - 70px);
+    padding: 0 15px;
 }
 
 #table-form-option th.header-item .header-item-inner .button-group {
@@ -733,7 +734,7 @@
     border-bottom: 1px solid #ddd;
     position: relative;
 }
-.profile-sidebar>ul li:last-child a  { border-bottom: none; }
+
 .profile-sidebar>ul li a:hover,
 .profile-sidebar>ul li a.active {
     background-color: #e0edf7;
@@ -2984,4 +2985,77 @@ th.require span::after {
 #search-box .table-gray td input {
     border: 1px solid #ddd;
     padding: 5px 15px;
+}
+
+#search-box .table-gray td fieldset {
+    display: flex;
+    gap: 30px;
+}
+
+.list-event-registrants .results {}
+
+.list-event-registrants .results table th,
+.list-event-registrants .results table td {
+    padding: 15px 0;
+}
+
+.list-event-registrants .results table th:first-child {
+    width: 4%;
+}
+
+.list-event-registrants .results table th:nth-child(2) {
+    width: 3%;
+}
+
+.list-event-registrants .results table th:nth-child(3) {
+    width: 2%;
+}
+
+.list-event-registrants .results table th:nth-child(4) {
+    width: 5%;
+}
+
+.list-event-registrants .results table th:nth-child(5) {
+    width: 3%;
+}
+
+.list-event-registrants .results table th:nth-child(6) {
+    width: 4%;
+}
+
+.list-event-registrants .results table th:nth-child(7) {
+    width: 4%;
+}
+
+.list-event-registrants .results table th:nth-child(8) {
+    width: 3%;
+}
+
+.list-event-registrants .results table th:nth-child(9) {
+    width: 10%;
+}
+
+.list-event-registrants .results table th:nth-child(10) {
+    width: 4%;
+}
+
+.list-event-registrants .results table th:nth-child(11) {
+    width: 4%;
+}
+
+.list-event-registrants .results table th:nth-child(12) {
+    width: 40%;
+}
+
+.list-event-registrants .results table td:nth-child(12) {
+    text-align: left;
+    padding: 0 5px;
+}
+
+.list-event-registrants .results table th:nth-child(13) {
+    width: 3%;
+}
+
+.list-event-registrants .results table th:last-child {
+    width: 3%;
 }
