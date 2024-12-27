@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/bootstrap/bootstrap.js"></script>
+</head>
+
+<body>
+    <!-- content -->
+    <div id="content" class="dental-plus-event-list">
+        <div class="container-fluid">
+            <div class="list-notification content">
+                <div class="sidebar">
+                    <ul>
+                        <li><a href="#">업무관리</a></li>
+                        <li class="active"><a href="#" class="active">덴탈플러스</a></li>
+                        <li><a href="#">자원봉사</a></li>
+                        <li><a href="#">이벤트</a></li>
+                        <li><a href="#">법정의무교육</a></li>
+                        <li><a href="#">문서서식</a></li>
+                        <li><a href="#">덴탈매거진</a></li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                </div>
+                <div class="list-notification-content content-right">
+                    <div class="title title-list-notification">법정의무교육</div>
+                    <div id="list-notification-content">
+                        <table class="table-gray">
+                            <tbody>
+                                <tr>
+                                    <th>
+                                        구분 선택
+                                    </th>
+                                    <td>
+                                        <div class="select-box">
+                                            <select name="" id="">
+                                                <option value="">제목</option>
+                                                <option value="">모집기간명</option>
+                                                <option value="">지역</option>
+                                            </select>
+                                            <input type="text" class="input-table" placeholder="검색어 입력">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        등록일
+                                    </th>
+                                    <td colspan="3">
+                                        <div class="flex group-item">
+                                            <div class="group-date">
+                                                <input type="date" class="input-date" value="2024.08.31">
+                                                <span>~</span>
+                                                <input type="date" class="input-date" value="2024.09.03">
+                                            </div>
+                                            <ul class="select-value">
+                                                <li>
+                                                    오늘
+                                                </li>
+                                                <li class="active">
+                                                    일주일
+                                                </li>
+                                                <li>
+                                                    15일
+                                                </li>
+                                                <li>
+                                                    1개월
+                                                </li>
+                                                <li>
+                                                    3개월
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="group-button center">
+                            <button class="btn btn-gray-bold">검색</button>
+                            <button class="btn btn-gray-thin">초기화</button>
+                        </div>
+                    </div>
+                    <div class="results">
+                        <div class="button-item">
+                            <a href="#">서식 등록</a>
+                        </div>
+                        <table class="table-gray table-dental-plus-event-list">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>타인</th>
+                                    <th>제목</th>
+                                    <th>신생대상</th>
+                                    <th>참여대상</th>
+                                    <th>등록여부</th>
+                                    <th>진행기간</th>
+                                    <th>진행여부</th>
+                                    <th>신청자</th>
+                                    <th>조회수</th>
+                                    <th>등록일</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>88</td>
+                                    <td>
+                                        <p>[일반](안내형)</p>
+                                        <p class="text-left">(App용)</p>
+                                        <img class="img-table" src="./images/grand-banner-1.png" alt="bnr_main_230901.jpg">
+                                        <p class="name-img">bnr_main_230901.jpg</p>
+                                    </td>
+                                    <td>[덴탈잡 이용권] 사용 혜택 - 신흥KF94마스크/커피 기프티콘</td>
+                                    <td>Web.App</td>
+                                    <td>전체(전체)</td>
+                                    <td>등록</td>
+                                    <td><span>2023-09-01</span>~<span>2026-08-01</span></td>
+                                    <td>
+                                        <div class="progress active">진행중</div>
+                                    </td>
+                                    <td></td>
+                                    <td>1,686</td>
+                                    <td>2023-08-21</td>
+                                </tr>
+                                <tr>
+                                    <td>88</td>
+                                    <td>
+                                        <p>[일반](안내형)</p>
+                                        <p class="text-left">(App용)</p>
+                                        <img class="img-table" src="./images/grand-banner-1.png" alt="bnr_main_230901.jpg">
+                                        <p class="name-img">bnr_main_230901.jpg</p>
+                                    </td>
+                                    <td>[덴탈잡 이용권] 사용 혜택 - 신흥KF94마스크/커피 기프티콘</td>
+                                    <td>Web.App</td>
+                                    <td>전체(전체)</td>
+                                    <td>등록</td>
+                                    <td><span>2023-09-01</span>~<span>2026-08-01</span></td>
+                                    <td>
+                                        <div class="progress">마감</div>
+                                    </td>
+                                    <td></td>
+                                    <td>1,686</td>
+                                    <td>2023-08-21</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="count-item">총 <span class="total">000</span>건</div>
+                        <div class="wrap-pagination">
+                            <div class="pagination-arrow icon icon-prev disable"></div>
+                            <ul class="pagination-number">
+                                <li class="active"><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                            </ul>
+                            <div class="pagination-arrow icon icon-next"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end content -->
+    <!-- content -->
+    <div id="content">
+        <div class="container-fluid">
+
+            </di>
+
+        </div>
+    </div>
+    <!-- end content -->
+</body>
+
+</html>

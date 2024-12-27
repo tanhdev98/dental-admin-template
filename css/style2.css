@@ -268,7 +268,7 @@
 .list-dental-document-formats table .input-table {
   width: 100%;
 }
-.list-dental-document-formats .results table.table-gray thead tr th ,
+.list-dental-document-formats .results table.table-gray thead tr th,
 .list-dental-document-formats .results table.table-gray tbody tr td {
   text-align: center !important;
   border: 1px solid #ddd;
@@ -351,7 +351,70 @@
 .list-dental-document-formats .results .btn-checkbox:hover {
   background-color: #f7f7f7;
 }
-.list-dental-document-formats .button-item{
+.list-dental-document-formats .button-item {
   border-radius: 5px;
 }
 /* END MAGAD010 */
+
+/* START MAGAC010 */
+.dental-plus-event-list .input-table {
+  width: 40%;
+}
+.dental-plus-event-list .results table.table-gray thead tr th:nth-child(1) {
+  width: 4%;
+}
+.dental-plus-event-list .results table.table-gray thead tr th:nth-child(2) {
+  width: 16%;
+}
+.dental-plus-event-list .results table.table-gray thead tr th:nth-child(3) {
+  width: 22%;
+}
+.dental-plus-event-list .results table.table-gray thead tr th:nth-child(4) {
+  width: 6%;
+}
+.dental-plus-event-list .results table.table-gray thead tr th:nth-child(5) {
+  width: 6%;
+}
+.dental-plus-event-list .results table.table-gray thead tr th:nth-child(6) {
+  width: 6%;
+}
+.dental-plus-event-list .results table.table-gray thead tr th:nth-child(7) {
+  width: 12%;
+}
+.dental-plus-event-list .results table.table-gray thead tr th:nth-child(8) {
+  width: 6%;
+}
+.dental-plus-event-list .results table.table-gray thead tr th:nth-child(9) {
+  width: 6%;
+}
+.dental-plus-event-list .results table.table-gray thead tr th:nth-child(10) {
+  width: 8%;
+}
+.dental-plus-event-list .results table.table-gray thead tr th:nth-child(11) {
+  width: 8%;
+}
+.dental-plus-event-list .results table.table-gray .text-left {
+  text-align: left;
+  margin: 5px 0;
+  font-weight: bold;
+}
+.dental-plus-event-list .results table.table-gray .img-table {
+  max-width: 100%;
+  max-height: 70px;
+  object-fit: contain;
+}
+.dental-plus-event-list .results table.table-gray .progress.active {
+  background-color: #fb4e08;
+}
+.dental-plus-event-list .results table.table-gray .progress {
+  border-radius: 20px;
+  background-color: #8f8f8f;
+  color: #fff;
+  vertical-align: middle;
+  height: 22px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* END MAGAC010 */

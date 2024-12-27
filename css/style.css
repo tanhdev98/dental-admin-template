@@ -733,7 +733,7 @@
     border-bottom: 1px solid #ddd;
     position: relative;
 }
-
+.profile-sidebar>ul li:last-child a  { border-bottom: none; }
 .profile-sidebar>ul li a:hover,
 .profile-sidebar>ul li a.active {
     background-color: #e0edf7;
