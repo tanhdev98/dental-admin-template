@@ -440,3 +440,77 @@ table.table-gray tbody tr td:last-child {
     display: block;
     cursor: pointer;
 }
+
+/* Radio box */
+.item-radioBox {
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    position: relative;
+}
+
+.item-radioBox input[type="radio"],
+.tab-check-box li input[type="radio"] {
+    display: none;
+}
+
+.item-radioBox input[type="radio"]+span,
+.tab-check-box input[type="radio"]+span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.item-radioBox input[type="radio"]+span::before {
+    content: "";
+    background: #0068b7;
+    width: 7px;
+    height: 7px;
+    display: block;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.item-radioBox input[type="radio"]:checked+span::before {
+    opacity: 1;
+}
+
+.item-radioBox>span {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #ccc;
+    position: absolute;
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.item-radioBox input[type="radio"]:checked+span {
+    border-color: #0068b7;
+}
+
+.item-radioBox label {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 31px;
+    color: #888;
+    z-index: 1;
+}
+
+.item-radioBox label span {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 31px;
+    color: #333;
+    padding-left: 24px;
+}
