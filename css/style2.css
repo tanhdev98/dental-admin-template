@@ -445,3 +445,157 @@
   border: 1px solid #ddd;
 }
 /* END MAGAC010 */
+
+/* START MAGAC020 */
+.dental-event-registration-modification table {
+  width: 100%;
+}
+.dental-event-registration-modification table td {
+  height: 55px;
+  border: 1px solid #ddd;
+  padding-left: 12px;
+  vertical-align: middle;
+}
+.dental-event-registration-modification table td:first-child {
+  width: 15%;
+  background-color: #f7f7f7;
+}
+.dental-event-registration-modification table td:last-child {
+  width: 85%;
+}
+.dental-event-registration-modification table tr:nth-child(1) td input {
+  width: calc(100% - 12px);
+}
+.dental-event-registration-modification
+  #list-notification-content
+  table
+  td
+  select {
+  width: 370px;
+  cursor: pointer;
+}
+.dental-event-registration-modification
+  #list-notification-content
+  table
+  td
+  .group-check-box {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  padding-left: 0;
+  margin-right: 5px;
+  gap: 10px;
+}
+.dental-event-registration-modification
+  #list-notification-content
+  table
+  td
+  .group-check-box
+  span {
+  padding-left: 0;
+}
+.dental-event-registration-modification
+  #list-notification-content
+  table
+  td
+  .group-check-box
+  .item-checkBox {
+  margin-right: 15px;
+}
+.dental-event-registration-modification
+  .table-parent
+  tr:nth-child(6)
+  td:nth-child(2),
+.dental-event-registration-modification
+  .table-parent
+  tr:nth-child(7)
+  td:nth-child(2) {
+  padding: 0;
+}
+.dental-event-registration-modification #list-notification-content .table-child,
+.dental-event-registration-modification
+  #list-notification-content
+  .table-child
+  tr
+  td {
+  border: none;
+}
+.dental-event-registration-modification
+  #list-notification-content
+  .table-child
+  tr
+  td:nth-child(1) {
+  width: 35%;
+  background-color: transparent;
+}
+.dental-event-registration-modification
+  #list-notification-content
+  .table-child
+  tr
+  td:nth-child(2) {
+  width: 15%;
+  background-color: #f7f7f7;
+  padding-left: 12px;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+.dental-event-registration-modification
+  #list-notification-content
+  .table-child
+  tr
+  td:nth-child(3) {
+  width: 35%;
+}
+.dental-event-registration-modification .table-parent tr td .item-input {
+  display: flex;
+  gap: 10px;
+}
+.dental-event-registration-modification .table-parent tr td .item-input input {
+  width: 45%;
+  pointer-events: none;
+}
+.dental-event-registration-modification
+  .table-parent
+  tr
+  td
+  .item-input
+  .btn-file-upload {
+  height: 34px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  background-color: #cccccc;
+  cursor: pointer;
+}
+.dental-event-registration-modification .table-parent tr:nth-child(10) td {
+  padding: 12px;
+}
+.dental-event-registration-modification .table-parent tr td #textarea-details{
+  width: 100%;
+  height: 230px;
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+.dental-event-registration-modification .table-parent tr td #input-link-url {
+  width: calc(100% - 12px);
+}
+.dental-event-registration-modification .group-button{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.dental-event-registration-modification .group-button .item-button button{
+  height: 35px;
+  width: 100px;
+}
+.dental-event-registration-modification .group-button .btn-popup{
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+.dental-event-registration-modification .group-button .btn-save{
+  background-color: #0C5AB3;
+  color: #fff;
+}
+/* END MAGAC020 */
