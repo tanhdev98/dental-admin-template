@@ -514,3 +514,9 @@ table.table-gray tbody tr td:last-child {
     color: #333;
     padding-left: 24px;
 }
+
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
