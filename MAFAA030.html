@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/bootstrap/bootstrap.js"></script>
+</head>
+
+<body>
+    <!-- content -->
+    <div id="content">
+        <div class="container-fluid">
+            <div class="business-banner content">
+                <div class="sidebar">
+                    <ul>
+                        <li><a href="#">업무관리</a></li>
+                        <li class="active"><a href="#" class="active">덴탈플러스</a></li>
+                        <li><a href="#">자원봉사</a></li>
+                        <li><a href="#">이벤트</a></li>
+                        <li><a href="#">법정의무교육</a></li>
+                        <li><a href="#">문서서식</a></li>
+                        <li><a href="#">덴탈매거진</a></li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                </div>
+                <div class="content-right">
+                    <div class="title">비즈니스 배너</div>
+                    <div class="group-filer-right">
+                        <div class="group-filer-right-title">그랜드 배너 Display <input type="number" value="26">개수:</div>
+                        <button class="group-filer-right-button">개수 변경</button>
+                    </div>
+                    <div class="group-filer-right-popup">
+                        <div class="popup-title">그랜드 배너 Display 개수 변경</div>
+                        <ul>
+                            <li>
+                                <div class="label-input">현재 Display 개수</div>
+                                <input type="number" value="26">
+                            </li>
+                            <li>
+                                <div class="label-input">변경 Display 개수</div>
+                                <input type="number" value="22">
+                                <div class="note-input">
+                                    ※(4배수-2) 개수로 입력하세요.
+                                </div>
+                            </li>
+                            <li>
+                                <div class="label-input">
+                                    변경 일자
+                                </div>
+                                <input type="datetime" value="2024.09.16">
+                            </li>
+                            <div class="group-filer-right-popup-button">
+                                <button>변경</button>
+                                <button>취소</button>
+                            </div>
+                        </ul>
+                    </div>
+                    <div id="search-box">
+                        <table class="table-gray">
+                            <tbody>
+                                <tr>
+                                    <th>
+                                        조건 검색
+                                    </th>
+                                    <td>
+                                        <div class="select-box">
+                                            <select name="" id="">
+                                                <option value="">회원 ID</option>
+                                                <option value="">채용공고 제목</option>
+                                                <option value="">기관명</option>
+                                            </select>
+                                            <input type="text" class="input-table" placeholder="검색어 입력">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        검색어 입력
+                                    </th>
+                                    <td colspan="3">
+                                        <div class="flex group-item">
+                                            <div class="group-date">
+                                                <input type="date" class="input-date" value="2024.08.31">
+                                                <span>~</span>
+                                                <input type="date" class="input-date" value="2024.09.03">
+                                            </div>
+                                            <ul class="select-value">
+                                                <li>
+                                                    오늘
+                                                </li>
+                                                <li class="active">
+                                                    일주일
+                                                </li>
+                                                <li>
+                                                    15일
+                                                </li>
+                                                <li>
+                                                    1개월
+                                                </li>
+                                                <li>
+                                                    3개월
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="group-button center">
+                            <button class="btn btn-gray-bold">검색</button>
+                            <button class="btn btn-gray-thin">초기화</button>
+                        </div>
+                    </div>
+                    <div class="results">
+                        <div class="group-table-results">
+                            <div class="table-left">
+                                <table class="table-gray">
+                                    <thead>
+                                        <tr>
+                                            <th>금일신청</th>
+                                            <th>금일서비스</th>
+                                            <th>금일서비스</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>16</td>
+                                            <td>1</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="table-right">
+                                <table class="table-gray">
+                                    <thead>
+                                        <tr>
+                                            <th>등록미확인</th>
+                                            <th>등록확인</th>
+                                            <th>등록확인</th>
+                                            <th>게재예정</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>62</td>
+                                            <td>5</td>
+                                            <td>27</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="table-details">
+                            <table class="table-gray">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>
+                                            회원ID<br>
+                                            (이름)
+                                        </th>
+                                        <th>기관명</th>
+                                        <th>우선 순위</th>
+                                        <th>배너상태</th>
+                                        <th>
+                                            채용공고<br>
+                                            조회수
+                                        </th>
+                                        <th>신청일</th>
+                                        <th>결제일</th>
+                                        <th>광고상품</th>
+                                        <th>
+                                            채용기간><br>
+                                            (서비스 기간)
+                                        </th>
+                                        <th>남은일수</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>신규</td>
+                                        <td>
+                                            Aaaaa11<br>
+                                            (홍길동)<br>
+                                            덴탈잡 로그인
+                                        </td>
+                                        <td>
+                                            강남에이플러스치과
+                                        </td>
+                                        <td>
+                                            <button class="button-table">변경</button>
+                                        </td>
+                                        <td>입금대기</td>
+                                        <td>
+                                            진료실 파트타임 근무 (치과위생사 선생님)<br>
+                                            입금 대기 (채용광고 조회: 0/배너광고 조회: 0)
+                                        </td>
+                                        <td>
+                                            2024.01.04<br>
+                                            오전 10:07:03
+                                        </td>
+                                        <td>
+                                            2024.01.04<br>
+                                            오전 10:07:03
+                                        </td>
+                                        <td>
+                                            메인상품 : 그랜드 배너<br>
+                                            고정옵션 : 고정옵션 (그랜드 배너)<br>
+                                            강조옵션<br>
+                                            └ 컬러 강조<br>
+                                            └ 하이라이트 강조 2
+                                        </td>
+                                        <td>
+                                            2024.01.05 ~ 2024.01.19 <br>
+                                            (2024.01.05 ~ 2024.01.19)
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="show-comment">
+                                        <td colspan="11">
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>상품명</td>
+                                                        <td>배너시작일</td>
+                                                        <td><input type="datetime" value="2024.09.07"></td>
+                                                        <td>채용시작원</td>
+                                                        <td><input type="datetime" value="2024.09.07"></td>
+                                                        <td>배너상태</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>덴탈잡그랜드배너(재용광고포함)</td>
+                                                        <td>고정옵션</td>
+                                                        <td><input type="datetime" value="2024.09.07"></td>
+                                                        <td>배너총료일</td>
+                                                        <td><input type="datetime" value="2024.09.07"></td>
+                                                        <td>
+                                                            <div class="select-box">
+                                                                <select name="" id="">
+                                                                    <option value="">전체</option>
+                                                                    <option value="">전체 2</option>
+                                                                    <option value="">전체 3</option>
+                                                                    <option value="">전체 4</option>
+                                                                </select>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>등록된 Comment (134)</td>
+                                                        <td colspan="5">
+                                                            <textarea></textarea>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <div class="note-table">
+                                                *Comment 등록형식: [상품명] / [Comment] ex 프리미엄배너/전화가 안와요 불만<br>
+                                                *반드시 베너 종료일이 재용 종료일보다 작거나 같도록 확연하고 설정해 주세요.
+                                            </div>
+                                            <div class="table-comment-results">
+                                                <div class="table-comment-results-title">등록된 Comment (134)</div>
+                                                <table class="table-gray">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Seq</th>
+                                                            <th>등록일</th>
+                                                            <th>관리자명</th>
+                                                            <th>사이트</th>
+                                                            <th>Comment</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>530113</td>
+                                                            <td>
+                                                                2024-06-13
+                                                            </td>
+                                                            <td>
+                                                                관리자명명명
+                                                            </td>
+                                                            <td>
+                                                                명명명
+                                                            </td>
+                                                            <td>
+                                                                명명명명명명명명명명명명명명명명명명명명명명명명명명명명
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>530113</td>
+                                                            <td>
+                                                                2024-06-13
+                                                            </td>
+                                                            <td>
+                                                                관리자명명명
+                                                            </td>
+                                                            <td>
+                                                                명명명
+                                                            </td>
+                                                            <td>
+                                                                명명명명명명명명명명명명명명명명명명명명명명명명명명명명
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>530113</td>
+                                                            <td>
+                                                                2024-06-13
+                                                            </td>
+                                                            <td>
+                                                                관리자명명명
+                                                            </td>
+                                                            <td>
+                                                                명명명
+                                                            </td>
+                                                            <td>
+                                                                명명명명명명명명명명명명명명명명명명명명명명명명명명명명
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>530113</td>
+                                                            <td>
+                                                                2024-06-13
+                                                            </td>
+                                                            <td>
+                                                                관리자명명명
+                                                            </td>
+                                                            <td>
+                                                                명명명
+                                                            </td>
+                                                            <td>
+                                                                명명명명명명명명명명명명명명명명명명명명명명명명명명명명
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>530113</td>
+                                                            <td>
+                                                                2024-06-13
+                                                            </td>
+                                                            <td>
+                                                                관리자명명명
+                                                            </td>
+                                                            <td>
+                                                                명명명
+                                                            </td>
+                                                            <td>
+                                                                명명명명명명명명명명명명명명명명명명명명명명명명명명명명
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>530113</td>
+                                                            <td>
+                                                                2024-06-13
+                                                            </td>
+                                                            <td>
+                                                                관리자명명명
+                                                            </td>
+                                                            <td>
+                                                                명명명
+                                                            </td>
+                                                            <td>
+                                                                명명명명명명명명명명명명명명명명명명명명명명명명명명명명
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end content -->
+    <!-- content -->
+    <div id="content">
+        <div class="container-fluid">
+
+            </di>
+
+        </div>
+    </div>
+    <!-- end content -->
+</body>
+
+</html>

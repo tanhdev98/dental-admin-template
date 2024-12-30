@@ -2992,8 +2992,6 @@ th.require span::after {
     gap: 30px;
 }
 
-.list-event-registrants .results {}
-
 .list-event-registrants .results table th,
 .list-event-registrants .results table td {
     padding: 15px 0;
@@ -3649,4 +3647,252 @@ th.require span::after {
 
 .reply-qa-content .bottom-content {
     margin-top: 15px;
+}
+
+/* business banner */
+
+.group-filer-right {
+    float: right;
+    display: flex;
+}
+
+.group-filer-right .group-filer-right-title {
+    font-weight: 500;
+    margin-right: 15px;
+}
+
+.group-filer-right .group-filer-right-title input {
+    width: 50px;
+    border: 1px solid #ddd;
+    padding: 2px 10px;
+}
+
+.group-filer-right .group-filer-right-title+.group-filer-right-button {
+    border: 1px solid #ddd;
+    padding: 2px 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.group-filer-right .group-filer-right-title+.group-filer-right-button:hover {
+    background-color: #333;
+    color: #fff;
+    border-color: #333;
+}
+
+.group-filer-right-popup {
+    position: absolute;
+    background-color: #fff;
+    padding: 20px 20px;
+    border: 1px solid #ddd;
+    z-index: 1;
+    right: 15px;
+    top: 100px;
+    width: 480px;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.group-filer-right-popup .popup-title {
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.group-filer-right-popup ul {
+    padding-left: 20px;
+}
+
+.group-filer-right-popup ul li {
+    display: flex;
+    position: relative;
+    align-items: center;
+    gap: 10px;
+}
+
+.group-filer-right-popup ul li+li {
+    margin-top: 5px;
+}
+
+.group-filer-right-popup ul li::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: #000;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    left: -20px;
+}
+
+.group-filer-right-popup ul li input:not([type="datetime"]) {
+    width: 70px;
+    text-align: center;
+    padding: 2px 15px;
+    border: 1px solid #ddd;
+}
+
+.group-filer-right-popup ul li input[type="datetime"] {
+    padding: 2px 15px;
+    border: 1px solid #ddd;
+    width: 150px;
+}
+
+.group-filer-right-popup .group-filer-right-popup-button {
+    margin-top: 15px;
+    display: flex;
+    justify-content: end;
+    gap: 5px;
+}
+
+.group-filer-right-popup .group-filer-right-popup-button button {
+    border: 1px solid #ddd;
+    padding: 2px 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.group-filer-right-popup .group-filer-right-popup-button button:hover {
+    background-color: #333;
+    color: #fff;
+    border-color: #333;
+}
+
+.group-table-results {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.group-table-results .table-left {
+    width: 39%;
+}
+
+.group-table-results .table-right {
+    width: 59%;
+}
+
+.business-banner #search-box {
+    margin-top: 65px;
+}
+
+.business-banner .results .table-details {
+    margin-top: 30px;
+}
+
+.business-banner .results .table-details td {
+    padding: 15px 5px;
+}
+
+.business-banner .results .table-details th:first-child {
+    width: 4%;
+}
+
+.business-banner .results .table-details th:nth-child(2) {
+    width: 8%;
+}
+
+.business-banner .results .table-details th:nth-child(3) {
+    width: 10%;
+}
+
+.business-banner .results .table-details th:nth-child(4) {
+    width: 5%;
+}
+
+.business-banner .results .table-details th:nth-child(5) {
+    width: 5%;
+}
+
+.business-banner .results .table-details th:nth-child(6) {
+    width: 18%;
+}
+
+.business-banner .results .table-details>table>tbody>tr>td:nth-child(6) {
+    text-align: left;
+}
+
+.business-banner .results table .select-box {
+    justify-content: center;
+}
+
+.business-banner .results .table-details th:nth-child(7) {
+    width: 7%;
+}
+
+.business-banner .results .table-details th:nth-child(8) {
+    width: 10%;
+}
+
+.business-banner .results .table-details th:nth-child(9) {
+    width: 17%;
+}
+
+.business-banner .results .table-details td:nth-child(9) {
+    text-align: left;
+}
+
+.business-banner .results .table-details th:nth-child(10) {
+    width: 11%;
+}
+
+.business-banner .results .table-details th:last-child {
+    width: 5%;
+}
+
+.business-banner .results .table-details .table-gray .button-table {
+    padding: 2px 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.business-banner .results .table-details table table {
+    width: 100%;
+}
+
+.business-banner .results .table-details table table td {
+    padding: 15px;
+}
+
+.business-banner .results .table-details table table textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+.business-banner .results .table-details .note-table {
+    color: red;
+    margin: 15px;
+}
+
+.business-banner .results .table-details .table-comment-results .table-comment-results-title {
+    background-color: #f9f9f9;
+    padding: 5px 15px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.business-banner .results .table-details .table-comment-results th:first-child {
+    width: 8%;
+}
+
+.business-banner .results .table-details .table-comment-results th:nth-child(2) {
+    width: 12%;
+}
+
+.business-banner .results .table-details .table-comment-results th:nth-child(3) {
+    width: 12%;
+}
+
+.business-banner .results .table-details .table-comment-results th:nth-child(4) {
+    width: 8%;
+}
+
+.business-banner .results .table-details .table-comment-results th:last-child {
+    width: 60%;
+}
+
+.business-banner .results .table-details .table-comment-results td:last-child {
+    text-align: left;
 }
