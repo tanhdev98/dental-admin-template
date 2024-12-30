@@ -3619,3 +3619,34 @@ th.require span::after {
 }
 
 /* END MAGAC020 */
+
+/* reply QA */
+.reply-qa-content .link-to-delete {
+    font-weight: 500;
+    float: right;
+    padding: 5px 15px;
+    background-color: #ddd;
+}
+
+.reply-qa-content .link-to-delete:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.reply-qa-content #content-table {
+    margin-top: 35px;
+}
+
+.reply-qa-content #content-table table th,
+.reply-qa-content #content-table table td {
+    text-align: left;
+    border-right: none;
+}
+
+.reply-qa-content #content-table table th {
+    width: 150px;
+}
+
+.reply-qa-content .bottom-content {
+    margin-top: 15px;
+}
