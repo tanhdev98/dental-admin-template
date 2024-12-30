@@ -572,7 +572,7 @@
 .dental-event-registration-modification .table-parent tr:nth-child(10) td {
   padding: 12px;
 }
-.dental-event-registration-modification .table-parent tr td #textarea-details{
+.dental-event-registration-modification .table-parent tr td #textarea-details {
   width: 100%;
   height: 230px;
   padding: 12px;
@@ -581,21 +581,47 @@
 .dental-event-registration-modification .table-parent tr td #input-link-url {
   width: calc(100% - 12px);
 }
-.dental-event-registration-modification .group-button{
+.dental-event-registration-modification .group-button {
   display: flex;
   justify-content: space-between;
   margin-top: 15px;
 }
-.dental-event-registration-modification .group-button .item-button button{
+.dental-event-registration-modification .group-button .item-button button {
   height: 35px;
   width: 100px;
 }
-.dental-event-registration-modification .group-button .btn-popup{
+.dental-event-registration-modification .group-button .btn-popup {
   background-color: #fff;
   border: 1px solid #ddd;
 }
-.dental-event-registration-modification .group-button .btn-save{
-  background-color: #0C5AB3;
+.dental-event-registration-modification .group-button .btn-save {
+  background-color: #0c5ab3;
   color: #fff;
 }
 /* END MAGAC020 */
+
+/* START MAGAB010 */
+.dental-tal-volunteer-list table.table-gray thead tr th:nth-child(1) {
+  width: 5%;
+}
+.dental-tal-volunteer-list table.table-gray thead tr th:nth-child(2) {
+  width: 40%;
+  text-align: left !important;
+}
+.dental-tal-volunteer-list table.table-gray thead tr th:nth-child(3) {
+  width: 30%;
+  text-align: left !important;
+}
+.dental-tal-volunteer-list table.table-gray thead tr th:nth-child(4) {
+  width: 15%;
+  text-align: left !important;
+}
+.dental-tal-volunteer-list table.table-gray thead tr th:nth-child(5) {
+  width: 10%;
+}
+.dental-tal-volunteer-list table.table-gray tbody tr td:nth-child(2),
+.dental-tal-volunteer-list table.table-gray tbody tr td:nth-child(3),
+.dental-tal-volunteer-list table.table-gray tbody tr td:nth-child(4) {
+  text-align: left;
+}
+/* END MAGAB010 */
