@@ -1,0 +1,102 @@
+/* START MAGAA010 */
+.dental-task-management-list .results table.table-gray thead th {
+  border: 1px solid #ddd;
+}
+.dental-task-management-list .results table.table-gray thead th:nth-child(1) {
+  width: 8%;
+}
+.dental-task-management-list .results table.table-gray thead th:nth-child(2) {
+  width: 8%;
+}
+.dental-task-management-list .results table.table-gray thead th:nth-child(3) {
+  width: 34%;
+}
+.dental-task-management-list .results table.table-gray thead th:nth-child(4) {
+  width: 12%;
+}
+.dental-task-management-list .results table.table-gray thead th:nth-child(5) {
+  width: 19%;
+}
+.dental-task-management-list .results table.table-gray thead th:nth-child(6) {
+  width: 19%;
+}
+.dental-task-management-list .results table.table-gray tbody tr td {
+  text-align: center;
+  border: 1px solid #ddd;
+}
+.dental-task-management-list .results table.table-gray thead th .border-ddd,
+.dental-task-management-list .results table.table-gray tbody tr td .border-ddd {
+  border: 1px solid #ddd;
+  padding: 3px 10px;
+  width: max-content;
+  border-radius: 3px;
+  margin: auto;
+  cursor: pointer;
+  background-color: #fff;
+}
+.dental-task-management-list
+  .results
+  table.table-gray
+  thead
+  th
+  .border-ddd:hover,
+.dental-task-management-list
+  .results
+  table.table-gray
+  tbody
+  tr
+  td
+  .border-ddd:hover {
+  background-color: #ccc;
+  color: #fff;
+}
+
+.dental-task-management-list .results table.table-gray tbody tr td:last-child {
+  display: flex;
+  justify-content: space-around;
+  border-left: none;
+  border-top: none;
+  margin-bottom: -1px;
+}
+.dental-task-management-list
+  .results
+  table.table-gray
+  tbody
+  tr:last-child
+  td:last-child {
+  border-bottom: 0px solid #ddd;
+}
+.dental-task-management-list
+  .results
+  table.table-gray
+  tbody
+  tr
+  td:last-child
+  button {
+  padding: 5px 15px;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+.dental-task-management-list
+  .results
+  table.table-gray
+  tbody
+  tr
+  td:last-child
+  button.edit:hover {
+  color: #fff;
+  background-color: #0B52A8;
+}
+.dental-task-management-list
+  .results
+  table.table-gray
+  tbody
+  tr
+  td:last-child
+  button.delete:hover {
+  color: #fff;
+  background-color: #f72c2c;
+}
+/* END MAGAA010 */
