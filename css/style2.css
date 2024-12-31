@@ -1,0 +1,84 @@
+/* START MABAA080_1 */
+#popup.dental-information .popup-content {
+    width: 1200px;
+    max-height: 95%;
+    overflow-y: scroll;
+}
+.dental-information .table-dental-information table {
+  width: 100%;
+}
+.dental-information .table-dental-information table tbody tr td {
+  width: 35%;
+  border: 1px solid #ddd;
+  padding-left: 10px;
+  height: 45px;
+  vertical-align: middle;
+  margin: auto;
+  text-align: center;
+}
+.dental-information .table-dental-information table tbody tr td:first-child,
+.dental-information .table-dental-information table tbody tr td:nth-child(3) {
+  width: 15%;
+  background-color: #f7f7f7;
+}
+
+.dental-information
+  .table-dental-information
+  table
+  tbody
+  tr:last-child
+  [colspan="3"] {
+  height: 150px;
+  padding: 10px;
+}
+.dental-information .table-dental-information table tbody tr td input {
+  padding: 4px 15px;
+  width: 70%;
+}
+.dental-information
+  .table-dental-information
+  table
+  tbody
+  tr
+  td
+  .select-box
+  select {
+  width: 70%;
+  margin: auto;
+  padding: 4px 15px;
+  height: 33px;
+}
+.dental-information .table-dental-information table tbody tr td textarea {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+.dental-information .popup-content .note-table {
+  color: red;
+  text-align: center;
+  margin: 15px;
+  line-height: 1.2;
+}
+.dental-information .popup-content .table-comment-results .table-comment-results-title {
+    background-color: #f9f9f9;
+    padding: 5px 15px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    text-align: left;
+}
+/* END MABAA080_1 */
+
+/* START MABAA080_2 */
+.dental-information.dental-information_2 table tbody tr td input {
+    padding: 4px 15px;
+    width: 30% !important;
+    margin: 0 10px;
+}
+.dental-information_2 .table-dental-information table tbody tr td .select-box select {
+    width: 20%;
+    margin: auto;
+    padding: 4px 15px;
+    height: 33px;
+}
+/* END MABAA080_2 */

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/bootstrap/bootstrap.js"></script>
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="container">
+            <img class="img-logo" src="./images/logo.png" alt="DentalJob Logo">
+            <ul class="auth-navigate">
+                <li><a href="#">덴탈잡 홈페이지</a></li>
+                <li>|</li>
+                <li><a href="#">김관리 님</a></li>
+                <li><button class="btn btn-secondary btn-rounded">로그아웃</button></li>
+            </ul>
+        </div>
+    </header>
+    <!-- end header -->
+    <!-- nav -->
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#">회원 관리</a></li>
+                <li><a href="#">채용 관리</a></li>
+                <li><a href="#">이력서 관리</a></li>
+                <li><a href="#">광고상품 관리 </a></li>
+                <li><a href="#">Biz보드 관리</a></li>
+                <li><a href="#">게시물 관리</a></li>
+                <li><a href="#">결제 관리</a></li>
+                <li><a href="#">통계 관리</a></li>
+                <li><a href="#">마케팅 관리</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- end nav -->
+    <!-- content -->
+    <div id="content">
+        <div class="container">
+            <div id="popup" data-popup="dental-information" class="dental-information">
+                <div class="overlay"></div>
+                <div class="popup-content">
+                    <div class="popup-close"></div>
+                    <div class="popup-title">마감된 채용광고 등록 - 신규등록</div>
+                    <div class="table-dental-information">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>아이디</td>
+                                    <td>plandents</td>
+                                    <td>치과명</td>
+                                    <td>수원플란치과의원</td>
+                                </tr>
+                                <tr>
+                                    <td>상품명</td>
+                                    <td>
+                                        <div class="select-box">
+                                            <select name="" id="">
+                                                <option value="">상품구분</option>
+                                                <option value="">상품구분 2</option>
+                                                <option value="">상품구분 3</option>
+                                                <option value="">상품구분 4</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                    <td>입금자명</td>
+                                    <td>
+                                        <input type="text">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>결제여부</td>
+                                    <td>
+                                        <div class="select-box">
+                                            <select name="" id="">
+                                                <option value="">선택</option>
+                                                <option value="">선택 2</option>
+                                                <option value="">선택 3</option>
+                                                <option value="">선택 4</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                    <td>결제일</td>
+                                    <td><input type="date"></td>
+                                </tr>
+                                <tr>
+                                    <td>채용시작일</td>
+                                    <td><input type="date"></td>
+
+                                    <td>채용종료일</td>
+                                    <td><input type="date"></td>
+
+                                </tr>
+                                <tr>
+                                    <td>Comment</td>
+                                    <td colspan="3">
+                                        <textarea></textarea>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="note-table">
+                        ※ Comment 등록형식 : [상품명]/ [Comment] . ex) 프리미엄배너 / 전화가 안와요 불만)<br>
+                        ※ 새로운 채용광고로 등록됩니다. 기간연장은 재사용 버튼을 사용하세요.<br>
+                        ※ 상품명 중 덴탈잡이 포함된 상품은 유료상품입니다.
+                    </div>
+                    <div class="group-btn">
+                        <button class="popup-button">등록 / 수정</button>
+                    </div>
+                    <div class="table-comment-results">
+                        <div class="table-comment-results-title">등록된 Comment (18)</div>
+                        <table class="table-gray">
+                            <thead>
+                                <tr>
+                                    <th>Seq</th>
+                                    <th>등록일</th>
+                                    <th>관리자명</th>
+                                    <th>등록사이트</th>
+                                    <th>Comment</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>530113</td>
+                                    <td>
+                                        2024-06-13
+                                    </td>
+                                    <td>
+                                        관리자명명명
+                                    </td>
+                                    <td>
+                                        명명명
+                                    </td>
+                                    <td>
+                                        덴탈잡웹사이트_관리자스케줄_마감일마감_09 3 2024 12:05AM-834655
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>530113</td>
+                                    <td>
+                                        2024-06-13
+                                    </td>
+                                    <td>
+                                        관리자명명명
+                                    </td>
+                                    <td>
+                                        명명명
+                                    </td>
+                                    <td>
+                                        덴탈잡웹사이트_관리자스케줄_마감일마감_09 3 2024 12:05AM-834655
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>530113</td>
+                                    <td>
+                                        2024-06-13
+                                    </td>
+                                    <td>
+                                        관리자명명명
+                                    </td>
+                                    <td>
+                                        명명명
+                                    </td>
+                                    <td>
+                                        덴탈잡웹사이트_관리자스케줄_마감일마감_09 3 2024 12:05AM-834655
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>530113</td>
+                                    <td>
+                                        2024-06-13
+                                    </td>
+                                    <td>
+                                        관리자명명명
+                                    </td>
+                                    <td>
+                                        명명명
+                                    </td>
+                                    <td>
+                                        덴탈잡웹사이트_관리자스케줄_마감일마감_09 3 2024 12:05AM-834655
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>530113</td>
+                                    <td>
+                                        2024-06-13
+                                    </td>
+                                    <td>
+                                        관리자명명명
+                                    </td>
+                                    <td>
+                                        명명명
+                                    </td>
+                                    <td>
+                                        덴탈잡웹사이트_관리자스케줄_마감일마감_09 3 2024 12:05AM-834655
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>530113</td>
+                                    <td>
+                                        2024-06-13
+                                    </td>
+                                    <td>
+                                        관리자명명명
+                                    </td>
+                                    <td>
+                                        명명명
+                                    </td>
+                                    <td>
+                                        덴탈잡웹사이트_관리자스케줄_마감일마감_09 3 2024 12:05AM-834655
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>530113</td>
+                                    <td>
+                                        2024-06-13
+                                    </td>
+                                    <td>
+                                        관리자명명명
+                                    </td>
+                                    <td>
+                                        명명명
+                                    </td>
+                                    <td>
+                                        덴탈잡웹사이트_관리자스케줄_마감일마감_09 3 2024 12:05AM-834655
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end content -->
+</body>
+
+</html>
