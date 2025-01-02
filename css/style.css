@@ -5,13 +5,13 @@
 
 .btn-gray-bold {
     width: 120px;
-    background-color: #7F7F7F;
+    background-color: #7f7f7f;
     color: #fff;
 }
 
 .btn-gray-thin {
     width: 120px;
-    background-color: #F2F2F2;
+    background-color: #f2f2f2;
     color: #333;
 }
 
@@ -49,11 +49,13 @@
     align-items: center;
 }
 
-.group-datepicker .datepicker-child {
+.datepicker-child {
     position: relative;
+    width: max-content;
+    margin: auto;
 }
 
-.group-datepicker .datepicker-child i {
+.datepicker-child i {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -69,7 +71,6 @@
     cursor: pointer;
     z-index: 1;
     pointer-events: auto;
-
 }
 
 .datepicker-child input {
@@ -172,7 +173,7 @@
     -moz-appearance: none;
     appearance: none;
     position: relative;
-    background: url("../images/icons/icon-down-select.png") no-repeat right 0px center;
+    background: url('../images/icons/icon-down-select.png') no-repeat right 0px center;
     background-size: 10px 6px;
     padding: 9px 6px;
     color: #666;
@@ -298,6 +299,7 @@
 .wrap-dropDown {
     display: flex;
     gap: 3px;
+    align-items: center;
     justify-content: flex-end;
 }
 
@@ -571,7 +573,7 @@
 }
 
 .top-nav button.close::before {
-    content: "";
+    content: '';
     width: 16px;
     height: 2px;
     background-color: #fff;
@@ -581,7 +583,7 @@
 }
 
 .top-nav button.close::after {
-    content: "";
+    content: '';
     width: 16px;
     height: 2px;
     background-color: #fff;
@@ -633,7 +635,6 @@
 .profile-sidebar .profile-user .profile-user-img img {
     height: 64px;
 }
-
 
 .profile-user-name {
     font-size: 15px;
@@ -743,10 +744,10 @@
 
 .profile-sidebar>ul li a:hover:after,
 .profile-sidebar>ul li a.active:after {
-    content: "";
+    content: '';
     width: 6px;
     height: 10px;
-    background: url("../images/icons/icon-right-active.png") no-repeat center / 100%;
+    background: url('../images/icons/icon-right-active.png') no-repeat center / 100%;
     position: absolute;
     right: 40px;
     top: 50%;
@@ -755,22 +756,22 @@
 
 .profile-sidebar>ul li a.active .icon-user-profile::after,
 .profile-sidebar>ul li a:hover .icon-user-profile::after {
-    background-image: url("../images/icons/icon-user-profile.png");
+    background-image: url('../images/icons/icon-user-profile.png');
 }
 
 .profile-sidebar>ul li a.active .icon-bag::after,
 .profile-sidebar>ul li a:hover .icon-bag::after {
-    background-image: url("../images/icons/icon-bag.png");
+    background-image: url('../images/icons/icon-bag.png');
 }
 
 .profile-sidebar>ul li a.active .icon-list::after,
 .profile-sidebar>ul li a:hover .icon-list::after {
-    background-image: url("../images/icons/icon-list.png");
+    background-image: url('../images/icons/icon-list.png');
 }
 
 .profile-sidebar>ul li a.active .icon-file::after,
 .profile-sidebar>ul li a:hover .icon-file::after {
-    background-image: url("../images/icons/icon-file.png");
+    background-image: url('../images/icons/icon-file.png');
 }
 
 #profile-sidebar-no-space.profile-sidebar {
@@ -779,7 +780,7 @@
 }
 
 #profile-sidebar-no-space.profile-sidebar:after {
-    content: "";
+    content: '';
     width: 1px;
     height: calc(100% + 70px);
     background-color: #ddd;
@@ -794,10 +795,10 @@
 
 #profile-sidebar-no-space.profile-sidebar>ul li a:hover:after,
 #profile-sidebar-no-space.profile-sidebar>ul li a.active:after {
-    content: "";
+    content: '';
     width: 6px;
     height: 10px;
-    background: url("../images/icons/icon-right-active.png") no-repeat center / 100%;
+    background: url('../images/icons/icon-right-active.png') no-repeat center / 100%;
     position: absolute;
     right: 10px;
     top: 50%;
@@ -817,7 +818,7 @@
 
 .advertising-sidebar::before,
 .sidebar::before {
-    content: "";
+    content: '';
     width: 1px;
     background-color: #ddd;
     height: 100vh;
@@ -845,7 +846,6 @@
     margin-bottom: 15px;
     height: 64px;
 }
-
 
 .advertising .advertising-sidebar>ul,
 .sidebar>ul {
@@ -877,10 +877,10 @@
 .sidebar>ul li a:hover:after,
 .advertising-sidebar>ul li a.active:after,
 .sidebar>ul li a.active:after {
-    content: "";
+    content: '';
     width: 6px;
     height: 10px;
-    background: url("../images/icons/icon-right-active.png") no-repeat center / 100%;
+    background: url('../images/icons/icon-right-active.png') no-repeat center / 100%;
     position: absolute;
     right: 15px;
     top: 50%;
@@ -985,7 +985,7 @@
 }
 
 .profile-content .title-table-info .total {
-    color: #C00000;
+    color: #c00000;
 }
 
 .profile-content-count,
@@ -999,7 +999,7 @@
 
 .profile-content-count .total,
 .count-item .total {
-    color: #C00000;
+    color: #c00000;
 }
 
 .member-basic-infor .title-table-info {
@@ -1027,7 +1027,6 @@
     border-top: 1px solid #dddddd;
 }
 
-
 .profile-content .member-basic-infor .table tr:first-child th {
     border-bottom: 1px solid #ddd;
     border-top: 1px solid #ddd;
@@ -1035,7 +1034,6 @@
 
 .profile-content .table th {
     background-color: #f7f7f7;
-
 }
 
 .profile-content .table th,
@@ -1054,7 +1052,6 @@
 .profile-content .table td:nth-child(4) {
     text-align: left;
 }
-
 
 .profile-content .table.member-infor {
     margin-top: 15px;
@@ -1130,7 +1127,7 @@ table .item-dot {
 
 table.th-dot th::before,
 table .item-dot::before {
-    content: "";
+    content: '';
     width: 6px;
     height: 6px;
     position: absolute;
@@ -1154,11 +1151,26 @@ table.member-infor td textarea {
     height: 100px;
 }
 
-table.member-infor td input[type="number"],
-table.member-infor td input[type="text"] {
+table.member-infor td input[type='number'],
+table.member-infor td input[type='text'] {
     border: 1px solid #ddd;
     width: 100%;
     padding: 5px 15px;
+}
+
+.table.member-infor ul.select-value {
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+    border: 1px solid #ddd;
+}
+
+.table.member-infor ul.select-value li {
+    padding: 5px;
+    width: max-content;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .border-r-ddd {
@@ -1240,7 +1252,7 @@ table.member-infor td input[type="text"] {
     padding: 0 23px;
 }
 
-.toggleTrueFalse input[type=checkbox] {
+.toggleTrueFalse input[type='checkbox'] {
     visibility: hidden;
 }
 
@@ -1272,7 +1284,7 @@ table.member-infor td input[type="text"] {
     width: 16px;
 }
 
-.toggleTrueFalse input[type=checkbox]:checked+label {
+.toggleTrueFalse input[type='checkbox']:checked+label {
     left: 53%;
 }
 
@@ -1382,7 +1394,6 @@ table.member-infor td input[type="text"] {
     margin: 0px 0 15px;
 }
 
-
 /* profile paid banners */
 
 #profile-paid-banners {
@@ -1393,8 +1404,6 @@ table.member-infor td input[type="text"] {
 #profile-paid-banners .title-table {
     margin: 0px 0 15px;
 }
-
-
 
 /* profile recent recruitment */
 
@@ -1417,7 +1426,6 @@ table.member-infor td input[type="text"] {
 #profile-continuous-recruitment-advertising .title-table {
     margin: 0px 0 15px;
 }
-
 
 /* profile continuous recruitment advertising*/
 
@@ -1459,7 +1467,7 @@ table.member-infor td input[type="text"] {
 }
 
 .profile-content-count .count span {
-    color: #C00000;
+    color: #c00000;
 }
 
 .profile .title-table {
@@ -1572,7 +1580,7 @@ table.member-infor td input[type="text"] {
 
 .box-self-introduction {
     padding: 15px;
-    border: 1px solid #ddd
+    border: 1px solid #ddd;
 }
 
 .advertising-content {
@@ -1583,7 +1591,6 @@ table.member-infor td input[type="text"] {
 .content {
     display: flex;
 }
-
 
 table {
     position: relative;
@@ -1666,7 +1673,7 @@ table ul.select-value li+li {
 
 table ul.select-value li.active:before,
 table ul.select-value li:hover:before {
-    content: "";
+    content: '';
     top: 0;
     left: 0;
     right: 0;
@@ -1841,8 +1848,8 @@ th.require span {
 }
 
 th.require span::after {
-    content: "*";
-    color: #C00000;
+    content: '*';
+    color: #c00000;
     position: absolute;
     right: -10px;
 }
@@ -1852,7 +1859,7 @@ th.require span::after {
     border-right: none;
 }
 
-#compulsory-education-content-list tr td input:not([type="radio"]) {
+#compulsory-education-content-list tr td input:not([type='radio']) {
     width: 100%;
 }
 
@@ -1868,7 +1875,6 @@ th.require span::after {
     border: 1px solid #ddd;
 }
 
-
 #compulsory-education-content-list td select {
     width: 500px;
 }
@@ -1878,13 +1884,13 @@ th.require span::after {
     gap: 30px;
 }
 
-#compulsory-education-content-list td input[type="file"] {
+#compulsory-education-content-list td input[type='file'] {
     display: none;
 }
 
-#compulsory-education-content-list td input[type="file"]+label {
+#compulsory-education-content-list td input[type='file']+label {
     padding: 6px 15px;
-    background-color: #7F7F7F;
+    background-color: #7f7f7f;
     color: #fff;
     cursor: pointer;
 }
@@ -1899,19 +1905,18 @@ th.require span::after {
     width: 650px;
 }
 
-
 #manager-banner-content-change-content-list th {
     border-left: 1px solid #ddd;
     text-align: left;
 }
 
-#manager-banner-content-change-content-list td input[type="file"] {
+#manager-banner-content-change-content-list td input[type='file'] {
     display: none;
 }
 
-#manager-banner-content-change-content-list td input[type="file"]+label {
+#manager-banner-content-change-content-list td input[type='file']+label {
     padding: 6px 15px;
-    background-color: #7F7F7F;
+    background-color: #7f7f7f;
     color: #fff;
     cursor: pointer;
 }
@@ -2015,11 +2020,10 @@ th.require span::after {
     text-align: left;
 }
 
-
 .list-of-dental-journals table.table-gray tbody tr td .status {
     padding: 3px 10px;
     border-radius: 15px;
-    background-color: #797EFC;
+    background-color: #797efc;
     color: #fff;
 }
 
@@ -2103,10 +2107,9 @@ th.require span::after {
 .list-notification table.table-gray tbody tr td .status {
     padding: 3px 10px;
     border-radius: 15px;
-    background-color: #7BB32D;
+    background-color: #7bb32d;
     color: #fff;
 }
-
 
 #list-faq-content th,
 #list-faq-content td {
@@ -2127,7 +2130,6 @@ th.require span::after {
 .list-faq table.table-gray thead tr th:first-child {
     width: 5%;
 }
-
 
 .list-faq table.table-gray thead tr th:nth-child(2) {
     width: 70%;
@@ -2182,11 +2184,9 @@ th.require span::after {
     border-right: none;
 }
 
-
 .email-request-list table.table-gray thead tr th:first-child {
     width: 5%;
 }
-
 
 .email-request-list table.table-gray thead tr th:nth-child(2) {
     width: 5%;
@@ -2231,11 +2231,9 @@ th.require span::after {
     border-right: none;
 }
 
-
 .email-request-short-list table.table-gray thead tr th:first-child {
     width: 10%;
 }
-
 
 .email-request-short-list table.table-gray thead tr th:nth-child(2) {
     width: 10%;
@@ -2591,8 +2589,8 @@ th.require span::after {
     width: 200px;
 }
 
-[data-popup="issuance-individual-tickets"] .popup-button,
-[data-popup="issuance-of-bulk-tickets"] .popup-button {
+[data-popup='issuance-individual-tickets'] .popup-button,
+[data-popup='issuance-of-bulk-tickets'] .popup-button {
     width: 120px !important;
     border-radius: 3px;
 }
@@ -2755,7 +2753,7 @@ th.require span::after {
     margin: 5px 0;
 }
 
-#popup[data-popup="issuance-of-bulk-tickets"] .popup-content {
+#popup[data-popup='issuance-of-bulk-tickets'] .popup-content {
     height: auto;
     max-height: 90%;
     overflow-y: scroll;
@@ -2765,8 +2763,30 @@ th.require span::after {
     height: 129px;
 }
 
-/* END MAIAA030 */
+#popup textarea {
+    border: 1px solid #ddd;
+    width: 100%;
+    height: 300px;
+    padding: 10px;
+}
 
+#popup .groupButton {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#popup .groupButton button {
+    margin: 0;
+}
+
+#popup .groupButton button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* END MAIAA030 */
 
 #cancel-payment-content-list td {
     text-align: left;
@@ -2779,11 +2799,9 @@ th.require span::after {
     border-right: none;
 }
 
-
 .cancel-payment table.table-gray thead tr th:first-child {
     width: 10%;
 }
-
 
 .cancel-payment table.table-gray thead tr th:nth-child(2) {
     width: 12%;
@@ -2857,7 +2875,7 @@ th.require span::after {
 }
 
 .result-input-file li::before {
-    content: "";
+    content: '';
     width: 2px;
     height: 12px;
     background-color: #333;
@@ -2868,7 +2886,7 @@ th.require span::after {
 }
 
 .result-input-file li::after {
-    content: "";
+    content: '';
     width: 2px;
     height: 12px;
     background-color: #333;
@@ -2935,7 +2953,6 @@ th.require span::after {
     margin-top: 10px;
 }
 
-
 /* Search Box */
 
 #search-box {
@@ -2955,7 +2972,6 @@ th.require span::after {
 #search-box .table-gray td {
     border-right: 0;
 }
-
 
 #search-box .table-gray th {
     width: 150px;
@@ -3077,7 +3093,7 @@ th.require span::after {
 
 .before-table .group-left .button-left {
     padding: 5px 15px;
-    background-color: #A5A5A5;
+    background-color: #a5a5a5;
     height: 24px;
     color: #fff;
 }
@@ -3612,7 +3628,7 @@ th.require span::after {
 }
 
 .dental-event-registration-modification .group-button .btn-save {
-    background-color: #0C5AB3;
+    background-color: #0c5ab3;
     color: #fff;
 }
 
@@ -3714,7 +3730,7 @@ th.require span::after {
 }
 
 .group-filer-right-popup ul li::before {
-    content: "";
+    content: '';
     width: 6px;
     height: 6px;
     background-color: #000;
@@ -3725,14 +3741,14 @@ th.require span::after {
     left: -20px;
 }
 
-.group-filer-right-popup ul li input:not([type="datetime"]) {
+.group-filer-right-popup ul li input:not([type='datetime']) {
     width: 70px;
     text-align: center;
     padding: 2px 15px;
     border: 1px solid #ddd;
 }
 
-.group-filer-right-popup ul li input[type="datetime"] {
+.group-filer-right-popup ul li input[type='datetime'] {
     padding: 2px 15px;
     border: 1px solid #ddd;
     width: 150px;
@@ -3793,19 +3809,19 @@ th.require span::after {
 }
 
 .business-banner .results .table-details th:nth-child(3) {
-    width: 10%;
+    width: 8%;
 }
 
 .business-banner .results .table-details th:nth-child(4) {
-    width: 5%;
+    width: 6%;
 }
 
 .business-banner .results .table-details th:nth-child(5) {
-    width: 5%;
+    width: 6%;
 }
 
 .business-banner .results .table-details th:nth-child(6) {
-    width: 18%;
+    width: 19%;
 }
 
 .business-banner .results .table-details>table>tbody>tr>td:nth-child(6) {
@@ -3970,7 +3986,7 @@ th.require span::after {
 
 .dental-task-management-list .results table.table-gray tbody tr td:last-child button.edit:hover {
     color: #fff;
-    background-color: #0B52A8;
+    background-color: #0b52a8;
 }
 
 .dental-task-management-list .results table.table-gray tbody tr td:last-child button.delete:hover {
@@ -3979,3 +3995,66 @@ th.require span::after {
 }
 
 /* END MAGAA010 */
+
+.reason-group-content {
+    line-height: 20px;
+}
+
+.list-event table select {
+    width: 300px;
+}
+
+.list-event table th,
+.list-event table td {
+    padding: 15px 15px;
+}
+
+.list-event table .datepicker-child {
+    margin: 0;
+}
+
+.value-dateRange {
+    background-color: #f1f1f1;
+}
+
+.group-action {
+    display: flex;
+    float: right;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.group-action button {
+    background-color: #fff;
+    color: #333;
+    padding: 5px 15px 4px;
+    border-radius: 3px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #333;
+    transition: all 0.3s ease;
+    margin: 0;
+    white-space: no-wrap;
+}
+
+.group-action button:hover {
+    background: #333;
+    color: #fff;
+}
+
+.popup-notification {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#popup .popup-button.button-to-home {
+    width: fit-content;
+}
+
+#popup .popup-button.button-to-home:hover {
+    background-color: #333;
+    color: #fff;
+}
