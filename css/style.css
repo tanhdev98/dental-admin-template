@@ -186,8 +186,46 @@
 }
 
 #content .container>.wrap .profile-sidebar {
-    width: 150px;
+    width: 180px;
     padding-right: 10px;
+}
+
+#content .container>.wrap .profile-sidebar ul li>h1 {
+    font-size: 16px;
+    height: 51px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    position: relative;
+}
+
+#content .container>.wrap .profile-sidebar ul li>h1:after {
+    content: '';
+    width: 6px;
+    height: 10px;
+    background: url(../images/icons/icon-right-active.png) no-repeat center / 100%;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#content .container>.wrap .profile-sidebar ul li>h1.active {
+    background-color: #e0edf7;
+    color: #0068b7;
+}
+
+#content .container>.wrap .profile-sidebar ul li>h1.active:after {
+    transform: rotate(90deg);
+    top: 20px;
+    transition: 0.2s ease-in-out;
+}
+
+#content .container>.wrap .profile-sidebar ul li>h1:hover {
+    background-color: #e0edf7;
+    color: #0068b7;
 }
 
 .content-right {
@@ -738,14 +776,19 @@
     position: relative;
 }
 
-.profile-sidebar>ul li a:hover,
-.profile-sidebar>ul li a.active {
+/* .profile-sidebar > ul li a:hover,
+.profile-sidebar > ul li a.active {
+    background-color: #e0edf7;
+    color: #0068b7;
+} */
+.profile-sidebar>ul>li a.active.activeNosub {
     background-color: #e0edf7;
     color: #0068b7;
 }
 
-.profile-sidebar>ul li a:hover:after,
-.profile-sidebar>ul li a.active:after {
+/* 
+.profile-sidebar > ul li a:hover:after,
+.profile-sidebar > ul li a.active:after {
     content: '';
     width: 6px;
     height: 10px;
@@ -754,7 +797,7 @@
     right: 40px;
     top: 50%;
     transform: translateY(-50%);
-}
+} */
 
 .profile-sidebar>ul li a.active .icon-user-profile::after,
 .profile-sidebar>ul li a:hover .icon-user-profile::after {
@@ -795,8 +838,8 @@
     padding: 0 10px;
 }
 
-#profile-sidebar-no-space.profile-sidebar>ul li a:hover:after,
-#profile-sidebar-no-space.profile-sidebar>ul li a.active:after {
+/* #profile-sidebar-no-space.profile-sidebar > ul li a:hover:after,
+#profile-sidebar-no-space.profile-sidebar > ul li a.active:after {
     content: '';
     width: 6px;
     height: 10px;
@@ -805,7 +848,7 @@
     right: 10px;
     top: 50%;
     transform: translateY(-50%);
-}
+} */
 
 .advertising {
     display: flex;
@@ -889,6 +932,9 @@
     transform: translateY(-50%);
 }
 
+/* .titleSubmenu{
+    background-color: #0068b7;
+} */
 /* right sidebar */
 
 /* Infomation member */
@@ -1076,7 +1122,6 @@
     text-align: left;
 }
 
-
 .profile-content .table.member-infor tbody td.four-columns {
     position: relative;
 }
@@ -1165,6 +1210,7 @@ table.member-infor td .group-datepicker {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    z-index: 1;
 }
 
 .table.member-infor ul.select-value {
@@ -1306,7 +1352,7 @@ table.member-infor td .group-datepicker {
     align-items: center;
 }
 
-.bottom-content .button-back-to-list {
+.button-back-to-list {
     background-color: #fff;
     color: #333;
     padding: 10px 15px 8px;
@@ -1321,13 +1367,13 @@ table.member-infor td .group-datepicker {
     margin: 0;
 }
 
-.bottom-content .button-back-to-list:hover {
+.button-back-to-list:hover {
     background-color: #0068b7;
     border: 1px solid #0068b7;
     color: #fff;
 }
 
-.bottom-content .button-save {
+.button-save {
     background-color: #0068b7;
     color: #fff;
     padding: 10px 15px 8px;
@@ -1342,7 +1388,7 @@ table.member-infor td .group-datepicker {
     opacity: 0.8;
 }
 
-.bottom-content .button-save:hover {
+.button-save:hover {
     opacity: 1;
 }
 
@@ -2806,6 +2852,7 @@ th.require span::after {
 
 #popup .table-gray td {
     text-align: left;
+    position: relative;
 }
 
 /* END MAIAA030 */
@@ -2883,13 +2930,19 @@ th.require span::after {
 }
 
 .result-input-file {
-    margin-top: 10px;
+    width: 100%;
+    top: 10px;
+    left: 100px;
 }
 
 .result-input-file li {
     position: relative;
     margin-left: 20px;
     cursor: pointer;
+}
+
+.result-input-file li:first-child {
+    margin-top: 10px;
 }
 
 .result-input-file li+li {
@@ -3117,7 +3170,6 @@ th.require span::after {
     float: left;
 }
 
-
 .before-table .group-left .button-left {
     padding: 5px 15px;
     background-color: #a5a5a5;
@@ -3129,9 +3181,6 @@ th.require span::after {
 .group-coupon {
     display: flex;
     gap: 15px;
-    padding: 15px;
-    border: 1px dashed red;
-    border-radius: 5px;
     margin-top: 30px;
 }
 
@@ -3250,7 +3299,7 @@ th.require span::after {
 }
 
 #popup.dental-plus-preview .popup-content input {
-    width: 450px;
+    width: 385px;
 }
 
 #popup.dental-plus-preview .popup-content select {
@@ -3956,11 +4005,11 @@ th.require span::after {
 }
 
 .dental-task-management-list .results table.table-gray thead th:nth-child(1) {
-    width: 8%;
+    width: 10%;
 }
 
 .dental-task-management-list .results table.table-gray thead th:nth-child(2) {
-    width: 8%;
+    width: 10%;
 }
 
 .dental-task-management-list .results table.table-gray thead th:nth-child(3) {
@@ -3972,11 +4021,15 @@ th.require span::after {
 }
 
 .dental-task-management-list .results table.table-gray thead th:nth-child(5) {
-    width: 19%;
+    width: 10%;
 }
 
 .dental-task-management-list .results table.table-gray thead th:nth-child(6) {
-    width: 19%;
+    width: 10%;
+}
+
+.dental-task-management-list .results table.table-gray thead th:nth-child(7) {
+    width: 10%;
 }
 
 .dental-task-management-list .results table.table-gray tbody tr td {
@@ -4175,7 +4228,15 @@ th.require span::after {
     cursor: pointer;
 }
 
+.admin-navigation .main-menu-item.activeLink {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
 .admin-navigation .main-menu-item:hover .menu-item {
+    color: #00ffff;
+}
+
+.admin-navigation .main-menu-item.activeLink .menu-item {
     color: #00ffff;
 }
 
@@ -4288,4 +4349,8 @@ th.require span::after {
 
 .handle-text:hover {
     text-decoration: underline;
+}
+
+.title-table {
+    margin-bottom: 10px;
 }
