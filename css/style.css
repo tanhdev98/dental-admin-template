@@ -1952,7 +1952,7 @@ th.require span::after {
 }
 
 #manager-banner-content-change-content-list img {
-    width: 300px;
+    width: 200px;
     margin-top: 15px;
 }
 
@@ -1961,9 +1961,14 @@ th.require span::after {
     width: 650px;
 }
 
+#manager-banner-content-change-content-list td td {
+    text-align: center;
+}
+
 #manager-banner-content-change-content-list th {
     border-left: 1px solid #ddd;
     text-align: left;
+    text-wrap: noWrap;
 }
 
 #manager-banner-content-change-content-list td input[type='file'] {
@@ -1990,6 +1995,11 @@ th.require span::after {
 #manager-banner-content-change-content-list tr td .radio-group {
     display: flex;
     gap: 30px;
+}
+
+#manager-banner-content-change-content-list tr td .radio-group+span {
+    margin-top: 5px;
+    display: flex;
 }
 
 #manager-banner-content-change-content-list .table-gray .table-gray {
@@ -2092,6 +2102,7 @@ th.require span::after {
 
 .dental-magazine table th {
     text-align: left;
+    text-wrap: nowrap;
 }
 
 .dental-magazine table td {

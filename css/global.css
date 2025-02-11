@@ -54,10 +54,10 @@ nav ul li {
     font-weight: 600;
 }
 
-nav ul li:hover,
+/* nav ul li:hover,
 nav ul li a.active {
     color: #00ffff;
-}
+} */
 
 /* end nav */
 /* checkbox */
@@ -66,6 +66,14 @@ nav ul li a.active {
     display: flex;
     align-items: center;
     position: relative;
+}
+
+.item-checkBox input[type="radio"]+span+label {
+    padding-left: 10px;
+}
+
+.item-checkBox input[type="radio"]+span+label span {
+    padding-left: 0;
 }
 
 .item-checkBox input[type="checkbox"],
@@ -92,7 +100,21 @@ nav ul li a.active {
     transform: translate(-50%, -50%);
 }
 
-.item-checkBox input[type="checkbox"]:checked+span::before {
+.item-checkBox input[type="radio"]+span::before {
+    content: "";
+    background: url('../images/icons/icon-checked-blue.png') no-repeat center /100%;
+    width: 10px;
+    height: 8px;
+    display: block;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.item-checkBox input[type="checkbox"]:checked+span::before,
+.item-checkBox input[type="radio"]:checked+span::before {
     opacity: 1;
 }
 
@@ -159,7 +181,8 @@ nav ul li a.active {
 }
 
 .pagination-number li a {
-    width: 20px;
+    width: fit-content;
+    min-width: 20px;
     height: 20px;
     line-height: 25px;
     display: flex;
@@ -256,6 +279,7 @@ table.table-gray tbody tr td:last-child {
     left: 0;
     width: 100%;
     height: 100%;
+    z-index: 100;
 }
 
 #popup .overlay {
@@ -331,16 +355,35 @@ table.table-gray tbody tr td:last-child {
 #popup .popup-content .popup-table .table-row .table-row-title {
     width: 10%;
     text-align: center;
-    padding: 10px 0;
+    padding: 13.5px 0;
     background-color: #f9f9f9;
+    height: 100%;
+    margin: auto;
 }
 
 #popup .popup-content .popup-table .table-row .table-row-content {
     width: 90%;
     text-align: center;
     border-left: 1px solid #ddd;
-    padding: 10px;
+    padding: 6px;
     font-size: 14px;
+    height: 45px;
+}
+
+#popup .popup-content .popup-table .table-row .table-row-content input {
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    border: 1px solid #ddd;
+}
+
+#popup .popup-content .popup-table .table-row .table-row-content select {
+    width: 50%;
+    height: 100%;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: start;
+    cursor: pointer;
 }
 
 #popup .popup-content .popup-table .table-row .table-row-content.left {
