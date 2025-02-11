@@ -266,6 +266,8 @@ table.table-gray thead tr th {
 table.table-gray tbody tr td {
     border-left: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
+    overflow-wrap: break-word;
+    word-break: keep-all;
 }
 
 table.table-gray tbody tr td:last-child {
@@ -562,4 +564,9 @@ table.table-gray tbody tr td:last-child {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.flex-CheckGroup {
+    display: flex;
+    justify-content: space-around;
 }
