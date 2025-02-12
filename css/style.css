@@ -1839,7 +1839,7 @@ table ul.select-value li:hover:before {
 }
 
 .manager-banner-content .results th:nth-child(5) {
-    width: 22%;
+    width: 10%;
 }
 
 .manager-banner-content .results th:nth-child(6) {
@@ -2037,10 +2037,21 @@ th.require span::after {
 
 .manager-banner table.table-gray tbody tr td.img-banner {
     text-align: left;
+    flex-direction: column;
 }
 
 .manager-banner table.table-gray tbody tr td img {
     margin-bottom: 10px;
+}
+
+.img-banner img {
+    margin-bottom: 10px;
+    max-width: 150px;
+}
+
+.img-banner {
+    display: flex;
+    flex-direction: column;
 }
 
 #list-of-dental-journals-content-list th,
@@ -4365,4 +4376,9 @@ th.require span::after {
 
 .title-table {
     margin-bottom: 10px;
+}
+
+.flex-CheckGroup {
+    display: flex;
+    justify-content: space-around;
 }
