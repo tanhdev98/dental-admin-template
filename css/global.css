@@ -481,6 +481,10 @@ table.table-gray tbody tr td:last-child {
     cursor: pointer;
 }
 
+#popup .group-button .popup-button {
+    margin: 0;
+}
+
 /* Radio box */
 .item-radioBox {
     line-height: 1;
