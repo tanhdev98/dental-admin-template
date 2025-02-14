@@ -2662,7 +2662,7 @@ th.require span::after {
 }
 
 .form-group-tickets .form-group-right input {
-    width: 400px;
+    width: 200px;
     height: 30px;
     border: 1px solid #ddd;
     padding-left: 12px;
@@ -4120,6 +4120,10 @@ th.require span::after {
 .list-event table th,
 .list-event table td {
     padding: 15px 15px;
+}
+
+.list-event .event__image {
+    max-width: 200px;
 }
 
 .list-event table .datepicker-child {
