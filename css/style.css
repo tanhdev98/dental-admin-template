@@ -4386,3 +4386,11 @@ th.require span::after {
     display: flex;
     justify-content: space-around;
 }
+
+#popup.dental-information .popup-button {
+    width: auto;
+}
+
+#popup.dental-information td:not(:last-child) {
+    text-align: center;
+}
