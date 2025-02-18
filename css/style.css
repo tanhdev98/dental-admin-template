@@ -4444,10 +4444,14 @@ th.require span::after {
     width: 100%;
 }
 
+#popup.dental-information .table-dental-information table textarea {
+    height: 130px;
+}
+
 .dental-information .table-dental-information table tbody tr td {
     width: 35%;
     border: 1px solid #ddd;
-    padding-left: 0px;
+    padding-left: 10px;
     height: 45px;
     vertical-align: middle;
     margin: auto;
@@ -4467,22 +4471,14 @@ th.require span::after {
 
 .dental-information .table-dental-information table tbody tr td input {
     padding: 4px 15px;
-    width: 80%;
+    width: 70%;
 }
 
 .dental-information .table-dental-information table tbody tr td .select-box select {
-    width: 80%;
+    width: 70%;
     margin: auto;
     padding: 4px 15px;
     height: 33px;
-}
-
-#popup.dental-information .popup-button {
-    width: fit-content;
-}
-
-#popup.dental-information table.table-gray td:not(:last-child) {
-    text-wrap: nowrap;
 }
 
 .dental-information .table-dental-information table tbody tr td textarea {
