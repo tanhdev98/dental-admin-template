@@ -1064,6 +1064,9 @@
     border-radius: 0;
     overflow: hidden;
     margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .profile-content .table {
@@ -1470,6 +1473,31 @@ table.member-infor td .group-datepicker {
 
 #profile-recent-recruitment .title-table {
     margin: 0px 0 15px;
+}
+
+#profile-recent-recruitment .button-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#profile-recent-recruitment .wrap-button {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+#profile-recent-recruitment .wrap-button button {
+    padding: 5px 8px;
+    border-radius: 3px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    flex: 1;
+    transition: 0.3s all;
+}
+
+#profile-recent-recruitment .wrap-button button:hover {
+    background-color: #f9f9f9;
 }
 
 /* profile continuous recruitment advertising*/
@@ -3991,6 +4019,11 @@ th.require span::after {
     margin: 15px;
 }
 
+.business-banner .results .table-details .note-table {
+    color: red;
+    margin: 15px;
+}
+
 .business-banner .results .table-details .table-comment-results .table-comment-results-title {
     background-color: #f9f9f9;
     padding: 5px 15px;
@@ -4387,8 +4420,13 @@ th.require span::after {
     justify-content: space-around;
 }
 
-#popup.dental-information .popup-button {
-    width: auto;
+.required {
+    position: relative;
+}
+
+.required::after {
+    content: '*';
+    color: red;
 }
 
 #popup.dental-information td:not(:last-child) {
@@ -4397,8 +4435,8 @@ th.require span::after {
 
 /* START MABAA080_1 */
 #popup.dental-information .popup-content {
-    width: 1200px;
-    max-height: 95%;
+    width: 800px;
+    max-height: 80%;
     overflow-y: scroll;
 }
 
@@ -4409,7 +4447,7 @@ th.require span::after {
 .dental-information .table-dental-information table tbody tr td {
     width: 35%;
     border: 1px solid #ddd;
-    padding-left: 10px;
+    padding-left: 0px;
     height: 45px;
     vertical-align: middle;
     margin: auto;
@@ -4429,14 +4467,22 @@ th.require span::after {
 
 .dental-information .table-dental-information table tbody tr td input {
     padding: 4px 15px;
-    width: 70%;
+    width: 80%;
 }
 
 .dental-information .table-dental-information table tbody tr td .select-box select {
-    width: 70%;
+    width: 80%;
     margin: auto;
     padding: 4px 15px;
     height: 33px;
+}
+
+#popup.dental-information .popup-button {
+    width: fit-content;
+}
+
+#popup.dental-information table.table-gray td:not(:last-child) {
+    text-wrap: nowrap;
 }
 
 .dental-information .table-dental-information table tbody tr td textarea {
