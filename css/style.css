@@ -1542,7 +1542,10 @@ table.member-infor td .group-datepicker {
     margin: 15px 0;
     line-height: 20px;
 }
-
+input.checkboxDefaultYN{
+    width: 0px;
+    height: 0px;
+}
 .profile-content-count .count {
     font-weight: 600;
     margin-bottom: 20px;
