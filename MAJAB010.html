@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/bootstrap/bootstrap.js"></script>
+</head>
+
+<body>
+    <!-- content -->
+    <div id="content" >
+        <div class="container-fluid">
+            <div class="content">
+                <div class="sidebar">
+                    <ul>
+                        <li><a href="#">업무관리</a></li>
+                        <li class="active"><a href="#" class="active">덴탈플러스</a></li>
+                        <li><a href="#">자원봉사</a></li>
+                        <li><a href="#">이벤트</a></li>
+                        <li><a href="#">법정의무교육</a></li>
+                        <li><a href="#">문서서식</a></li>
+                        <li><a href="#">덴탈매거진</a></li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                </div>
+                <div class=" content-right">
+                    <div class="title">[ 일자별 등록집계 ]</div>
+                    <div class="">
+                        <table class="table-gray">
+                            <tbody>
+                                <tr>
+                                    <th style="width: 150px;">
+                                        일자 
+                                    </th>
+                                    <td colspan="3">
+                                        <div class="flex group-item">
+                                            <div class="group-date">
+                                                <input type="date" class="input-date" value="2024.08.31">
+                                            </div>
+                                        </div>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="group-button center">
+                            <button class="btn btn-gray-bold">검색</button>
+                            <button class="btn btn-gray-thin">초기화</button>
+                        </div>
+                    </div>
+                    <div class="statistics-by-day results">
+                        <div class="count-item">[ 덴탈잡 결제내역 일계 - 이용권 결제내역은 구매일이 아닌 사용일(조회일) 기준입니다.]</div>
+                        <table class="table-gray">
+                            <thead>
+                                <tr>
+                                    <th>상품명</th>
+                                    <th>단가</th>
+                                    <th>이니시스결제</th>
+                                    <th>이니시스결제금액</th>
+                                    <th>이니시스부가세별도</th>
+                                    <th>이용권결제</th>
+                                    <th>이용권결제금액</th>
+                                    <th>이용권부가세별도</th>
+                                    <th>결제합계</th>
+                                    <th>결제합계금액</th>
+                                    <th>결제합계부가세별도</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Hàng 1 -->
+                                <tr>
+                                    <td>
+                                        덴탈잡채용광고
+                                    </td>
+                                    <td>60,000</td>
+                                    <td>2</td>
+                                    <td>120,000</td>
+                                    <td>109,090</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>2</td>
+                                    <td>120,000</td>
+                                    <td>109,090</td>
+                                </tr> 
+                                <!-- Hàng 2-->
+                                <tr>
+                                    <td>
+                                        덴탈잡채용광고
+                                    </td>
+                                    <td>50,000</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>3</td>
+                                    <td>150,000</td>
+                                    <td>136,363</td>
+                                    <td>3</td>
+                                    <td>150,000</td>
+                                    <td>136,363</td>
+                                </tr>
+                                <!-- Hàng 3-->
+                                <tr>
+                                    <td>
+                                        덴탈잡채용광고
+                                    </td>
+                                    <td>45,000</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        덴탈잡채용광고
+                                    </td>
+                                    <td>0</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>4</td>
+                                    <td>180,000</td>
+                                    <td>163,636</td>
+                                    <td>4</td>
+                                    <td>180,000</td>
+                                    <td>163,636</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        덴탈잡채용광고(합계)
+                                    </td>
+                                    <td></td>
+                                    <td>2</td>
+                                    <td>120,000</td>
+                                    <td>109,090</td>
+                                    <td>7</td>
+                                    <td>330,000</td>
+                                    <td>299,999</td>
+                                    <td>9</td>
+                                    <td>450,000</td>
+                                    <td>409,089<br>
+                                        (409089)
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <!-- Hàng 1 -->
+                                <tr>
+                                    <td>
+                                        덴탈잡채용광고
+                                    </td>
+                                    <td>60,000</td>
+                                    <td>2</td>
+                                    <td>120,000</td>
+                                    <td>109,090</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>2</td>
+                                    <td>120,000</td>
+                                    <td>109,090</td>
+                                </tr> 
+                                <!-- Hàng 2-->
+                                <tr>
+                                    <td>
+                                        덴탈잡채용광고
+                                    </td>
+                                    <td>50,000</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>3</td>
+                                    <td>150,000</td>
+                                    <td>136,363</td>
+                                    <td>3</td>
+                                    <td>150,000</td>
+                                    <td>136,363</td>
+                                </tr>
+                                <!-- Hàng 3-->
+                                <tr>
+                                    <td>
+                                        덴탈잡채용광고
+                                    </td>
+                                    <td>45,000</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        덴탈잡채용광고
+                                    </td>
+                                    <td>0</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>4</td>
+                                    <td>180,000</td>
+                                    <td>163,636</td>
+                                    <td>4</td>
+                                    <td>180,000</td>
+                                    <td>163,636</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        덴탈잡채용광고(합계)
+                                    </td>
+                                    <td></td>
+                                    <td>2</td>
+                                    <td>120,000</td>
+                                    <td>109,090</td>
+                                    <td>7</td>
+                                    <td>330,000</td>
+                                    <td>299,999</td>
+                                    <td>9</td>
+                                    <td>450,000</td>
+                                    <td>409,089<br>
+                                        (409089)
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <!-- Hàng 1 -->
+                                <tr>
+                                    <td>
+                                        덴탈잡채용광고
+                                    </td>
+                                    <td>60,000</td>
+                                    <td>2</td>
+                                    <td>120,000</td>
+                                    <td>109,090</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>2</td>
+                                    <td>120,000</td>
+                                    <td>109,090</td>
+                                </tr> 
+                                <!-- Hàng 2-->
+                                <tr>
+                                    <td>
+                                        덴탈잡채용광고
+                                    </td>
+                                    <td>50,000</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>3</td>
+                                    <td>150,000</td>
+                                    <td>136,363</td>
+                                    <td>3</td>
+                                    <td>150,000</td>
+                                    <td>136,363</td>
+                                </tr>
+                                <!-- Hàng 3-->
+                                <tr>
+                                    <td>
+                                        덴탈잡채용광고
+                                    </td>
+                                    <td>45,000</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        덴탈잡채용광고
+                                    </td>
+                                    <td>0</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>4</td>
+                                    <td>180,000</td>
+                                    <td>163,636</td>
+                                    <td>4</td>
+                                    <td>180,000</td>
+                                    <td>163,636</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        덴탈잡채용광고(합계)
+                                    </td>
+                                    <td></td>
+                                    <td>2</td>
+                                    <td>120,000</td>
+                                    <td>109,090</td>
+                                    <td>7</td>
+                                    <td>330,000</td>
+                                    <td>299,999</td>
+                                    <td>9</td>
+                                    <td>450,000</td>
+                                    <td>409,089<br>
+                                        (409089)
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <!-- Hàng 1 -->
+                                <tr>
+                                    <td>
+                                        덴탈잡채용광고
+                                    </td>
+                                    <td>60,000</td>
+                                    <td>2</td>
+                                    <td>120,000</td>
+                                    <td>109,090</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>2</td>
+                                    <td>120,000</td>
+                                    <td>109,090</td>
+                                </tr> 
+                                <!-- Hàng 2-->
+                                <tr>
+                                    <td>
+                                        덴탈잡채용광고
+                                    </td>
+                                    <td>50,000</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>3</td>
+                                    <td>150,000</td>
+                                    <td>136,363</td>
+                                    <td>3</td>
+                                    <td>150,000</td>
+                                    <td>136,363</td>
+                                </tr>
+                                <!-- Hàng 3-->
+                                <tr>
+                                    <td>
+                                        덴탈잡채용광고
+                                    </td>
+                                    <td>45,000</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        덴탈잡채용광고
+                                    </td>
+                                    <td>0</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>4</td>
+                                    <td>180,000</td>
+                                    <td>163,636</td>
+                                    <td>4</td>
+                                    <td>180,000</td>
+                                    <td>163,636</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        덴탈잡채용광고(합계)
+                                    </td>
+                                    <td></td>
+                                    <td>2</td>
+                                    <td>120,000</td>
+                                    <td>109,090</td>
+                                    <td>7</td>
+                                    <td>330,000</td>
+                                    <td>299,999</td>
+                                    <td>9</td>
+                                    <td>450,000</td>
+                                    <td>409,089<br>
+                                        (409089)
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="wrap-pagination">
+                            <div class="pagination-arrow icon icon-prev disable"></div>
+                            <ul class="pagination-number">
+                                <li class="active"><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                            </ul>
+                            <div class="pagination-arrow icon icon-next"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end content -->
+</body>
+
+</html>

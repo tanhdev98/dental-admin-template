@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/bootstrap/bootstrap.js"></script>
+</head>
+
+<body>
+    <!-- content -->
+    <div id="content" >
+        <div class="container-fluid">
+            <div class="content">
+                <div class="sidebar">
+                    <ul>
+                        <li><a href="#">업무관리</a></li>
+                        <li class="active"><a href="#" class="active">덴탈플러스</a></li>
+                        <li><a href="#">자원봉사</a></li>
+                        <li><a href="#">이벤트</a></li>
+                        <li><a href="#">법정의무교육</a></li>
+                        <li><a href="#">문서서식</a></li>
+                        <li><a href="#">덴탈매거진</a></li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                </div>
+                <div class=" content-right">
+                    <div class="title">[ 일자별 등록집계 ]</div>
+                    <div class="">
+                        <table class="table-gray">
+                            <tbody>
+                                <tr>
+                                    <th style="width: 150px;">
+                                        일자 
+                                    </th>
+                                    <td colspan="3">
+                                        <div class="flex group-item">
+                                            <div class="group-date">
+                                                <input type="date" class="input-date" value="2024.08.31">
+                                            </div>
+                                        </div>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="group-button center">
+                            <button class="btn btn-gray-bold">검색</button>
+                            <button class="btn btn-gray-thin">초기화</button>
+                        </div>
+                    </div>
+                    <div class="table-padding-5 last-transparent">
+                        <div class="count-item">[ 덴탈잡 결제내역 일계 - 이용권 결제내역은 구매일이 아닌 사용일(조회일) 기준입니다.]</div>
+                        <table class="table-gray">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>pSeq</th>
+                                    <th>Seq</th>
+                                    <th>MemberID</th>
+                                    <th>BizCompany</th>
+                                    <th>NameKor</th>
+                                    <th>GoodName</th>
+                                    <th>TotPrice</th>
+                                    <th>BuyerCompany</th>
+                                    <th>BuyerName</th>
+                                    <th>AddDate</th>
+                                    <th>입금자명</th>
+                                    <th>(가상)입금은행</th>
+                                    <th>가상계좌</th>
+                                    <th>(가상)입금자명</th>
+                                    <th>계좌만료일</th>
+                                    <th>TID</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Hàng 1 -->
+                                <tr>
+                                    <td>
+                                        선택
+                                    </td>
+                                    <td>550515</td>
+                                    <td>855041</td>
+                                    <td>dentalgm</td>
+                                    <td>굿모닝치과</td>
+                                    <td>정석윤</td>
+                                    <td>덴탈잡채용광고</td>
+                                    <td>60000</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>2025-02-28 <br>오후 5:26:50</td>
+                                    <td>정상문</td>
+                                    <td>기업은행</td>
+                                    <td>07502311097206</td>
+                                    <td>정상문</td>
+                                    <td>20250305</td>
+                                    <td>StdpayVBNKsdentaljob20250228172754809869</td>
+                                </tr> 
+                                <tr>
+                                    <td>
+                                        선택
+                                    </td>
+                                    <td>550515</td>
+                                    <td>855041</td>
+                                    <td>dentalgm</td>
+                                    <td>굿모닝치과</td>
+                                    <td>정석윤</td>
+                                    <td>덴탈잡채용광고</td>
+                                    <td>60000</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>2025-02-28 <br>오후 5:26:50</td>
+                                    <td>정상문</td>
+                                    <td>기업은행</td>
+                                    <td>07502311097206</td>
+                                    <td>정상문</td>
+                                    <td>20250305</td>
+                                    <td>StdpayVBNKsdentaljob20250228172754809869</td>
+                                </tr> 
+                                <tr>
+                                    <td>
+                                        선택
+                                    </td>
+                                    <td>550515</td>
+                                    <td>855041</td>
+                                    <td>dentalgm</td>
+                                    <td>굿모닝치과</td>
+                                    <td>정석윤</td>
+                                    <td>덴탈잡채용광고</td>
+                                    <td>60000</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>2025-02-28 <br>오후 5:26:50</td>
+                                    <td>정상문</td>
+                                    <td>기업은행</td>
+                                    <td>07502311097206</td>
+                                    <td>정상문</td>
+                                    <td>20250305</td>
+                                    <td>StdpayVBNKsdentaljob20250228172754809869</td>
+                                </tr> 
+                                <tr>
+                                    <td>
+                                        선택
+                                    </td>
+                                    <td>550515</td>
+                                    <td>855041</td>
+                                    <td>dentalgm</td>
+                                    <td>굿모닝치과</td>
+                                    <td>정석윤</td>
+                                    <td>덴탈잡채용광고</td>
+                                    <td>60000</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>2025-02-28 <br>오후 5:26:50</td>
+                                    <td>정상문</td>
+                                    <td>기업은행</td>
+                                    <td>07502311097206</td>
+                                    <td>정상문</td>
+                                    <td>20250305</td>
+                                    <td>StdpayVBNKsdentaljob20250228172754809869</td>
+                                </tr> 
+                                <tr>
+                                    <td>
+                                        선택
+                                    </td>
+                                    <td>550515</td>
+                                    <td>855041</td>
+                                    <td>dentalgm</td>
+                                    <td>굿모닝치과</td>
+                                    <td>정석윤</td>
+                                    <td>덴탈잡채용광고</td>
+                                    <td>60000</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>2025-02-28 <br>오후 5:26:50</td>
+                                    <td>정상문</td>
+                                    <td>기업은행</td>
+                                    <td>07502311097206</td>
+                                    <td>정상문</td>
+                                    <td>20250305</td>
+                                    <td>StdpayVBNKsdentaljob20250228172754809869</td>
+                                </tr> 
+                                <tr>
+                                    <td>
+                                        선택
+                                    </td>
+                                    <td>550515</td>
+                                    <td>855041</td>
+                                    <td>dentalgm</td>
+                                    <td>굿모닝치과</td>
+                                    <td>정석윤</td>
+                                    <td>덴탈잡채용광고</td>
+                                    <td>60000</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>2025-02-28 <br>오후 5:26:50</td>
+                                    <td>정상문</td>
+                                    <td>기업은행</td>
+                                    <td>07502311097206</td>
+                                    <td>정상문</td>
+                                    <td>20250305</td>
+                                    <td>StdpayVBNKsdentaljob20250228172754809869</td>
+                                </tr> 
+                            </tbody>
+                        </table>
+                        <div class="wrap-pagination">
+                            <div class="pagination-arrow icon icon-prev disable"></div>
+                            <ul class="pagination-number">
+                                <li class="active"><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                            </ul>
+                            <div class="pagination-arrow icon icon-next"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end content -->
+</body>
+
+</html>

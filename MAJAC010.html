@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/bootstrap/bootstrap.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+</head>
+
+<body>
+    <!-- content -->
+    <div id="content" >
+        <div class="container-fluid">
+            <div class="content">
+                <div class="sidebar">
+                    <ul>
+                        <li><a href="#">업무관리</a></li>
+                        <li class="active"><a href="#" class="active">덴탈플러스</a></li>
+                        <li><a href="#">자원봉사</a></li>
+                        <li><a href="#">이벤트</a></li>
+                        <li><a href="#">법정의무교육</a></li>
+                        <li><a href="#">문서서식</a></li>
+                        <li><a href="#">덴탈매거진</a></li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                </div>
+                <div class=" content-right">
+                    <div class="title">[ 덴탈잡 구인 및 유료배너 등록 현황 ]</div>
+                    <div class="">
+                        <table class="table-gray">
+                            <tbody>
+                                <tr>
+                                    <th style="width: 150px;">
+                                        일자 
+                                    </th>
+                                    <td colspan="3">
+                                        <div class="flex group-item">
+                                            <div class="group-date">
+                                                <input type="date" class="input-date" value="2024.08.31">
+                                            </div>
+                                        </div>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="group-button center">
+                            <button class="btn btn-gray-bold">검색</button>
+                            <button class="btn btn-gray-thin">초기화</button>
+                        </div>
+                    </div>
+                    <div class="table-padding-5">
+                        <div class="count-item">[ 덴탈잡 결제내역 일계 - 이용권 결제내역은 구매일이 아닌 사용일(조회일) 기준입니다.]</div>
+                        <table class="table-gray">
+                            <thead>
+                                <tr>
+                                    <th rowspan="3">구분</th>
+                                    <th colspan="2" rowspan="1" >구인등록</th>
+                                    <th colspan="2" rowspan="1" >구인등록</th>
+                                    <th colspan="2" rowspan="1" >구인등록</th>
+                                    <th colspan="2" rowspan="1" >구인등록</th>
+                                    <th colspan="2" rowspan="1" >구인등록</th>
+                                    <th colspan="2" rowspan="1" >구인등록</th>
+                                    <th colspan="2" rowspan="1" >구인등록</th>
+                                    <th colspan="2" rowspan="1" >구인등록</th>
+                                    <th colspan="2" rowspan="1" >구인등록</th>
+                                    <th colspan="2" rowspan="1" >구인등록</th>
+                                    <th colspan="2" rowspan="1" >구인등록</th>
+                                    <th colspan="2" rowspan="1" >구인등록</th>
+                                    <th colspan="2" rowspan="1" >구인등록</th>
+                                    <th colspan="2" rowspan="1" >구인등록</th>
+                                    <th colspan="2" rowspan="1" >구인등록</th>
+                                    <th rowspan="1" >구인등록</th>
+                                    <th rowspan="1" >구인등록</th>
+                                    <th rowspan="1" >구인등록</th>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">2025</th>
+                                    <th colspan="2">2025</th>
+                                    <th colspan="2">2025</th>
+                                    <th colspan="2">2025</th>
+                                    <th colspan="2">2025</th>
+                                    <th colspan="2">2025</th>
+                                    <th colspan="2">2025</th>
+                                    <th colspan="2">2025</th>
+                                    <th colspan="2">2025</th>
+                                    <th colspan="2">2025</th>
+                                    <th colspan="2">2025</th>
+                                    <th colspan="2">2025</th>
+                                    <th colspan="2">2025</th>
+                                    <th colspan="2">2025</th>
+                                    <th colspan="2">2025</th>
+                                    <th>2025</th>
+                                    <th>2025</th>
+                                    <th>2025</th>
+                                </tr>
+                                <tr>
+                                    <th colspan="1">전체</th>
+                                    <th colspan="1">신/누</th>
+                                    <th colspan="1">전체</th>
+                                    <th colspan="1">신/누</th>
+                                    <th colspan="1">전체</th>
+                                    <th colspan="1">신/누</th>
+                                    <th colspan="1">전체</th>
+                                    <th colspan="1">신/누</th>
+                                    <th colspan="1">전체</th>
+                                    <th colspan="1">신/누</th>
+                                    <th colspan="1">전체</th>
+                                    <th colspan="1">신/누</th>
+                                    <th colspan="1">전체</th>
+                                    <th colspan="1">신/누</th>
+                                    <th colspan="1">전체</th>
+                                    <th colspan="1">신/누</th>
+                                    <th colspan="1">전체</th>
+                                    <th colspan="1">신/누</th>
+                                    <th colspan="1">전체</th>
+                                    <th colspan="1">신/누</th>
+                                    <th colspan="1">전체</th>
+                                    <th colspan="1">신/누</th>
+                                    <th colspan="1">전체</th>
+                                    <th colspan="1">신/누</th>
+                                    <th colspan="1">전체</th>
+                                    <th colspan="1">신/누</th>
+                                    <th colspan="1">전체</th>
+                                    <th colspan="1">신/누</th>
+                                    <th colspan="1">전체</th>
+                                    <th colspan="1">신/누</th>
+                                    <th>신규</th>
+                                    <th>신규</th>
+                                    <th>신규</th>
+                                </tr>
+                            </thead>
+                           <tbody>
+                            <tr>
+                                <td>1월</td>
+                                <td>2,710</td>
+                                <td>1,925/31</td>
+                                <td>90</td>
+                                <td>54/3</td>
+                                <td>99</td>
+                                <td>71/5</td>
+                                <td>43</td>
+                                <td>33/3</td>
+                                <td>686</td>
+                                <td>423/18</td>
+                                <td>43</td>
+                                <td>31/2</td>
+                                <td>48</td>
+                                <td>34/5</td>
+                                <td>15</td>
+                                <td>12/1</td>
+                                <td>53</td>
+                                <td>47/11</td>
+                                <td>530</td>
+                                <td>387/23</td>
+                                <td>18</td>
+                                <td>16/2</td>
+                                <td>56</td>
+                                <td>48/4</td>
+                                <td>12</td>
+                                <td>12/7</td>
+                                <td>35</td>
+                                <td>30/10</td>
+                                <td></td>
+                                <td>/</td>
+                                <td>841</td>
+                                <td>27</td>
+                                <td>543</td>
+                            </tr>
+                            <tr>
+                                <td>1월</td>
+                                <td>2,710</td>
+                                <td>1,925/31</td>
+                                <td>90</td>
+                                <td>54/3</td>
+                                <td>99</td>
+                                <td>71/5</td>
+                                <td>43</td>
+                                <td>33/3</td>
+                                <td>686</td>
+                                <td>423/18</td>
+                                <td>43</td>
+                                <td>31/2</td>
+                                <td>48</td>
+                                <td>34/5</td>
+                                <td>15</td>
+                                <td>12/1</td>
+                                <td>53</td>
+                                <td>47/11</td>
+                                <td>530</td>
+                                <td>387/23</td>
+                                <td>18</td>
+                                <td>16/2</td>
+                                <td>56</td>
+                                <td>48/4</td>
+                                <td>12</td>
+                                <td>12/7</td>
+                                <td>35</td>
+                                <td>30/10</td>
+                                <td></td>
+                                <td>/</td>
+                                <td>841</td>
+                                <td>27</td>
+                                <td>543</td>
+                            </tr>
+                            <tr>
+                                <td>1월</td>
+                                <td>2,710</td>
+                                <td>1,925/31</td>
+                                <td>90</td>
+                                <td>54/3</td>
+                                <td>99</td>
+                                <td>71/5</td>
+                                <td>43</td>
+                                <td>33/3</td>
+                                <td>686</td>
+                                <td>423/18</td>
+                                <td>43</td>
+                                <td>31/2</td>
+                                <td>48</td>
+                                <td>34/5</td>
+                                <td>15</td>
+                                <td>12/1</td>
+                                <td>53</td>
+                                <td>47/11</td>
+                                <td>530</td>
+                                <td>387/23</td>
+                                <td>18</td>
+                                <td>16/2</td>
+                                <td>56</td>
+                                <td>48/4</td>
+                                <td>12</td>
+                                <td>12/7</td>
+                                <td>35</td>
+                                <td>30/10</td>
+                                <td></td>
+                                <td>/</td>
+                                <td>841</td>
+                                <td>27</td>
+                                <td>543</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Total</td>
+                                <td>5,852</td>
+                                <td>2,987/72</td>
+                                <td>180</td>
+                                <td>75/4</td>
+                                <td>195</td>
+                                <td>102/9</td>
+                                <td>94</td>
+                                <td>61/8</td>
+                                <td>1,408</td>
+                                <td>625/36</td>
+                                <td>89</td>
+                                <td>46/3</td>
+                                <td>82</td>
+                                <td>44/7</td>
+                                <td>27</td>
+                                <td>20/4</td>
+                                <td>109</td>
+                                <td>84/19</td>
+                                <td>1,082</td>
+                                <td>584/46</td>
+                                <td>38</td>
+                                <td>32/7</td>
+                                <td>135</td>
+                                <td>91/19</td>
+                                <td>25</td>
+                                <td>24</td>
+                                <td>69</td>
+                                <td>50/16</td>
+                                <td></td>
+                                <td>/</td>
+                                <td>2,028</td>
+                                <td>56</td>
+                                <td>1,092</td>
+                            </tr>
+                           </tbody>
+                        </table>
+                        <div class="flex-table">
+                            <table class="calendar-table">
+                                <thead>
+                                    <tr>
+                                        <th onclick="prevMonth()"><i class="icon icon-prev"></i></th>
+                                        <th colspan="5" id="monthYear">2026년 11월</th>
+                                        <th onclick="nextMonth()"><i class="icon icon-next"></i></th>
+                                    </tr>
+                                    <tr> 
+                                        <td>월</td>
+                                        <td>화</td>
+                                        <td>수</td>
+                                        <td>목</td>
+                                        <td>금</td>
+                                        <td>토</td>
+                                        <td>일</td>
+                                    </tr>
+                                </thead>
+                                <tbody id="calendar-body"></tbody>
+                            </table>
+                            <div class="right-table">
+                                <table class="table table-gray">
+                                    <tbody>
+                                        <tr>
+                                            <th>
+                                                일평균 구인등록	
+                                            </th>
+                                            <td>89</td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                전체구인등록
+                                            </th>
+                                            <td>487,049</td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                영업일수
+                                            </th>
+                                            <td>5,488</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table class="table table-gray">
+                                    <tbody style="margin-top: 20px;">
+                                        <tr>
+                                            <th>
+                                                전체 등록회원	
+                                            </th>
+                                            <td>92,335</td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                치과(전체)	
+                                            </th>
+                                            <td>22,599</td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                개인(전체)	
+                                            </th>
+                                            <td>69,736</td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                치과(순수신규)	
+                                            </th>
+                                            <td>2</td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                치과(활성신규)	
+                                            </th>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                치과(전환신규)	
+                                            </th>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                개인(순수신규)	
+                                            </th>
+                                            <td style="color: red;">5</td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                개인(활성신규)	
+                                            </th>
+                                            <td>3</td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                개인(전환신규)	
+                                            </th>
+                                            <td> </td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                치과(탈퇴)	
+                                            </th>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                개인(탈퇴)	
+                                            </th>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">※ 2017.9.4 부터 휴면계정전환이 적용된 회원수입니다.</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">※ 순수신규 : 덴탈잡에서 가입</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">※ 활성신규 : 휴면계정에서 활성전환</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">※ 전환신규 : 비타민회원이 그룹구분 설정</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div id="chart-container" style="margin-top: 60px;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end content -->
+    <script>
+        let currentMonth = 10; 
+        let currentYear = 2026;
+
+        const dayData = {
+            "2026-11-01": "255",
+            "2026-11-05": "300",
+            "2026-11-20": "350",
+            "2026-11-25": "400"
+        };
+
+        function generateCalendar(month, year) {
+            const calendarBody = document.getElementById("calendar-body");
+            const monthYear = document.getElementById("monthYear");
+            calendarBody.innerHTML = ""; 
+            monthYear.innerText = `${year}년 ${month + 1}월`;
+
+            const firstDay = new Date(year, month, 1).getDay();
+            const daysInMonth = new Date(year, month + 1, 0).getDate();
+            const prevMonthDays = new Date(year, month, 0).getDate();
+
+            let date = 1;
+            let nextDate = 1;
+            let prevDate = prevMonthDays - firstDay + 1;
+
+            for (let i = 0; i < 6; i++) {
+                let row = "<tr>";
+                for (let j = 0; j < 7; j++) {
+                    if (i === 0 && j < firstDay) {
+                        row += `<td class="other-month"><span>${prevDate}</span></td>`;
+                        prevDate++;
+                    } else if (date > daysInMonth) {
+                        row += `<td class="other-month"><span>${nextDate}</span></td>`;
+                        nextDate++;
+                    } else {
+                        let dayKey = `${year}-${String(month + 1).padStart(2, '0')}-${String(date).padStart(2, '0')}`;
+                        let eventData = dayData[dayKey] || ""; 
+                        row += `<td>
+                                    <span>${date}</span>
+                                    <p>${eventData}</p>
+                                </td>`;
+                        date++;
+                    }
+                }
+                row += "</tr>";
+                calendarBody.innerHTML += row;
+                if (date > daysInMonth && nextDate > 1) break;
+            }
+        }
+
+        function prevMonth() {
+            currentMonth--;
+            if (currentMonth < 0) {
+                currentMonth = 11;
+                currentYear--;
+            }
+            generateCalendar(currentMonth, currentYear);
+        }
+
+        function nextMonth() {
+            currentMonth++;
+            if (currentMonth > 11) {
+                currentMonth = 0;
+                currentYear++;
+            }
+            generateCalendar(currentMonth, currentYear);
+        }
+
+        generateCalendar(currentMonth, currentYear);
+
+
+        Highcharts.chart('chart-container', {
+    chart: {
+        type: 'bar',
+        height: 600
+    },
+    title: {
+        text: '시간대별 등록현황',
+        align: 'left'
+    },
+    xAxis: {
+        categories: [
+            '00', '01', '02', '03', '04', '05', '06', '07', '08', '09', 
+            '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', 
+            '20', '21', '22', '23'
+        ]
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: ''
+        },
+    },
+    legend: {
+        reversed: true
+    },
+    plotOptions: {
+        series: {
+            stacking: 'normal',
+            dataLabels: {
+                enabled: true,
+                align: 'left', 
+                inside: false,  
+                x: 5,  
+                y: 0,  
+                crop: false,  
+                overflow: 'none',  
+                allowOverlap: true, 
+                style: {
+                    fontWeight: 'bold',
+                    color: 'black',
+                    textOutline: 'none'  
+                }
+            }
+        }
+    },
+
+    series: [{
+        name: "시간대별 등록현황",
+        data: [3226, 1505, 597, 279, 213, 232, 666, 2010, 7494, 49768, 
+               56089, 41637, 40490, 29324, 37209, 29149, 25176, 23113, 
+               19395, 9251, 6207, 4622, 3751, 2631]
+    }]
+});
+
+
+    </script>
+</body>
+
+</html>
