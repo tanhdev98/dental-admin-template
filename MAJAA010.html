@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/bootstrap/bootstrap.js"></script>
+</head>
+
+<body>
+    <!-- content -->
+    <div id="content">
+        <div class="container-fluid">
+            <div class="statistics-sale-history content">
+                <div class="sidebar">
+                    <ul>
+                        <li><a href="#">업무관리</a></li>
+                        <li class="active"><a href="#" class="active">덴탈플러스</a></li>
+                        <li><a href="#">자원봉사</a></li>
+                        <li><a href="#">이벤트</a></li>
+                        <li><a href="#">법정의무교육</a></li>
+                        <li><a href="#">문서서식</a></li>
+                        <li><a href="#">덴탈매거진</a></li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                </div>
+                <div class="sale-history-management content-right">
+                    <div class="title">매출내역관리</div>
+                    <div class="group-content">
+                        <div class="title-name">[덴탈잡 매출내역 다운]</div>
+                        <div class="select-box">
+                            <select name="saleHistoryYear" id="">
+                                <option value="2025">2025</option>
+                                <option value="2024">2024</option>
+                                <option value="2023">2023</option>
+                                <option value="2022">2022</option>
+                                <option value="2021">2021</option>
+                                <option value="2020">2020</option>
+                                <option value="2019">2019</option>
+                                <option value="2018">2018</option>
+                                <option value="2017">2017</option>
+                                <option value="2016">2016</option>
+                                <option value="2015">2015</option>
+                            </select>
+                            년
+                            <select name="saleHistoryMonth" id="">
+                                <option value="1">01</option>
+                                <option value="2">02</option>
+                                <option value="3">03</option>
+                                <option value="4">04</option>
+                                <option value="5">05</option>
+                                <option value="6">06</option>
+                                <option value="7">07</option>
+                                <option value="8">08</option>
+                                <option value="9">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                            월
+                        </div>
+                        <div class="wrap-button">
+                            <div class="wrap-tiem">
+                                <button class="btn-item">덴탈장 집계내역</button>
+                            </div>
+                            <div class="wrap-tiem">
+                                <button class="btn-item">덴탈잡 이용권 구매내역</button> -> 구매일기준
+                            </div>
+                            <div class="wrap-tiem">
+                                <button class="btn-item">덴달잡 이용권 환물(취소)내역</button> -> 환물(취소)일기준
+                            </div>
+                            <div class="wrap-tiem">
+                                <button class="btn-item">덴달잡 이용권 사용내역</button> -> 사용일기준
+                            </div>
+                        </div>
+                        <div class="wanning-alert">※ 다운받은 파일은 반드시 엑셀형식으로 다시 저장해서 사용하세요.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end content -->
+</body>
+
+</html>
