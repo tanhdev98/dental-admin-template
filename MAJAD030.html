@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/bootstrap/bootstrap.js"></script>
+</head>
+
+<body>
+    <!-- content -->
+    <div id="content" >
+        <div class="container-fluid">
+            <div class="content">
+                <div class="sidebar">
+                    <ul>
+                        <li><a href="#">업무관리</a></li>
+                        <li class="active"><a href="#" class="active">덴탈플러스</a></li>
+                        <li><a href="#">자원봉사</a></li>
+                        <li><a href="#">이벤트</a></li>
+                        <li><a href="#">법정의무교육</a></li>
+                        <li><a href="#">문서서식</a></li>
+                        <li><a href="#">덴탈매거진</a></li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                </div>
+                <div class=" content-right">
+                    <div class="title">[ 일자별 등록집계 ]</div>
+                    <div class="">
+                        <table class="table-gray">
+                            <tbody>
+                                <tr>
+                                    <th style="width: 150px;">
+                                        일자 
+                                    </th>
+                                    <td colspan="3">
+                                        <div class="flex group-item">
+                                            <div class="group-date">
+                                                <input type="date" class="input-date" value="2024.08.31">
+                                            </div>
+                                        </div>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="group-button center">
+                            <button class="btn btn-gray-bold">검색</button>
+                            <button class="btn btn-gray-thin">초기화</button>
+                        </div>
+                    </div>
+                    <div class="table-padding-5">
+                        <div class="count-item">[ 덴탈잡 결제내역 일계 - 이용권 결제내역은 구매일이 아닌 사용일(조회일) 기준입니다.]</div>
+                        <table class="table-gray custom-table-other-job">
+                            <thead>
+                                <tr>
+                                    <th rowspan="4">구분</th>
+                                    <th colspan="2" rowspan="1" >치과회원</th>
+                                    <th colspan="10" rowspan="1" >개인회원</th>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">2025년</th>
+                                    <th colspan="10">2025년</th>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">쪽지</th>
+                                    <th colspan="2">쪽지</th>
+                                    <th colspan="6">이력서</th>
+                                    <th colspan="2">온라인지원</th>
+                                </tr> 
+                                <tr>
+                                    <th colspan="1">발송건</th>
+                                    <th colspan="1">발송회원</th>
+                                    <th colspan="1">발송건</th>
+                                    <th colspan="1">발송회원</th>
+                                    <th colspan="1">게재<br>(New)</th>
+                                    <th colspan="1">보관<br>(New)</th>
+                                    <th colspan="1">보관<br>(변경)</th>
+                                    <th colspan="1">보관<br>(시스템)</th>
+                                    <th colspan="1">업데이트</th>
+                                    <th colspan="1">게재전체<br>(평균)</th>
+                                    <th colspan="1">지원건</th>
+                                    <th colspan="1">지원회원</th>
+                                </tr>
+                            </thead>
+                           <tbody>
+                            <tr>
+                                <td>1월</td>
+                                <td>4,307</td>
+                                <td>1,971</td>
+                                <td>2,446</td>
+                                <td>1,314</td>
+                                <td>238</td>
+                                <td>599</td>
+                                <td>123</td>
+                                <td></td>
+                                <td>236</td>
+                                <td>1,187</td>
+                                <td>7,004</td>
+                                <td>3,169</td>
+                            </tr>
+                            <tr>
+                                <td>1월</td>
+                                <td>4,307</td>
+                                <td>1,971</td>
+                                <td>2,446</td>
+                                <td>1,314</td>
+                                <td>238</td>
+                                <td>599</td>
+                                <td>123</td>
+                                <td></td>
+                                <td>236</td>
+                                <td>1,187</td>
+                                <td>7,004</td>
+                                <td>3,169</td>
+                            </tr>
+                            <tr>
+                                <td>1월</td>
+                                <td>4,307</td>
+                                <td>1,971</td>
+                                <td>2,446</td>
+                                <td>1,314</td>
+                                <td>238</td>
+                                <td>599</td>
+                                <td>123</td>
+                                <td></td>
+                                <td>236</td>
+                                <td>1,187</td>
+                                <td>7,004</td>
+                                <td>3,169</td>
+                            </tr>
+                             <tr class="no-data">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>  
+                            <tr class="no-data">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>  
+                            <tr class="no-data">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>  
+                            <tr class="no-data">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>  
+                            <tr class="no-data">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>  
+                            <tr class="no-data">
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Total</td>
+                                <td>5,852</td>
+                                <td>2,987/72</td>
+                                <td>180</td>
+                                <td>75/4</td>
+                                <td>195</td>
+                                <td>102/9</td>
+                                <td>94</td>
+                                <td>61/8</td>
+                                <td>1,408</td>
+                                <td>625/36</td>
+                                <td>89</td>
+                                <td>46/3</td>
+                            </tr>
+                           </tbody>
+                        </table>
+                        <table class="table table-gray custom-th" style="margin-top: 60px;">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        마감일
+                                    </th>
+                                    <th>
+                                        이력서 게재 전체	
+                                    </th>
+                                    <th>
+                                        이력서 보관 전체	
+                                    </th>
+                                    <th>
+                                        안심번호 사용건 전체(게재중)
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        2025-03-03	
+                                    </td>
+                                    <td>
+                                        1,334		
+                                    </td>
+                                    <td>
+                                        66,346	
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="calendar-table w-full p-no-absolute">
+                            <thead>
+                                <tr>
+                                    <th onclick="prevMonth()"><i class="icon icon-prev"></i></th>
+                                    <th colspan="5" id="monthYear">2026년 11월</th>
+                                    <th onclick="nextMonth()"><i class="icon icon-next"></i></th>
+                                </tr>
+                                <tr> 
+                                    <td>월</td>
+                                    <td>화</td>
+                                    <td>수</td>
+                                    <td>목</td>
+                                    <td>금</td>
+                                    <td>토</td>
+                                    <td>일</td>
+                                </tr>
+                            </thead>
+                            <tbody id="calendar-body"></tbody>
+                        </table>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end content -->
+</body>
+<script>
+    let currentMonth = 10; 
+    let currentYear = 2026;
+
+    const eventData = {
+            '2026-11-01': [
+                '(C)쪽지발송 : 345',
+                '(C)쪽지발송회원 : 155',
+                '(P)쪽지발송 : 160',
+                '(P)쪽지발송회원 : 84',
+                '(P)이력전체 : 1,341',
+                '(P)이력게재(new) : 13',
+                '(P)이력보관(new) : 38',
+                '(P)이력보관(변경) : 6',
+                '(P)이력보관(시스템) : 0',
+                '(P)이력업데이트 : 13',
+                '(P)온라인지원 : 370',
+                '(P)온라인지원회원 : 173',
+                '(P)안심번호전체 : 0',
+                '(P)안심번호(new) : 0'
+            ],
+            '2026-11-05': ['(P)이력업데이트 : 13'],
+            '2026-11-10': ['(P)이력전체 : 1,341']
+    };
+    function generateCalendar(month, year) {
+            const calendarBody = document.getElementById("calendar-body");
+            const monthYear = document.getElementById("monthYear");
+            calendarBody.innerHTML = "";
+            monthYear.innerText = `${year}년 ${month + 1}월`;
+
+            const firstDay = new Date(year, month, 1).getDay();
+            const daysInMonth = new Date(year, month + 1, 0).getDate();
+            const prevMonthDays = new Date(year, month, 0).getDate();
+
+            let date = 1;
+            let prevDate = prevMonthDays - firstDay + 1;
+            for (let i = 0; i < 6; i++) {
+                let row = "<tr>";
+                for (let j = 0; j < 7; j++) {
+                    if (i === 0 && j < firstDay) {
+                        row += `<td class="other-month"><span>${prevDate}</span></td>`;
+                        prevDate++;
+                    } else if (date > daysInMonth) {
+                        row += `<td class="other-month"><span>${date - daysInMonth}</span></td>`;
+                        date++;
+                    } else {
+                        let className = (j === 6) ? "red-data" : "";
+                        let fullDate = `${year}-${String(month + 1).padStart(2, '0')}-${String(date).padStart(2, '0')}`;
+                        let eventText = eventData[fullDate] ? eventData[fullDate].map(e => `<p>${e}</p>`).join('') : "";
+                        row += `<td class="${className}"><span>${date}</span>${eventText}</td>`;
+                        date++;
+                    }
+                }
+                row += "</tr>";
+                calendarBody.innerHTML += row;
+                if (date > daysInMonth) break;
+            }
+        }
+
+        function prevMonth() {
+            currentMonth--;
+            if (currentMonth < 0) {
+                currentMonth = 11;
+                currentYear--;
+            }
+            generateCalendar(currentMonth, currentYear);
+        }
+
+        function nextMonth() {
+            currentMonth++;
+            if (currentMonth > 11) {
+                currentMonth = 0;
+                currentYear++;
+            }
+            generateCalendar(currentMonth, currentYear);
+        }
+
+        generateCalendar(currentMonth, currentYear);
+</script>
+</html>

@@ -14,6 +14,21 @@
     background-color: #f2f2f2;
     color: #333;
 }
+.w-full {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+.w-fit {
+    width: fit-content;
+}
+
+.group-button-download{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+}
 
 .btn-gray-bold:hover,
 .btn-gray-thin:hover {
@@ -232,6 +247,9 @@
     flex: 1;
     min-height: calc(100vh - 20px - 50px - 63px - 70px);
     padding: 0 15px;
+}
+.sidebar+.content-right {
+   width: calc(100% - 150px);
 }
 
 #table-form-option th.header-item .header-item-inner .button-group {
@@ -1064,6 +1082,9 @@
     border-radius: 0;
     overflow: hidden;
     margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .profile-content .table {
@@ -1472,6 +1493,31 @@ table.member-infor td .group-datepicker {
     margin: 0px 0 15px;
 }
 
+#profile-recent-recruitment .button-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#profile-recent-recruitment .wrap-button {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+#profile-recent-recruitment .wrap-button button {
+    padding: 5px 8px;
+    border-radius: 3px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    flex: 1;
+    transition: 0.3s all;
+}
+
+#profile-recent-recruitment .wrap-button button:hover {
+    background-color: #f9f9f9;
+}
+
 /* profile continuous recruitment advertising*/
 
 #profile-continuous-recruitment-advertising {
@@ -1514,7 +1560,10 @@ table.member-infor td .group-datepicker {
     margin: 15px 0;
     line-height: 20px;
 }
-
+input.checkboxDefaultYN{
+    width: 0px;
+    height: 0px;
+}
 .profile-content-count .count {
     font-weight: 600;
     margin-bottom: 20px;
@@ -3991,6 +4040,11 @@ th.require span::after {
     margin: 15px;
 }
 
+.business-banner .results .table-details .note-table {
+    color: red;
+    margin: 15px;
+}
+
 .business-banner .results .table-details .table-comment-results .table-comment-results-title {
     background-color: #f9f9f9;
     padding: 5px 15px;
@@ -4387,8 +4441,13 @@ th.require span::after {
     justify-content: space-around;
 }
 
-#popup.dental-information .popup-button {
-    width: auto;
+.required {
+    position: relative;
+}
+
+.required::after {
+    content: '*';
+    color: red;
 }
 
 #popup.dental-information td:not(:last-child) {
@@ -4432,4 +4491,329 @@ th.require span::after {
     margin-top: 10px;
     font-size: 24px;
     color: red;
+}
+/* START MABAA080_1 */
+#popup.dental-information .popup-content {
+    width: 800px;
+    max-height: 80%;
+    overflow-y: scroll;
+}
+
+.dental-information .table-dental-information table {
+    width: 100%;
+}
+
+.dental-information .table-dental-information table tbody tr td {
+    width: 35%;
+    border: 1px solid #ddd;
+    padding-left: 0px;
+    height: 45px;
+    vertical-align: middle;
+    margin: auto;
+    text-align: center;
+}
+
+.dental-information .table-dental-information table tbody tr td:first-child,
+.dental-information .table-dental-information table tbody tr td:nth-child(3) {
+    width: 15%;
+    background-color: #f7f7f7;
+}
+
+.dental-information .table-dental-information table tbody tr:last-child [colspan="3"] {
+    height: 150px;
+    padding: 10px;
+}
+
+.dental-information .table-dental-information table tbody tr td input {
+    padding: 4px 15px;
+    width: 80%;
+}
+
+.dental-information .table-dental-information table tbody tr td .select-box select {
+    width: 80%;
+    margin: auto;
+    padding: 4px 15px;
+    height: 33px;
+}
+
+#popup.dental-information .popup-button {
+    width: fit-content;
+}
+
+#popup.dental-information table.table-gray td {
+    text-wrap: nowrap;
+    padding: 10px;
+}
+
+#popup.dental-information table.table-gray td:not(:last-child) {
+    text-wrap: nowrap;
+}
+
+#popup.dental-information textarea {
+    height: 130px;
+}
+
+.dental-information .table-dental-information table tbody tr td textarea {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.dental-information .popup-content .note-table {
+    color: red;
+    text-align: center;
+    margin: 15px;
+    line-height: 1.2;
+}
+
+.dental-information .popup-content .table-comment-results .table-comment-results-title {
+    background-color: #f9f9f9;
+    padding: 5px 15px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+/* END MABAA080_1 */
+
+/* START MABAA080_2 */
+.dental-information.dental-information_2 table tbody tr td input {
+    padding: 4px 15px;
+    width: 30% !important;
+    margin: 0 10px;
+}
+
+.dental-information_2 .table-dental-information table tbody tr td .select-box select {
+    width: 20%;
+    margin: auto;
+    padding: 4px 15px;
+    height: 33px;
+}
+
+
+
+/* END MABAA080_2 */ 
+
+.statistics-by-day.results .table-gray th{
+    background-color: #FFE4C4;
+}
+.statistics-by-day.results .table-gray tr:last-child td{
+    background-color: #F0F8FF;
+}
+.statistics-by-day.results .table-gray th:first-child,
+.statistics-by-day.results .table-gray th:nth-child(6),
+.statistics-by-day.results .table-gray th:nth-child(9),
+.statistics-by-day.results .table-gray th:nth-child(11),
+.statistics-by-day.results .table-gray tr:last-child td:first-child,
+.statistics-by-day.results .table-gray tr:last-child td:nth-child(6),
+.statistics-by-day.results .table-gray tr:last-child td:nth-child(9),
+.statistics-by-day.results .table-gray tr:last-child td:nth-child(11){
+    background-color: #00FFFF;
+    font-weight: 500;
+}
+
+.table-padding-5 table.table-gray th,.table-padding-5 table.table-gray td{
+    padding: 5px;
+    min-height: 30px;
+}
+
+.table-padding-5 table.table-gray th,.table-padding-5 table.table-gray td{
+    height: 31px;
+}
+
+.table-padding-5 table.table-gray tbody tr:last-child{
+    background-color: #f9f9f9;
+}
+
+.table-padding-5.last-transparent table.table-gray tbody tr:last-child{
+    background-color: transparent;
+}
+
+.calendar-table{
+    width: 100%;
+    margin-top: 60px;
+    max-width: 70%;
+    border-bottom: none;
+}
+
+.calendar-table thead tr th {
+    background-color: #C0C0C0;
+    height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    position: relative;
+}
+.calendar-table thead tr th:first-child  {
+   border-right: none;
+ }
+ 
+.calendar-table thead tr th:last-child  {
+   border-left: none;
+}
+
+.calendar-table thead tr th:nth-child(2)  {
+    border-left: none;
+    border-right: none;
+}
+ 
+.calendar-table thead tr th:first-child i {
+   position: absolute;
+   left: 20px;
+   top: 50%;
+   transform: translateY(-50%);
+   background-color: #fff;
+   border-right: none;
+}
+
+.calendar-table thead tr th:last-child i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+   transform: translateY(-50%);
+   background-color: #fff;
+   border-left: none;
+}
+
+.calendar-table thead tr td {
+    height: 35px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+}
+
+.calendar-table tbody tr td {
+    height: 150px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    position: relative;
+    width: calc(100% / 7);
+    padding: 30px 10px;
+}
+
+.calendar-table tbody tr td.other-month {
+    background-color: #f9f9f9;
+}
+
+.calendar-table tbody tr td.red-data span,
+.calendar-table tbody tr td.red-data p{
+    color: #ff0000;
+}
+
+.calendar-table tbody tr td p {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 600;
+}
+
+.calendar-table.p-no-absolute tbody tr td p {
+ font-size: 14px;
+}
+
+.calendar-table tbody tr td>span {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: 14px;
+  }
+  .calendar-table tbody tr td p>span {
+   margin-top: 4px;
+   display: inline-block;
+  }
+  
+  .calendar-table tbody tr td p span span {
+   font-weight: 600;
+  }
+
+.calendar-table.p-no-absolute tbody tr td p {
+    position: relative;
+    transform:unset;
+    left: unset;
+    bottom: unset;
+    text-align: left;
+    font-weight: 400;
+}
+
+.red-note{
+    color: #ff0000;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.flex-table{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-table .right-table{
+    margin-top: 30px;
+}
+.flex-table .right-table th{
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+.flex-table .right-table.table-list-status{
+    margin-top: 60px;
+}
+
+.table-list-status table{
+    width: 480px;
+}
+.table-padding-5 .table-list-status  .table.table-gray tr th{
+    height: 40px;
+}
+
+.table-list-status tr td:first-child{
+  width: 25%;
+
+}
+.table-list-status tr td:nth-child(2){
+  width: 60%;
+}
+.table-list-status tr td:last-child{
+    width: 15%;
+  }
+
+.custom-table-other-job tbody tr:not(:last-child) td:nth-child(6),
+.custom-table-other-job tbody tr:not(:last-child) td:nth-child(11){
+    background-color: #00FFFF;
+}
+
+.custom-table-other-job tbody tr.no-data td:nth-child(6),
+.custom-table-other-job tbody tr.no-data td:nth-child(11){
+    background-color: transparent;
+}
+
+.custom-th thead tr th{
+    background-color: #f9f9f9;
+}
+
+.custom-th tbody tr td:nth-child(2){
+    background-color: #00FFFF;
+}
+
+.group-table{
+    margin-top: 15px;
+    background-color: #f9f9f9;
+    padding: 10px;
+}
+
+.group-table.bg-transparent{
+    margin-top: 30px;
+    background-color: transparent;
+    padding: 0px;
+}
+
+.group-table .child-title{
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.group-table .table.w50{
+    width: 50%;
 }
