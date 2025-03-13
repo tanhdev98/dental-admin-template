@@ -3844,9 +3844,10 @@ th.require span::after {
 }
 
 .group-filer-right .group-filer-right-title input {
-    width: 50px;
+    width: 65px;
     border: 1px solid #ddd;
     padding: 2px 10px;
+    text-align: center;
 }
 
 .group-filer-right .group-filer-right-title+.group-filer-right-button {
